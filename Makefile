@@ -4,9 +4,10 @@ main:
 deploy:
 	-gitbook build
 	-git checkout gh-pages
-	-cp _book/* ./
+	-cp -r _book/* ./
 	-git add -A 
 	-git commit -m 'Update'
 	-git push origin gh-pages
+	-git checkout develop
 
 .PHONY: main deploy
