@@ -1,8 +1,6 @@
-# GitBook FAQ
+# ZtbCMS FAQ
 
-This page gathers common questions and answers concerning the GitBook format and toolchain.
-
-Questions about GitBook.com and the Editor are gather into the [help.gitbook.com's FAQ](http://help.gitbook.com/faq.html).
+有疑问请联系tonjayin@gmail.com
 
 #### How can I host/publish my book?
 
