@@ -1,9 +1,9 @@
 # Summary
 
-### Getting Started
+### 起步
 
-* [About this documentation](README.md)
-* [Installation and Setup](setup.md)
+* [简介](README.md)
+* [环境搭建&安装](setup.md)
 
 ### Your Content
 
