@@ -2,7 +2,7 @@
 <!DOCTYPE HTML>
 <html lang="" >
     <head>
-        <title>About this documentation · GitBook Toolchain Documentation</title>
+        <title>FAQ · GitBook Toolchain Documentation</title>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
@@ -56,8 +56,10 @@
 
 
     
-    <link rel="next" href="setup.html" />
+    <link rel="next" href="examples.html" />
     
+    
+    <link rel="prev" href="themes/" />
     
 
     </head>
@@ -81,7 +83,7 @@
             
 
             
-<a href="https://github.com/GitbookIO/gitbook/blob/master/docs/README.md" target="_blank" class="btn btn-link pull-right hidden-xs">
+<a href="https://github.com/GitbookIO/gitbook/blob/master/docs/faq.md" target="_blank" class="btn btn-link pull-right hidden-xs">
     <i class="octicon octicon-mark-github"></i> Edit on GitHub
 </a>
 <a href="faq.html" class="btn btn-link pull-right hidden-xs">
@@ -116,7 +118,7 @@
             
     
         
-        <a href="./" class="list-group-item active">
+        <a href="./" class="list-group-item ">
         
 
             
@@ -368,7 +370,7 @@
             
     
         
-        <a href="faq.html" class="list-group-item ">
+        <a href="faq.html" class="list-group-item active">
         
 
             
@@ -431,14 +433,21 @@
                             
 
                             <div class="gb-markdown book-page-inner">
-                                <h1 id="gitbook-toolchain-documentation">GitBook Toolchain Documentation</h1><p>This document aims to be a comprehensive guide to GitBook. It contains the full documentation for version <strong>3.0.0</strong>. Help for GitBook.com specific questions can be found at <a href="https://help.gitbook.com" target="_blank">help.gitbook.com</a>.</p><h3 id="what-is-gitbook">What is GitBook?</h3><p>GitBook is a command line tool (and Node.js library) for building beautiful books using GitHub/Git and Markdown (or AsciiDoc). . This documentation has been generated using GitBook.</p><p>GitBook can output your content as a website (<a href="themes/">customizable</a> and <a href="plugins/">extensibles</a>) or as an ebook (PDF, ePub or Mobi).</p><p><a href="https://www.gitbook.com" target="_blank">GitBook.com</a> is the online platform to create and host books built using the GitBook format. It offers hosting, collaboration features and an <a href="https://www.gitbook.com/editor" target="_blank">easy-to-use editor</a>.</p><h3 id="help-and-support">Help and Support</h3><p>We&apos;re always happy to help out with your books or any other questions you might have. You can ask a question on the following contact form at <a href="https://www.gitbook.com/contact" target="_blank">gitbook.com/contact</a> or signal an issue on <a href="https://github.com/GitbookIO/gitbook" target="_blank">GitHub</a>.</p><p>Check out the <a href="https://slack.gitbook.com" target="_blank">GitBook Community Slack Channel</a>, Stay updated by following <a href="https://twitter.com/GitBookIO" target="_blank">@GitBookIO</a> on Twitter or <a href="https://www.facebook.com/gitbookcom" target="_blank">GitBook</a> on Facebook.</p><h3 id="faq">FAQ</h3><p>Some questions are frequently asked. If you have a problem you should  <a href="faq.html">check this out</a> first.</p><h3 id="contribute-to-this-documentation">Contribute to this documentation</h3><p>You can contribute to improve this documentation on <a href="https://github.com/GitbookIO/gitbook" target="_blank">GitHub</a> by signaling issues or proposing changes.</p>
+                                <h1 id="gitbook-faq">GitBook FAQ</h1><p>This page gathers common questions and answers concerning the GitBook format and toolchain.</p><p>Questions about GitBook.com and the Editor are gather into the <a href="http://help.gitbook.com/faq.html" target="_blank">help.gitbook.com&apos;s FAQ</a>.</p><h4 id="how-can-i-hostpublish-my-book">How can I host/publish my book?</h4><p>Books can easily be published and hosted on <a href="https://www.gitbook.com" target="_blank">GitBook.com</a>. But GitBook output can be hosted on any static file hosting solution.</p><h4 id="what-can-i-use-to-edit-my-content">What can I use to edit my content?</h4><p>Any text editor should work! But we advise using the <a href="https://www.gitbook.com/editor" target="_blank">GitBook Editor</a>. <a href="https://www.gitbook.com" target="_blank">GitBook.com</a> also provides a web version of this editor.</p><hr><h4 id="does-gitbook-supports-rtlbi-directional-text-">Does GitBook supports RTL/bi-directional text ?</h4><p>The GitBook format supports right to left, and bi-directional writing. To enable it, you either need to specify a language (ex: <code>ar</code>), or force GitBook to use RTL in your <code>book.json</code>:</p><pre><code class="lang-json">{
+    <span class="hljs-string">&quot;language&quot;</span>: <span class="hljs-string">&quot;ar&quot;</span>,
+    <span class="hljs-string">&quot;direction&quot;</span>: <span class="hljs-string">&quot;rtl&quot;</span>
+}</code></pre>
+<p>With version 3.0 of GitBook, it&apos;s automatically detected according to the content.
+<em>Note that, while the output book will indeed respect RTL, the Editor doesn&apos;t support RTL writing yet</em>.</p><h4 id="should-i-use-an-html-or-md-extensions-in-my-links">Should I use an <code>.html</code> or <code>.md</code> extensions in my links?</h4><p>You should always use paths and the <code>.md</code> extensions when linking to your files, GitBook will automatically replace these paths by the appropriate link when the pointing file is referenced in the Table of Contents.</p><h4 id="can-i-create-a-gitbook-in-a-sub-directory-of-my-repository">Can I create a GitBook in a sub-directory of my repository?</h4><p>Yes, GitBooks can be created in <a href="structure.html#subdirectory">sub-directories</a>. GitBook.com and the CLI also looks by default in a serie of <a href="structure.html">folders</a>.</p><h4 id="does-gitbook-supports-rtl-languages">Does GitBook supports RTL languages?</h4><p>Yes, GitBook automatically detect the direction in your pages (<code>rtl</code> or <code>ltr</code>) and adjust the layout accordingly. The direction can also be specified globally in the <a href="config.html">book.json</a>.</p><hr><h4 id="does-gitbook-support-math-equations">Does GitBook support Math equations?</h4><p>GitBook supports math equations and TeX thanks to plugins. There are currently 2 official plugins to display math: <a href="https://plugins.gitbook.com/plugin/mathjax" target="_blank">mathjax</a> and <a href="https://plugins.gitbook.com/plugin/katex" target="_blank">katex</a>.</p><h4 id="can-i-customizetheme-the-output">Can I customize/theme the output?</h4><p>Yes, both the website and ebook outputs can be customized using <a href="themes/">themes</a>.</p><h4 id="can-i-add-interactive-content-videos-etc">Can I add interactive content (videos, etc)?</h4><p>GitBook is very <a href="plugins/">extensible</a>. You can use <a href="https://plugins.gitbook.com" target="_blank">existing plugins</a> or create your own!</p>
                             </div>
                             
 <hr>
 <div class="btn-group btn-group-justified">
     
+    <a class="btn" href="themes/"><b>Previous:</b> Theming</a>
     
-    <a class="btn" href="setup.html"><b>Next:</b> Installation and Setup</a>
+    
+    <a class="btn" href="examples.html"><b>Next:</b> Examples</a>
     
 </div>
 
@@ -502,7 +511,7 @@
 
 <script>
 (function() {
-    gitbook.page.hasChanged({"page":{"title":"About this documentation","level":"1.1","depth":1,"next":{"title":"Installation and Setup","level":"1.2","depth":1,"path":"setup.md","ref":"setup.md","articles":[]},"dir":"ltr"},"config":{"plugins":["theme-official@2.1.1","-sharing","-fontsettings","sitemap"],"root":"./docs","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"sitemap":{"hostname":"https://toolchain.gitbook.com"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"theme-official":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"version":"3.0.0"},"title":"GitBook Toolchain Documentation","gitbook":"3.2.0"},"file":{"path":"README.md","mtime":"2016-08-16T02:45:37.000Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2016-08-16T02:47:26.332Z"},"basePath":".","book":{"language":""}});
+    gitbook.page.hasChanged({"page":{"title":"FAQ","level":"4.1","depth":1,"next":{"title":"Examples","level":"4.2","depth":1,"path":"examples.md","ref":"examples.md","articles":[]},"previous":{"title":"Theming","level":"3.3","depth":1,"path":"themes/README.md","ref":"themes/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["theme-official@2.1.1","-sharing","-fontsettings","sitemap"],"root":"./docs","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"sitemap":{"hostname":"https://toolchain.gitbook.com"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"theme-official":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"version":"3.0.0"},"title":"GitBook Toolchain Documentation","gitbook":"3.2.0"},"file":{"path":"faq.md","mtime":"2016-08-16T02:45:37.000Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2016-08-16T02:47:26.332Z"},"basePath":".","book":{"language":""}});
 })();
 </script>
 
