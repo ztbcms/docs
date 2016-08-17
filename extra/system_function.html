@@ -1,0 +1,435 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <title>系统函数 · GitBook Toolchain Documentation</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.0">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+
+    
+    
+    <link rel="prev" href="./" />
+    
+
+    </head>
+    <body>
+        
+<div class="gb-page-wrapper">
+    <header class="gb-page-header">
+        <div class="container">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+
+            <a href=".." class="logo">
+                <img src="../gitbook/images/logo/128.png">
+                <h1>GitBook Toolchain Documentation</h1>
+            </a>
+
+            
+
+            
+<a href="https://github.com/Zhutibang/ZtbCMS-docs/blob/master/docs/extra/system_function.md" target="_blank" class="btn btn-link pull-right hidden-xs">
+    <i class="octicon octicon-mark-github"></i> Edit on GitHub
+</a>
+<a href="../faq.md" class="btn btn-link pull-right hidden-xs">
+    F.A.Q
+</a>
+<a href="https://github.com/Zhutibang/ZtbCMS" target="_blank" class="btn btn-link pull-right hidden-xs">
+    3.0.0
+</a>
+
+        
+        </div>
+    </header>
+
+    <div class="gb-page-body">
+        <div class="gb-page-inner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        
+
+
+
+    
+    <div class="panel panel-default">
+        
+        <div class="panel-heading">
+            <h3 class="panel-title">开始使用</h3>
+        </div>
+        
+
+        <div class="list-group">
+            
+    
+        
+        <a href="../" class="list-group-item ">
+        
+
+            
+
+            
+
+            概述
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../setup.html" class="list-group-item ">
+        
+
+            
+
+            
+
+            环境搭建&安装
+
+        
+        </a>
+        
+
+        
+    
+
+        </div>
+    </div>
+    
+    <div class="panel panel-default">
+        
+        <div class="panel-heading">
+            <h3 class="panel-title">基本使用</h3>
+        </div>
+        
+
+        <div class="list-group">
+            
+    
+        
+        <a href="../template/" class="list-group-item ">
+        
+
+            
+
+            
+            <i class="octicon octicon-chevron-right"></i>
+            
+
+            模板
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="./" class="list-group-item ">
+        
+
+            
+
+            
+            <i class="octicon octicon-chevron-down"></i>
+            
+
+            附录
+
+        
+        </a>
+        
+
+        
+        
+    
+        
+        <a href="system_function.html" class="list-group-item active">
+        
+
+            
+            <i class="octicon octicon-chevron-down" style="opacity: 0"></i>
+            
+
+            
+
+            系统函数
+
+        
+        </a>
+        
+
+        
+    
+
+        
+    
+
+        </div>
+    </div>
+    
+
+
+
+                    </div>
+                    <div class="col-md-9">
+                        
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                            
+
+                            <div class="gb-markdown book-page-inner">
+                                <ul><li>&#x83B7;&#x53D6;&#x680F;&#x76EE;&#x76F8;&#x5173;&#x4FE1;&#x606F;&#xFF1A;getCategory
+</li>
+<li>&#x83B7;&#x53D6;&#x6A21;&#x578B;&#x6570;&#x636E;&#xFF1A;getModel
+</li>
+<li>&#x751F;&#x6210;&#x7F29;&#x7565;&#x56FE;&#xFF1A;thumb
+</li>
+<li>&#x5B57;&#x7B26;&#x622A;&#x53D6;&#xFF1A;str_cut
+</li>
+<li>&#x83B7;&#x53D6;&#x70B9;&#x51FB;&#x6570;&#xFF1A;hits
+</li>
+<li>&#x6807;&#x9898;&#x94FE;&#x63A5;&#x83B7;&#x53D6;&#xFF1A;titleurl
+</li>
+<li>&#x83B7;&#x53D6;&#x6587;&#x7AE0;&#x8BC4;&#x8BBA;&#x603B;&#x6570;&#xFF1A;commcount
+</li>
+<li>&#x751F;&#x6210;&#x6807;&#x9898;&#x6837;&#x5F0F;&#xFF1A;title_style
+</li>
+<li>&#x83B7;&#x53D6;&#x680F;&#x76EE;&#x76F8;&#x5173;&#x4FE1;&#x606F;&#xFF1A;getCategory
+</li></ul>
+<h3 id="&#x83B7;&#x53D6;&#x680F;&#x76EE;&#x76F8;&#x5173;&#x4FE1;&#x606F;&#xFF1A;getcategory">&#x83B7;&#x53D6;&#x680F;&#x76EE;&#x76F8;&#x5173;&#x4FE1;&#x606F;&#xFF1A;getCategory</h3><table>
+<thead>
+<tr><th>&#x53C2;&#x6570;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr></thead><tbody>
+<tr><td>$catid</td>
+<td style="text-align:left">&#x680F;&#x76EE;id&#xFF0C;&#x53EA;&#x652F;&#x6301;&#x5355;&#x4E2A;&#xFF0C;&#x6570;&#x503C;&#x7C7B;&#x578B;&#xFF0C;&#x5FC5;&#x586B;</td>
+</tr><tr><td>$field</td>
+<td style="text-align:left">&#x9700;&#x8981;&#x8FD4;&#x56DE;&#x7684;&#x680F;&#x76EE;&#x5B57;&#x6BB5;&#xFF0C;&#x4F8B;&#x5982;&#xFF1B;catname,&#x5982;&#x679C;&#x4E3A;&#x7A7A;&#xFF0C;&#x5C06;&#x4EE5;&#x6570;&#x7EC4;&#x7684;&#x5F62;&#x5F0F;&#x8FD4;&#x56DE;&#x5168;&#x90E8;&#x53C2;&#x6570;&#x3002;</td>
+</tr><tr><td>$newCache</td>
+<td style="text-align:left">&#x662F;&#x5426;&#x4F7F;&#x7528;&#x7F13;&#x5B58;&#xFF0C;&#x9ED8;&#x8BA4;false&#xFF0C;&#x5E03;&#x5C14;&#x503C;</td>
+</tr></tbody></table>
+
+<p>&#x53C2;&#x6570;    &#x8BF4;&#x660E;
+$catid    | &#x680F;&#x76EE;id&#xFF0C;&#x53EA;&#x652F;&#x6301;&#x5355;&#x4E2A;&#xFF0C;&#x6570;&#x503C;&#x7C7B;&#x578B;&#xFF0C;&#x5FC5;&#x586B;
+$field    | &#x9700;&#x8981;&#x8FD4;&#x56DE;&#x7684;&#x680F;&#x76EE;&#x5B57;&#x6BB5;&#xFF0C;&#x4F8B;&#x5982;&#xFF1B;catname,&#x5982;&#x679C;&#x4E3A;&#x7A7A;&#xFF0C;&#x5C06;&#x4EE5;&#x6570;&#x7EC4;&#x7684;&#x5F62;&#x5F0F;&#x8FD4;&#x56DE;&#x5168;&#x90E8;&#x53C2;&#x6570;&#x3002;
+$newCache    | &#x662F;&#x5426;&#x4F7F;&#x7528;&#x7F13;&#x5B58;&#xFF0C;&#x9ED8;&#x8BA4;false&#xFF0C;&#x5E03;&#x5C14;&#x503C;</p><h3 id="&#x83B7;&#x53D6;&#x6A21;&#x578B;&#x6570;&#x636E;&#xFF1A;getmodel">&#x83B7;&#x53D6;&#x6A21;&#x578B;&#x6570;&#x636E;&#xFF1A;getModel</h3><table>
+<thead>
+<tr><th>&#x53C2;&#x6570;</th>
+<th style="text-align:left">&#x8BF4;&#x660E;</th>
+</tr></thead><tbody>
+<tr><td>$modelid</td>
+<td style="text-align:left">&#x6A21;&#x578B;ID&#xFF0C;&#x5FC5;&#x586B;&#x9879;</td>
+</tr><tr><td>$field</td>
+<td style="text-align:left">&#x9700;&#x8981;&#x8FD4;&#x56DE;&#x7684;&#x6A21;&#x578B;&#x5B57;&#x6BB5;&#xFF0C;&#x4F8B;&#x5982;&#xFF1A;tablename&#xFF0C;&#x5982;&#x679C;&#x4E3A;&#x7A7A;&#xFF0C;&#x5C06;&#x4EE5;&#x6570;&#x7EC4;&#x7684;&#x5F62;&#x5F0F;&#x8FD4;&#x56DE;&#x5168;&#x90E8;&#x53C2;&#x6570;&#x3002;</td>
+</tr></tbody></table>
+
+<h3 id="&#x751F;&#x6210;&#x7F29;&#x7565;&#x56FE;&#xFF1A;thumb">&#x751F;&#x6210;&#x7F29;&#x7565;&#x56FE;&#xFF1A;thumb</h3><table>
+<thead>
+<tr><th>&#x53C2;&#x6570;</th>
+<th style="text-align:left">&#x8BF4;&#x660E;</th>
+</tr></thead><tbody>
+<tr><td>$imgurl</td>
+<td style="text-align:left">&#x56FE;&#x7247;&#x5730;&#x5740;</td>
+</tr><tr><td>$width</td>
+<td style="text-align:left">&#x7F29;&#x7565;&#x56FE;&#x5BBD;&#x5EA6;&#xFF0C;&#x9ED8;&#x8BA4;100</td>
+</tr><tr><td>$height</td>
+<td style="text-align:left">&#x7F29;&#x7565;&#x56FE;&#x9AD8;&#x5EA6;&#xFF0C;&#x9ED8;&#x8BA4;100</td>
+</tr><tr><td>$thumbType</td>
+<td style="text-align:left">&#x7F29;&#x7565;&#x56FE;&#x751F;&#x6210;&#x65B9;&#x5F0F; 1 &#x6309;&#x8BBE;&#x7F6E;&#x5927;&#x5C0F;&#x622A;&#x53D6; 0 &#x6309;&#x539F;&#x56FE;&#x7B49;&#x6BD4;&#x4F8B;&#x7F29;&#x7565;&#xFF0C;&#x9ED8;&#x8BA4;0</td>
+</tr><tr><td>$smallpic</td>
+<td style="text-align:left">&#x56FE;&#x7247;&#x4E0D;&#x5B58;&#x5728;&#x65F6;&#x663E;&#x793A;&#x9ED8;&#x8BA4;&#x56FE;&#x7247;&#xFF0C;&#x9ED8;&#x8BA4;nopic.gif</td>
+</tr></tbody></table>
+
+<p>&#x6CE8;&#x610F;&#xFF1A;&#x56FE;&#x7247;&#x8DEF;&#x5F84;&#x8981;&#x6B63;&#x786E;&#xFF0C;&#x5FC5;&#x987B;&#x662F;&#x7AD9;&#x5185;&#x56FE;&#x7247;&#xFF01;</p><p>&#x6A21;&#x677F;&#x4E2D;&#x7528;&#x6CD5;&#xFF1A; {:thumb(&apos;/statics/images/rss.png&apos;)}</p><h3 id="&#x5B57;&#x7B26;&#x622A;&#x53D6;&#xFF1A;strcut">&#x5B57;&#x7B26;&#x622A;&#x53D6;&#xFF1A;str_cut</h3><table>
+<thead>
+<tr><th>&#x53C2;&#x6570;</th>
+<th style="text-align:left">&#x8BF4;&#x660E;</th>
+</tr></thead><tbody>
+<tr><td>$string</td>
+<td style="text-align:left">&#x9700;&#x8981;&#x622A;&#x53D6;&#x7684;&#x5B57;&#x7B26;&#x4E32;</td>
+</tr><tr><td>$length</td>
+<td style="text-align:left">&#x957F;&#x5EA6;</td>
+</tr><tr><td>$dot</td>
+<td style="text-align:left">&#x5F53;&#x957F;&#x5EA6;&#x8D85;&#x51FA;&#x65F6;&#x663E;&#x793A;&#x7684;&#x5B57;&#x7B26;&#xFF0C;&#x9ED8;&#x8BA4; ...</td>
+</tr></tbody></table>
+
+<p>&#x6A21;&#x677F;&#x4E2D;&#x7528;&#x6CD5;&#xFF1A; {$vo.title|str_cut=###,100} &#x6216;&#x8005; {:str_cut($vo[&apos;title&apos;],100)}</p><h3 id="&#x83B7;&#x53D6;&#x70B9;&#x51FB;&#x6570;&#xFF1A;hits">&#x83B7;&#x53D6;&#x70B9;&#x51FB;&#x6570;&#xFF1A;hits</h3><table>
+<thead>
+<tr><th>&#x53C2;&#x6570;</th>
+<th style="text-align:left">&#x8BF4;&#x660E;</th>
+</tr></thead><tbody>
+<tr><td>$catid</td>
+<td style="text-align:left">&#x680F;&#x76EE;ID</td>
+</tr><tr><td>$id</td>
+<td style="text-align:left">&#x4FE1;&#x606F;ID</td>
+</tr></tbody></table>
+
+<p>&#x6A21;&#x677F;&#x4E2D;&#x7528;&#x6CD5;&#xFF1A;{:hits($catid,$id)} &#x6216;&#x8005; {:hits(2,255)}</p><h3 id="&#x6807;&#x9898;&#x94FE;&#x63A5;&#x83B7;&#x53D6;&#xFF1A;titleurl">&#x6807;&#x9898;&#x94FE;&#x63A5;&#x83B7;&#x53D6;&#xFF1A;titleurl</h3><table>
+<thead>
+<tr><th>&#x53C2;&#x6570;</th>
+<th style="text-align:left">&#x8BF4;&#x660E;</th>
+</tr></thead><tbody>
+<tr><td>$catid</td>
+<td style="text-align:left">&#x680F;&#x76EE;ID</td>
+</tr><tr><td>$id</td>
+<td style="text-align:left">&#x4FE1;&#x606F;ID</td>
+</tr></tbody></table>
+
+<h3 id="&#x83B7;&#x53D6;&#x6587;&#x7AE0;&#x8BC4;&#x8BBA;&#x603B;&#x6570;&#xFF1A;commcount">&#x83B7;&#x53D6;&#x6587;&#x7AE0;&#x8BC4;&#x8BBA;&#x603B;&#x6570;&#xFF1A;commcount</h3><table>
+<thead>
+<tr><th>&#x53C2;&#x6570;</th>
+<th style="text-align:left">&#x8BF4;&#x660E;</th>
+</tr></thead><tbody>
+<tr><td>$catid</td>
+<td style="text-align:left">&#x680F;&#x76EE;ID</td>
+</tr><tr><td>$id</td>
+<td style="text-align:left">&#x4FE1;&#x606F;ID</td>
+</tr></tbody></table>
+
+<p>&#x6A21;&#x677F;&#x4E2D;&#x7528;&#x6CD5;&#xFF1A;{:commcount($catid,$id)} &#x6216;&#x8005; {:commcount(2,255)}</p><h3 id="&#x751F;&#x6210;&#x6807;&#x9898;&#x6837;&#x5F0F;&#xFF1A;titlestyle">&#x751F;&#x6210;&#x6807;&#x9898;&#x6837;&#x5F0F;&#xFF1A;title_style</h3><table>
+<thead>
+<tr><th>&#x53C2;&#x6570;</th>
+<th style="text-align:left">&#x8BF4;&#x660E;</th>
+</tr></thead><tbody>
+<tr><td>$style</td>
+<td style="text-align:left">&#x6837;&#x5F0F;&#xFF0C;&#x901A;&#x5E38;&#x65F6;&#x5B57;&#x6BB5;style&#xFF0C;&#x4EE5;&#x201C;;&#x201D;&#x9694;&#x5F00;&#xFF0C;&#x7B2C;&#x4E00;&#x4E2A;&#x662F;&#x6587;&#x5B57;&#x989C;&#x8272;&#xFF0C;&#x7B2C;&#x4E8C;&#x4E2A;&#x662F;&#x5426;&#x52A0;&#x7C97;</td>
+</tr><tr><td>$html</td>
+<td style="text-align:left">&#x662F;&#x5426;&#x663E;&#x793A;&#x5B8C;&#x6574;&#x7684;STYLE&#x6837;&#x5F0F;&#x4EE3;&#x7801;</td>
+</tr></tbody></table>
+
+<p>&#x6A21;&#x677F;&#x4E2D;&#x7528;&#x6CD5;&#xFF1A;{:title_style($style)} &#x6216;&#x8005; {:title_style(&quot;#ff0000;bold&quot;)}</p>
+                            </div>
+                            
+<hr>
+<div class="btn-group btn-group-justified">
+    
+    <a class="btn" href="./"><b>Previous:</b> 附录</a>
+    
+    
+</div>
+
+                        
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="gb-page-footer">
+        <div class="container">
+            <ul class="menu">
+                <li class="pull-right">
+                    <span class="service-info">Copyright GitBook 2016</span>
+                </li>
+                <li>
+                    <a href="#">Return to the top</a>
+                </li>
+                <li>
+                    <a href="#">Updated Aug 18th 16</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</div>
+
+<script src="../gitbook/gitbook.js"></script>
+
+    
+    <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+    
+
+    
+    <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+    
+
+    
+    <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+    
+
+<script>
+(function() {
+    gitbook.page.hasChanged({"page":{"title":"系统函数","level":"2.2.1","depth":2,"previous":{"title":"附录","level":"2.2","depth":1,"path":"extra/README.md","ref":"extra/README.md","articles":[{"title":"系统函数","level":"2.2.1","depth":2,"path":"extra/system_function.md","ref":"extra/system_function.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["theme-official@2.1.1","-sharing","-fontsettings","sitemap"],"root":"./docs","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"sitemap":{"hostname":"https://toolchain.gitbook.com"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"theme-official":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"version":"3.0.0"},"title":"GitBook Toolchain Documentation","gitbook":"3.2.0"},"file":{"path":"extra/system_function.md","mtime":"2016-08-17T18:11:04.000Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2016-08-17T18:12:32.582Z"},"basePath":"..","book":{"language":""}});
+})();
+</script>
+
+        
+    </body>
+</html>
+
