@@ -1,50 +1,25 @@
 # Summary
 
-### 起步
+### 开始使用
 
-* [简介](README.md)
+* [概述](README.md)
 * [环境搭建&安装](setup.md)
 
-### Your Content
+### 基本使用
 
-* [Directory structure](structure.md)
-* [Pages and Summary](pages.md)
-* [Configuration](config.md)
-* [Glossary](lexicon.md)
-* [Multi-Lingual](languages.md)
-* [Markdown](syntax/markdown.md)
-    * [Headings](syntax/markdown.md#headings)
-    * [Paragraphs](syntax/markdown.md#paragraphs)
-    * [Lists](syntax/markdown.md#lists)
-    * [Links](syntax/markdown.md#links)
-    * [Images](syntax/markdown.md#images)
-    * [Blockquotes](syntax/markdown.md#blockquotes)
-    * [Tables](syntax/markdown.md#tables)
-    * [Code](syntax/markdown.md#code)
-    * [HTML](syntax/markdown.md#html)
-    * [Footnotes](syntax/markdown.md#footnotes)
-* [AsciiDoc](syntax/asciidoc.md)
-* [eBook and PDF](ebook.md)
-
-### Customization
-
-* [Templating](templating/README.md)
-    * [Content References](templating/conrefs.md)
-    * [Variables](templating/variables.md)
-    * [Builtin](templating/builtin.md)
-* [Plugins](plugins/README.md)
-    * [Create a plugin](plugins/create.md)
-    * [Hooks](plugins/hooks.md)
-    * [Blocks](plugins/blocks.md)
-    * [Filters](plugins/filters.md)
-    * [API & Context](plugins/api.md)
-    * [Test your plugin](plugins/testing.md)
-* [Theming](themes/README.md)
-
---
-
-* [FAQ](faq.md)
-* [Examples](examples.md)
-* [Release notes](https://github.com/GitbookIO/gitbook/blob/master/CHANGES.md)
+* [模板](template/README.md)
+    * [常用变量](template/common_variables.md)
+    * [模板标签](template/tag/README.md)
+        * [content内容标签](template/tag/content.md)
+        * [spf内容标签](template/tag/spf.md)
+        * [tags内容标签](template/tag/tags.md)
+        * [position推荐位标签](template/tag/position.md)
+        * [get数据获取标签](template/tag/get.md)
+        * [template模板引入标签](template/tag/template.md)
+        * [pre上一篇标签](template/tag/pre.md)
+        * [next下一篇标签](template/tag/next.md)
+        * [blockcache区块缓存标签](template/tag/blockcache.md)
+* [附录](extra/README.md)
+    * [系统函数](extra/system_function.md)
 
 
