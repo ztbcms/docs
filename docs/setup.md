@@ -1,69 +1,32 @@
-# Setup and Installation of GitBook
+### 环境要求
 
-Getting GitBook installed and ready-to-go should only take a few minutes.
+- Mysql 5.5+
+- curl
+- mysql-client 
+- apache2 
+- php5(5.5+)
+    - php5-curl 
+    - php5-gd
 
-### GitBook.com
+### 首次安装(在Ubuntu环境下)
 
-[GitBook.com](https://www.gitbook.com) is an easy to use solution to write, publish and host books. It is the easiest solution for publishing your content and collaborating on it.
+详情请看`Makefile`
 
-It integrates well with the [GitBook Editor](https://www.gitbook.com/editor).
+```shell
+# 初始化Ubuntu环境(相关依赖安装)
+$ make setup-ubuntu-env
 
-### Local Installation
-
-##### Requirements
-
-Installing GitBook is easy and straightforward. Your system just needs to meet these two requirements:
-
-* NodeJS (v4.0.0 and above is recommended)
-* Windows, Linux, Unix, or Mac OS X
-
-##### Install with NPM
-
-The best way to install GitBook is via **NPM**. At the terminal prompt, simply run the following command to install GitBook:
-
-```
-$ npm install gitbook-cli -g
+# 修改权限
+$ make setup-env
 ```
 
-`gitbook-cli` is an utility to install and use multiple versions of GitBook on the same system. It will automatically install the required version of GitBook to build a book.
+### 根据安装程序安装好后，进入后台需要进行如下操作：
 
-##### Create a book
+* 更新站点缓存。
+* 进入 内容 -> 批量更新URL 更新地址。
+* 进入 内容 -> 批量更新栏目页 进行生成栏目页。
+* 进入 内容 -> 批量更新内容页 进行生成内容页。
+* 进入 模块 -> 搜索配置 -> 重建索引 进行搜索数据的重建。
 
-GitBook can setup a boilerplate book:
 
-```
-$ gitbook init
-```
-
-If you wish to create the book into a new directory, you can do so by running `gitbook init ./directory`
-
-Preview and serve your book using:
-
-```
-$ gitbook serve
-```
-
-Or build the static website using:
-
-```
-$ gitbook build
-```
-
-##### Install pre-releases
-
-`gitbook-cli` makes it easy to download and install other versions of GitBook to test with your book:
-
-```
-$ gitbook fetch beta
-```
-
-Use `gitbook ls-remote` to list remote versions available for install.
-
-##### Debugging
-
-You can use the options `--log=debug` and `--debug` to get better error messages (with stack trace). For example:
-
-```
-$ gitbook build ./ --log=debug --debug
-```
-
+    
