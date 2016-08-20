@@ -19,6 +19,14 @@
         * [pre上一篇标签](template/tag/pre.md)
         * [next下一篇标签](template/tag/next.md)
         * [blockcache区块缓存标签](template/tag/blockcache.md)
+
+### 模块
+
+* [中国区域模块](module/area.md)
+
+
+### 附录
+
 * [附录](extra/README.md)
     * [系统函数](extra/system_function.md)
 
