@@ -13,26 +13,22 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/GitbookIO/gitbook.git"
+    "url": "https://github.com/zhutibang/ztbcms-docs.git"
   },
   "keywords": [
     "git",
     "book",
     "gitbook"
   ],
-  "author": "FriendCode Inc. <contact@gitbook.com>",
+  "author": "Jayin Ton",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/GitbookIO/gitbook/issues"
+    "url": "https://github.com/zhutibang/ztbcms-docs/issues"
   },
   "contributors": [
     {
-      "name": "Aaron O'Mullan",
-      "email": "aaron@gitbook.com"
-    },
-    {
-      "name": "Samy Pessé",
-      "email": "samy@gitbook.com"
+      "name": "Jayin",
+      "email": "tonjayin@gmail.com"
     }
   ]
 }
