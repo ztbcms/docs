@@ -5,7 +5,7 @@
 * [概述](README.md)
 * [环境搭建&安装](setup.md)
 
-### 基本使用
+### 二次开发
 
 * [模板](template/README.md)
     * [常用变量](template/common_variables.md)

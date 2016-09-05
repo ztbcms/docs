@@ -8,6 +8,9 @@
     - php5-curl 
     - php5-gd
 
+环境需要支持PDO数据库连接
+注：http://blog.163.com/song_0803/blog/static/4609759720113163623385/
+
 ### 首次安装(在Ubuntu环境下)
 
 详情请看`Makefile`
