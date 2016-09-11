@@ -30,8 +30,4 @@
 * [附录](extra/README.md)
     * [系统函数](extra/system_function.md)
 
----
-
-- [FAQ](faq.md)    
-
 
