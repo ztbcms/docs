@@ -334,35 +334,7 @@
     
                             
                             <div class="gb-markdown book-page-inner">
-                                <h1 id="templating">Templating</h1><p>GitBook uses the <a href="https://mozilla.github.io/nunjucks/" target="_blank">Nunjucks templating language</a> to process pages and theme&apos;s templates.</p><p>The Nunjucks syntax is very similar to <strong>Jinja2</strong> or <strong>Liquid</strong>. Its syntax uses surrounding braces <code>{ }</code> to mark content that needs to be processed.</p><h3 id="variables">Variables</h3><p>A variable looks up a value from the template context. If you wanted to simply display a variable, you would use the <code>{{ variable }}</code> syntax. For example :</p><pre><code class="lang-twig"><span class="xml">My name is </span><span class="hljs-template-variable">{{ name }}</span><span class="xml">, nice to meet you</span></code></pre>
-<p>This looks up username from the context and displays it. Variable names can have dots in them which lookup properties, just like JavaScript. You can also use the square bracket syntax.</p><pre><code class="lang-twig"><span class="xml"></span><span class="hljs-template-variable">{{ foo.bar }}</span><span class="xml">
-</span><span class="hljs-template-variable">{{ foo[&quot;bar&quot;] }}</span><span class="xml"></span></code></pre>
-<p>If a value is undefined, nothing is displayed. The following all output nothing if foo is undefined: <code>{{ foo }}</code>, <code>{{ foo.bar }}</code>, <code>{{ foo.bar.baz }}</code>.</p><p>GitBook provides a set of <a href="variables.md">predefined  variables</a> from the context.</p><h3 id="filters">Filters</h3><p>Filters are essentially functions that can be applied to variables. They are called with a pipe operator (<code>|</code>) and can take arguments.</p><pre><code class="lang-twig"><span class="xml"></span><span class="hljs-template-variable">{{ foo | title }}</span><span class="xml">
-</span><span class="hljs-template-variable">{{ foo | join(&quot;,&quot;) }}</span><span class="xml">
-</span><span class="hljs-template-variable">{{ foo | replace(&quot;foo&quot;, &quot;bar&quot;) | capitalize }}</span><span class="xml"></span></code></pre>
-<p>The third example shows how you can chain filters. It would display &quot;Bar&quot;, by first replacing &quot;foo&quot; with &quot;bar&quot; and then capitalizing it.</p><h3 id="tags">Tags</h3><h5 id="if">if</h5><p><code>if</code> tests a condition and lets you selectively display content. It behaves exactly as JavaScript&apos;s <code>if</code> behaves.</p><pre><code class="lang-twig"><span class="xml"></span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-keyword">if</span></span> variable %}</span><span class="xml">
-  It is true
-</span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-keyword">endif</span></span> %}</span><span class="xml"></span></code></pre>
-<p>If variable is defined and evaluates to true, &quot;It is true&quot; will be displayed. Otherwise, nothing will be.</p><p>You can specify alternate conditions with <code>elif</code> and <code>else</code>:</p><pre><code class="lang-twig"><span class="xml"></span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-keyword">if</span></span> hungry %}</span><span class="xml">
-  I am hungry
-</span><span class="hljs-template-tag">{% <span class="hljs-name">elif</span> tired %}</span><span class="xml">
-  I am tired
-</span><span class="hljs-template-tag">{% <span class="hljs-name">else</span> %}</span><span class="xml">
-  I am good!
-</span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-keyword">endif</span></span> %}</span><span class="xml"></span></code></pre>
-<h5 id="for">for</h5><p><code>for</code> iterates over arrays and dictionaries.</p><pre><code class="lang-twig"><span class="xml"># Chapters about GitBook
-
-</span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-keyword">for</span></span> article in glossary.terms[&apos;gitbook&apos;].articles %}</span><span class="xml">
-* [</span><span class="hljs-template-variable">{{ article.title }}</span><span class="xml">](</span><span class="hljs-template-variable">{{ article.path }}</span><span class="xml">)
-</span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-keyword">endfor</span></span> %}</span><span class="xml"></span></code></pre>
-<h5 id="set">set</h5><p><code>set</code> lets you create/modify a variable.</p><pre><code class="lang-twig"><span class="xml"></span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-keyword">set</span></span> softwareVersion = &quot;1.0.0&quot; %}</span><span class="xml">
-
-Current version is </span><span class="hljs-template-variable">{{ softwareVersion }}</span><span class="xml">.
-[Download it](website.com/download/</span><span class="hljs-template-variable">{{ softwareVersion }}</span><span class="xml">)</span></code></pre>
-<h5 id="include-and-block">include and block</h5><p>Inclusion and inheritance is detailled in the <a href="conrefs.md">Content References</a> section.</p><h3 id="escaping">Escaping</h3><p>If you want GitBook to ignore any of the special templating tags, you can use raw and anything inside of it will be output as plain text.</p><pre><code class="lang-twig"><span class="xml"></span><span class="hljs-template-tag">{% <span class="hljs-name">raw</span> %}</span><span class="xml">
-  this will </span><span class="hljs-template-variable">{{ not be processed }}</span><span class="xml">
-</span><span class="hljs-template-tag">{% <span class="hljs-name">endraw</span> %}</span><span class="xml"></span></code></pre>
-
+                                <h1 id="&#x6A21;&#x677F;">&#x6A21;&#x677F;</h1><p>&#x6A21;&#x677F;&#x662F;cms&#x4E2D;&#x6700;&#x4E3A;&#x5173;&#x952E;&#x7684;&#x4E00;&#x90E8;&#x5206;&#x3002;</p>
                             </div>
                             
                         
@@ -398,7 +370,7 @@ Current version is </span><span class="hljs-template-variable">{{ softwareVersio
                     <a href="#">Return to the top</a>
                 </li>
                 <li>
-                    <a href="#">Updated Sep 10th 16</a>
+                    <a href="#">Updated Sep 11th 16</a>
                 </li>
             </ul>
         </div>
@@ -425,7 +397,7 @@ Current version is </span><span class="hljs-template-variable">{{ softwareVersio
 
 <script>
 (function() {
-    gitbook.page.hasChanged({"page":{"title":"模板","level":"2.1","depth":1,"next":{"title":"常用变量","level":"2.1.1","depth":2,"path":"template/common_variables.md","ref":"template/common_variables.md","articles":[]},"previous":{"title":"环境搭建&安装","level":"1.2","depth":1,"path":"setup.md","ref":"setup.md","articles":[]},"dir":"ltr"},"config":{"plugins":["theme-ztbcms-docs@1.0.0","-sharing","-fontsettings","sitemap"],"root":"./docs","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"sitemap":{"hostname":"https://toolchain.gitbook.com"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"theme-ztbcms-docs":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"version":"3.0.0"},"title":"ZtbCMS","gitbook":"3.2.0"},"file":{"path":"template/README.md","mtime":"2016-09-10T14:16:27.000Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2016-09-10T14:24:26.487Z"},"basePath":"..","book":{"language":""}});
+    gitbook.page.hasChanged({"page":{"title":"模板","level":"2.1","depth":1,"next":{"title":"常用变量","level":"2.1.1","depth":2,"path":"template/common_variables.md","ref":"template/common_variables.md","articles":[]},"previous":{"title":"环境搭建&安装","level":"1.2","depth":1,"path":"setup.md","ref":"setup.md","articles":[]},"dir":"ltr"},"config":{"plugins":["theme-ztbcms-docs@1.0.0","-sharing","-fontsettings","sitemap"],"root":"./docs","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"sitemap":{"hostname":"https://toolchain.gitbook.com"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"theme-ztbcms-docs":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"version":"3.0.0"},"title":"ZtbCMS","gitbook":"3.2.0"},"file":{"path":"template/README.md","mtime":"2016-09-11T05:21:14.000Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2016-09-11T05:23:47.877Z"},"basePath":"..","book":{"language":""}});
 })();
 </script>
 
