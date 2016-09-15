@@ -492,7 +492,84 @@
     
                             
                             <div class="gb-markdown book-page-inner">
-                                
+                                <h2 id="tags&#x6807;&#x7B7E;">Tags&#x6807;&#x7B7E;</h2><p>&#x6807;&#x7B7E;&#xFF1A;</p><pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">tags</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">tags</span>&gt;</span></code></pre>
+<p>&#x4F5C;&#x7528;&#xFF1A;&#x8FDB;&#x884C;&#x76F8;&#x5173;Tags&#x6570;&#x636E;&#x8C03;&#x7528;</p><p>&#x683C;&#x5F0F;&#xFF1A;</p><pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">tags</span> <span class="hljs-attr">action</span>=<span class="hljs-string">&quot;&#x65B9;&#x6CD5;&#x540D;&quot;</span> &#x53C2;&#x6570;=<span class="hljs-string">&quot;&#x5185;&#x5BB9;&quot;</span>&gt;</span> 
+    .. HTML ..
+<span class="hljs-tag">&lt;/<span class="hljs-name">tags</span>&gt;</span></code></pre>
+<p>&#x7528;&#x6CD5;&#x793A;&#x4F8B;&#xFF1A;</p><pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">tags</span> <span class="hljs-attr">action</span>=<span class="hljs-string">&quot;lists&quot;</span> <span class="hljs-attr">tag</span>=<span class="hljs-string">&quot;$tag&quot;</span> <span class="hljs-attr">num</span>=<span class="hljs-string">&quot;4&quot;</span> <span class="hljs-attr">page</span>=<span class="hljs-string">&quot;$page&quot;</span> <span class="hljs-attr">order</span>=<span class="hljs-string">&quot;updatetime DESC&quot;</span>&gt;</span> 
+    .. HTML ..
+<span class="hljs-tag">&lt;/<span class="hljs-name">tags</span>&gt;</span> </code></pre>
+<h3 id="&#x57FA;&#x672C;&#x53C2;&#x6570;">&#x57FA;&#x672C;&#x53C2;&#x6570;</h3><table>
+<thead>
+<tr><th>&#x53C2;&#x6570;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr></thead><tbody>
+<tr><td>@action</td>
+<td style="text-align:left">&#x8C03;&#x7528;&#x65B9;&#x6CD5;&#xFF08;&#x5FC5;&#x586B;&#xFF09;</td>
+</tr><tr><td>@page</td>
+<td style="text-align:left">&#x5F53;&#x524D;&#x5206;&#x9875;&#x53F7;&#xFF0C;&#x9ED8;&#x8BA4;$page&#xFF0C;&#x5F53;&#x4F20;&#x5165;&#x8BE5;&#x53C2;&#x6570;&#x8868;&#x793A;&#x542F;&#x7528;&#x5206;&#x9875;&#xFF0C;&#x4E00;&#x4E2A;&#x9875;&#x9762;&#x53EA;&#x5141;&#x8BB8;&#x6709;&#x4E00;&#x4E2A;page&#xFF0C;&#x591A;&#x4E2A;&#x6807;&#x7B7E;&#x4F7F;&#x7528;&#x591A;&#x4E2A;page&#x4F1A;&#x9020;&#x6210;&#x4E0D;&#x53EF;&#x9884;&#x77E5;&#x7684;&#x95EE;&#x9898;&#x3002;</td>
+</tr><tr><td>@num</td>
+<td style="text-align:left">&#x6BCF;&#x6B21;&#x8FD4;&#x56DE;&#x6570;&#x636E;&#x91CF;&#x3002;</td>
+</tr></tbody></table>
+
+<h3 id="&#x516C;&#x7528;&#x53C2;&#x6570;">&#x516C;&#x7528;&#x53C2;&#x6570;</h3><table>
+<thead>
+<tr><th>&#x53C2;&#x6570;</th>
+<th style="text-align:left">&#x8BF4;&#x660E;</th>
+</tr></thead><tbody>
+<tr><td>@cache</td>
+<td style="text-align:left">&#x6570;&#x636E;&#x7F13;&#x5B58;&#x65F6;&#x95F4;&#xFF0C;&#x5355;&#x4F4D;&#x79D2;&#x3002;</td>
+</tr><tr><td>@return</td>
+<td style="text-align:left">&#x8FD4;&#x56DE;&#x503C;&#x53D8;&#x91CF;&#x540D;&#x79F0;&#xFF0C;&#x9ED8;&#x8BA4;data</td>
+</tr><tr><td>@pagefun</td>
+<td style="text-align:left">&#x5206;&#x9875;&#x51FD;&#x6570;&#xFF0C;&#x9ED8;&#x8BA4;page()</td>
+</tr><tr><td>@pagetp</td>
+<td style="text-align:left">&#x5206;&#x9875;&#x6A21;&#x677F;</td>
+</tr><tr><td>@where</td>
+<td style="text-align:left">sql&#x8BED;&#x53E5;&#x7684;where&#x90E8;&#x5206; &#x4F8B;&#x5982;&#xFF1A;child = 0</td>
+</tr></tbody></table>
+
+<h3 id="&#x83B7;&#x53D6;tag&#x6807;&#x7B7E;&#x5217;&#x8868;">&#x83B7;&#x53D6;tag&#x6807;&#x7B7E;&#x5217;&#x8868;</h3><p>&#x5F53;@action&#x4E3A;lists&#x65F6;&#xFF0C;&#x83B7;&#x53D6;tag&#x6807;&#x7B7E;&#x5217;&#x8868;</p><table>
+<thead>
+<tr><th>&#x53C2;&#x6570;</th>
+<th style="text-align:left">&#x8BF4;&#x660E;</th>
+</tr></thead><tbody>
+<tr><td>@tag</td>
+<td style="text-align:left">&#x6807;&#x7B7E;&#x540D;&#xFF0C;&#x4F8B;&#x5982;&#xFF1A;&#x53A6;&#x95E8; &#x652F;&#x6301;&#x591A;&#x4E2A;&#xFF0C;&#x591A;&#x4E2A;&#x7528;&#x7A7A;&#x683C;&#x6216;&#x8005;&#x82F1;&#x6587;&#x9017;&#x53F7;</td>
+</tr><tr><td>@tagid</td>
+<td style="text-align:left">&#x6807;&#x7B7E;id &#x591A;&#x4E2A;&#x4F7F;&#x7528;&#x82F1;&#x6587;&#x9017;&#x53F7;&#x9694;&#x5F00;</td>
+</tr><tr><td>@order</td>
+<td style="text-align:left">&#x6392;&#x5E8F;</td>
+</tr><tr><td>@num</td>
+<td style="text-align:left">&#x6BCF;&#x6B21;&#x8FD4;&#x56DE;&#x6570;&#x636E;&#x91CF;</td>
+</tr></tbody></table>
+
+<p>&#x7528;&#x6CD5;&#x793A;&#x4F8B;&#xFF1A;</p><pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">tags</span> <span class="hljs-attr">action</span>=<span class="hljs-string">&quot;lists&quot;</span> <span class="hljs-attr">tag</span>=<span class="hljs-string">&quot;&#x53A6;&#x95E8;&quot;</span> <span class="hljs-attr">num</span>=<span class="hljs-string">&quot;4&quot;</span> <span class="hljs-attr">order</span>=<span class="hljs-string">&quot;updatetime DESC&quot;</span>&gt;</span>
+&#x5FAA;&#x73AF;&#x5217;&#x8868;&#xFF0C;&#x9ED8;&#x8BA4;&#x8FD4;&#x56DE;&#x6570;&#x636E;&#x662F;$data
+    <span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">volist</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;data&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;vo&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>tag&#x6807;&#x7B7E;&#xFF1A;{$vo.tag}&#xFF0C;&#x6587;&#x7AE0;&#x6807;&#x9898;&#xFF1A;{$vo.title}&#xFF0C;&#x6587;&#x7AE0;&#x5730;&#x5740;&#xFF1A;{$vo.url}<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">volist</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">tags</span>&gt;</span></code></pre>
+<h3 id="&#x83B7;&#x53D6;tag&#x70B9;&#x51FB;&#x6392;&#x884C;&#x699C;">&#x83B7;&#x53D6;tag&#x70B9;&#x51FB;&#x6392;&#x884C;&#x699C;</h3><p>&#x5F53;@action&#x4E3A;top&#x65F6;&#xFF0C;&#x83B7;&#x53D6;tag&#x70B9;&#x51FB;&#x6392;&#x884C;&#x699C;</p><table>
+<thead>
+<tr><th>&#x53C2;&#x6570;</th>
+<th style="text-align:left">&#x8BF4;&#x660E;</th>
+</tr></thead><tbody>
+<tr><td>@num</td>
+<td style="text-align:left">&#x6BCF;&#x6B21;&#x8FD4;&#x56DE;&#x6570;&#x636E;&#x91CF;</td>
+</tr></tbody></table>
+
+<p>&#x7528;&#x6CD5;&#x793A;&#x4F8B;&#xFF1A;</p><pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">tags</span> <span class="hljs-attr">action</span>=<span class="hljs-string">&quot;top&quot;</span>  <span class="hljs-attr">num</span>=<span class="hljs-string">&quot;4&quot;</span>  <span class="hljs-attr">order</span>=<span class="hljs-string">&quot;tagid DESC&quot;</span>&gt;</span>
+&#x5FAA;&#x73AF;&#x5217;&#x8868;&#xFF0C;&#x9ED8;&#x8BA4;&#x8FD4;&#x56DE;&#x6570;&#x636E;&#x662F;$data
+    <span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">volist</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;data&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;vo&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>tag&#x6807;&#x7B7E;&#xFF1A;{$vo.tag}&#xFF0C;tag&#x5730;&#x5740;&#xFF1A;{$vo.url}&#xFF0C;&#x70B9;&#x51FB;&#xFF1A;{$vo.hits}<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">volist</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">tags</span>&gt;</span></code></pre>
+
                             </div>
                             
                         
@@ -528,7 +605,7 @@
                     <a href="#">Return to the top</a>
                 </li>
                 <li>
-                    <a href="#">Updated Sep 11th 16</a>
+                    <a href="#">Updated Sep 15th 16</a>
                 </li>
             </ul>
         </div>
@@ -555,7 +632,7 @@
 
 <script>
 (function() {
-    gitbook.page.hasChanged({"page":{"title":"tags内容标签","level":"2.1.2.3","depth":3,"next":{"title":"position推荐位标签","level":"2.1.2.4","depth":3,"path":"template/tag/position.md","ref":"template/tag/position.md","articles":[]},"previous":{"title":"spf内容标签","level":"2.1.2.2","depth":3,"path":"template/tag/spf.md","ref":"template/tag/spf.md","articles":[]},"dir":"neutral"},"config":{"plugins":["theme-ztbcms-docs@1.0.0","-sharing","-fontsettings","sitemap"],"root":"./docs","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"sitemap":{"hostname":"https://toolchain.gitbook.com"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"theme-ztbcms-docs":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"version":"3.0.0"},"title":"ZtbCMS","gitbook":"3.2.0"},"file":{"path":"template/tag/tags.md","mtime":"2016-09-11T05:47:03.000Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2016-09-13T06:08:15.510Z"},"basePath":"../..","book":{"language":""}});
+    gitbook.page.hasChanged({"page":{"title":"tags内容标签","level":"2.1.2.3","depth":3,"next":{"title":"position推荐位标签","level":"2.1.2.4","depth":3,"path":"template/tag/position.md","ref":"template/tag/position.md","articles":[]},"previous":{"title":"spf内容标签","level":"2.1.2.2","depth":3,"path":"template/tag/spf.md","ref":"template/tag/spf.md","articles":[]},"dir":"ltr"},"config":{"plugins":["theme-ztbcms-docs@1.0.0","-sharing","-fontsettings","sitemap"],"root":"./docs","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"sitemap":{"hostname":"https://toolchain.gitbook.com"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"theme-ztbcms-docs":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"version":"3.0.0"},"title":"ZtbCMS","gitbook":"3.2.0"},"file":{"path":"template/tag/tags.md","mtime":"2016-09-15T13:32:29.000Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2016-09-15T14:01:04.509Z"},"basePath":"../..","book":{"language":""}});
 })();
 </script>
 

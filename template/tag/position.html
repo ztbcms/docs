@@ -492,7 +492,47 @@
     
                             
                             <div class="gb-markdown book-page-inner">
-                                
+                                <h2 id="position&#x63A8;&#x8350;&#x4F4D;&#x6807;&#x7B7E;">position&#x63A8;&#x8350;&#x4F4D;&#x6807;&#x7B7E;</h2><p>&#x6807;&#x7B7E;&#xFF1A;</p><pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">position</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">position</span>&gt;</span> </code></pre>
+<p>&#x7528;&#x6CD5;&#x793A;&#x4F8B;</p><pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">position</span> <span class="hljs-attr">action</span>=<span class="hljs-string">&quot;position&quot;</span> <span class="hljs-attr">posid</span>=<span class="hljs-string">&quot;1&quot;</span>&gt;</span> .. HTML ..<span class="hljs-tag">&lt;/<span class="hljs-name">position</span>&gt;</span></code></pre>
+<h3 id="&#x516C;&#x7528;&#x53C2;&#x6570;">&#x516C;&#x7528;&#x53C2;&#x6570;</h3><table>
+<thead>
+<tr><th>&#x53C2;&#x6570;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr></thead><tbody>
+<tr><td>@cache</td>
+<td style="text-align:left">&#x6570;&#x636E;&#x7F13;&#x5B58;&#x65F6;&#x95F4;&#xFF0C;&#x5355;&#x4F4D;&#x79D2;</td>
+</tr><tr><td>@return</td>
+<td style="text-align:left">&#x8FD4;&#x56DE;&#x503C;&#x53D8;&#x91CF;&#x540D;&#x79F0;&#xFF0C;&#x9ED8;&#x8BA4;data</td>
+</tr><tr><td>@where</td>
+<td style="text-align:left">sql&#x8BED;&#x53E5;&#x7684;where&#x90E8;&#x5206;</td>
+</tr></tbody></table>
+
+<h3 id="&#x83B7;&#x53D6;&#x63A8;&#x8350;&#x4F4D;&#x6570;&#x636E;">&#x83B7;&#x53D6;&#x63A8;&#x8350;&#x4F4D;&#x6570;&#x636E;</h3><table>
+<thead>
+<tr><th>&#x53C2;&#x6570;</th>
+<th style="text-align:left">&#x8BF4;&#x660E;</th>
+</tr></thead><tbody>
+<tr><td>@posid</td>
+<td style="text-align:left">&#x63A8;&#x8350;&#x4F4D;ID(&#x5FC5;&#x586B;)</td>
+</tr><tr><td>@catid</td>
+<td style="text-align:left">&#x8C03;&#x7528;&#x680F;&#x76EE;ID</td>
+</tr><tr><td>@thumb</td>
+<td style="text-align:left">&#x662F;&#x5426;&#x4EC5;&#x5FC5;&#x987B;&#x7F29;&#x7565;&#x56FE;&#xFF0C;1&#x662F;&#xFF0C;0&#x4E0D;&#x662F;</td>
+</tr><tr><td>@order</td>
+<td style="text-align:left">&#x6392;&#x5E8F;</td>
+</tr><tr><td>@num</td>
+<td style="text-align:left">&#x6BCF;&#x6B21;&#x8FD4;&#x56DE;&#x6570;&#x636E;&#x91CF;</td>
+</tr></tbody></table>
+
+<p>&#x7528;&#x6CD5;&#x793A;&#x4F8B;&#xFF1A;</p><pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">position</span> <span class="hljs-attr">action</span>=<span class="hljs-string">&quot;position&quot;</span> <span class="hljs-attr">posid</span>=<span class="hljs-string">&quot;1&quot;</span>&gt;</span>
+&#x5FAA;&#x73AF;&#x63A8;&#x8350;&#x4F4D;&#x91CC;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x9ED8;&#x8BA4;&#x8FD4;&#x56DE;&#x503C;&#x662F; data&#xFF0C;&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#x6709;&#x4EE5;&#x4E0B;&#x57FA;&#x672C;&#x6570;&#x636E;
+    <span class="hljs-tag">&lt;<span class="hljs-name">volist</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;data&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;vo&quot;</span>&gt;</span>
+    &#x6807;&#x9898;&#xFF1A;{$vo.data.title}
+    &#x94FE;&#x63A5;&#xFF1A;{$vo.data.url}
+    &#x5176;&#x4ED6;&#x7684;&#x5B57;&#x6BB5;&#xFF0C;&#x9700;&#x8981;&#x5728;&#x6A21;&#x578B;&#x91CC;&#x9762;&#x8BBE;&#x7F6E;&#x5B57;&#x6BB5;&#x7684;&#x201C;&#x5728;&#x63A8;&#x8350;&#x4F4D;&#x6807;&#x7B7E;&#x4E2D;&#x8C03;&#x7528;&#x201D;&#x8BBE;&#x7F6E;&#x4E3A;&#x662F;&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x8C03;&#x7528;&#x62C9;&#x3002;
+    <span class="hljs-tag">&lt;/<span class="hljs-name">volist</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">position</span>&gt;</span></code></pre>
+
                             </div>
                             
                         
@@ -528,7 +568,7 @@
                     <a href="#">Return to the top</a>
                 </li>
                 <li>
-                    <a href="#">Updated Sep 11th 16</a>
+                    <a href="#">Updated Sep 15th 16</a>
                 </li>
             </ul>
         </div>
@@ -555,7 +595,7 @@
 
 <script>
 (function() {
-    gitbook.page.hasChanged({"page":{"title":"position推荐位标签","level":"2.1.2.4","depth":3,"next":{"title":"get数据获取标签","level":"2.1.2.5","depth":3,"path":"template/tag/get.md","ref":"template/tag/get.md","articles":[]},"previous":{"title":"tags内容标签","level":"2.1.2.3","depth":3,"path":"template/tag/tags.md","ref":"template/tag/tags.md","articles":[]},"dir":"neutral"},"config":{"plugins":["theme-ztbcms-docs@1.0.0","-sharing","-fontsettings","sitemap"],"root":"./docs","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"sitemap":{"hostname":"https://toolchain.gitbook.com"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"theme-ztbcms-docs":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"version":"3.0.0"},"title":"ZtbCMS","gitbook":"3.2.0"},"file":{"path":"template/tag/position.md","mtime":"2016-09-11T05:47:03.000Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2016-09-13T06:08:15.510Z"},"basePath":"../..","book":{"language":""}});
+    gitbook.page.hasChanged({"page":{"title":"position推荐位标签","level":"2.1.2.4","depth":3,"next":{"title":"get数据获取标签","level":"2.1.2.5","depth":3,"path":"template/tag/get.md","ref":"template/tag/get.md","articles":[]},"previous":{"title":"tags内容标签","level":"2.1.2.3","depth":3,"path":"template/tag/tags.md","ref":"template/tag/tags.md","articles":[]},"dir":"ltr"},"config":{"plugins":["theme-ztbcms-docs@1.0.0","-sharing","-fontsettings","sitemap"],"root":"./docs","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"sitemap":{"hostname":"https://toolchain.gitbook.com"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"theme-ztbcms-docs":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"version":"3.0.0"},"title":"ZtbCMS","gitbook":"3.2.0"},"file":{"path":"template/tag/position.md","mtime":"2016-09-15T13:24:39.000Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2016-09-15T14:01:04.509Z"},"basePath":"../..","book":{"language":""}});
 })();
 </script>
 
