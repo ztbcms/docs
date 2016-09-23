@@ -2,7 +2,7 @@
 <!DOCTYPE HTML>
 <html lang="" >
     <head>
-        <title>模板标签 · ZtbCMS</title>
+        <title>comment评论标签 · ZtbCMS</title>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
@@ -56,10 +56,10 @@
 
 
     
-    <link rel="next" href="content.html" />
+    <link rel="next" href="position.html" />
     
     
-    <link rel="prev" href="../common_variables.html" />
+    <link rel="prev" href="tags.html" />
     
 
     </head>
@@ -84,7 +84,7 @@
 
             
 
-<a href="https://github.com/ztbcms/docs/blob/develop/docs/template/tag/README.md" target="_blank" class="btn btn-link pull-right hidden-xs">
+<a href="https://github.com/ztbcms/docs/blob/develop/docs/template/tag/comment.md" target="_blank" class="btn btn-link pull-right hidden-xs">
     修正当前页
 </a>
 
@@ -209,7 +209,7 @@
         
     
         
-        <a href="./" class="list-group-item active">
+        <a href="./" class="list-group-item ">
         
 
             
@@ -290,7 +290,7 @@
         
     
         
-        <a href="comment.html" class="list-group-item ">
+        <a href="comment.html" class="list-group-item active">
         
 
             
@@ -512,7 +512,84 @@
     
                             
                             <div class="gb-markdown book-page-inner">
-                                
+                                <h2 id="comment&#x8BC4;&#x8BBA;&#x6807;&#x7B7E;">comment&#x8BC4;&#x8BBA;&#x6807;&#x7B7E;</h2><p>&#x6807;&#x7B7E;&#xFF1A;</p><pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">comment</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">comment</span>&gt;</span></code></pre>
+<p>&#x4F5C;&#x7528;&#xFF1A;&#x8BC4;&#x8BBA;&#x6807;&#x7B7E;</p><p>&#x7528;&#x6CD5;&#x793A;&#x4F8B;&#xFF1A;</p><pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">comment</span> <span class="hljs-attr">action</span>=<span class="hljs-string">&quot;get_comment&quot;</span> <span class="hljs-attr">catid</span>=<span class="hljs-string">&quot;$catid&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;$id&quot;</span>&gt;</span> .. HTML ..<span class="hljs-tag">&lt;/<span class="hljs-name">comment</span>&gt;</span></code></pre>
+<h3 id="&#x57FA;&#x672C;&#x53C2;&#x6570;">&#x57FA;&#x672C;&#x53C2;&#x6570;</h3><table>
+<thead>
+<tr><th>&#x53C2;&#x6570;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr></thead><tbody>
+<tr><td>@action</td>
+<td style="text-align:left">&#x8C03;&#x7528;&#x65B9;&#x6CD5;&#xFF08;&#x5FC5;&#x586B;&#xFF09;</td>
+</tr><tr><td>@catid</td>
+<td style="text-align:left">&#x680F;&#x76EE;id&#xFF08;&#x5FC5;&#x586B;&#xFF09;&#xFF0C;&#x5217;&#x8868;&#x9875;&#xFF0C;&#x5185;&#x5BB9;&#x9875;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; $catid &#x83B7;&#x53D6;&#x5F53;&#x524D;&#x680F;&#x76EE;&#x3002;</td>
+</tr></tbody></table>
+
+<p>&#x516C;&#x7528;&#x53C2;&#x6570;</p><table>
+<thead>
+<tr><th>&#x53C2;&#x6570;</th>
+<th style="text-align:left">&#x8BF4;&#x660E;</th>
+</tr></thead><tbody>
+<tr><td>@cache</td>
+<td style="text-align:left">&#x6570;&#x636E;&#x7F13;&#x5B58;&#x65F6;&#x95F4;&#xFF0C;&#x5355;&#x4F4D;&#x79D2;</td>
+</tr><tr><td>@return</td>
+<td style="text-align:left">&#x8FD4;&#x56DE;&#x503C;&#x53D8;&#x91CF;&#x540D;&#x79F0;&#xFF0C;&#x9ED8;&#x8BA4;data</td>
+</tr></tbody></table>
+
+<h3 id="&#x83B7;&#x53D6;&#x8BC4;&#x8BBA;&#x603B;&#x6570;">&#x83B7;&#x53D6;&#x8BC4;&#x8BBA;&#x603B;&#x6570;</h3><p>&#x5F53;@action&#x4E3A;get_comment&#x65F6;&#xFF0C;&#x83B7;&#x53D6;&#x8BC4;&#x8BBA;&#x603B;&#x6570;</p><table>
+<thead>
+<tr><th>&#x53C2;&#x6570;</th>
+<th style="text-align:left">&#x8BF4;&#x660E;</th>
+</tr></thead><tbody>
+<tr><td>@action</td>
+<td style="text-align:left">&#x8C03;&#x7528;&#x65B9;&#x6CD5;&#xFF08;&#x5FC5;&#x586B;&#xFF09;</td>
+</tr><tr><td>@catid</td>
+<td style="text-align:left">&#x680F;&#x76EE;id&#xFF08;&#x5FC5;&#x586B;&#xFF09;&#xFF0C;&#x5217;&#x8868;&#x9875;&#xFF0C;&#x5185;&#x5BB9;&#x9875;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; $catid &#x83B7;&#x53D6;&#x5F53;&#x524D;&#x680F;&#x76EE;&#x3002;</td>
+</tr></tbody></table>
+
+<p>&#x83B7;&#x53D6;&#x8BC4;&#x8BBA;&#x603B;&#x6570;&#x5EFA;&#x8BAE;&#x76F4;&#x63A5;&#x7528;&#xFF1A;{:commcount($catid,$id)} &#x4EE3;&#x66FF;&#xFF01;</p><h3 id="&#x83B7;&#x53D6;&#x8BC4;&#x8BBA;&#x6570;&#x636E;">&#x83B7;&#x53D6;&#x8BC4;&#x8BBA;&#x6570;&#x636E;</h3><p>&#x5F53;@action&#x4E3A;lists&#x65F6;&#xFF0C;&#x83B7;&#x53D6;&#x8BC4;&#x8BBA;&#x6570;&#x636E;&#x5217;&#x8868;</p><table>
+<thead>
+<tr><th>&#x53C2;&#x6570;</th>
+<th style="text-align:left">&#x8BF4;&#x660E;</th>
+</tr></thead><tbody>
+<tr><td>@action</td>
+<td style="text-align:left">&#x8C03;&#x7528;&#x65B9;&#x6CD5;&#xFF08;&#x5FC5;&#x586B;&#xFF09;</td>
+</tr><tr><td>@catid</td>
+<td style="text-align:left">&#x680F;&#x76EE;id&#xFF08;&#x5FC5;&#x586B;&#xFF09;&#xFF0C;&#x5217;&#x8868;&#x9875;&#xFF0C;&#x5185;&#x5BB9;&#x9875;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; $catid &#x83B7;&#x53D6;&#x5F53;&#x524D;&#x680F;&#x76EE;&#x3002;</td>
+</tr><tr><td>@hot</td>
+<td style="text-align:left">&#x6392;&#x5E8F;&#x65B9;&#x5F0F;&#xFF5B;0&#xFF1A;&#x6700;&#x65B0;&#xFF5D;</td>
+</tr><tr><td>@date</td>
+<td style="text-align:left">&#x65F6;&#x95F4;&#x683C;&#x5F0F; Y-m-d H:i:s A</td>
+</tr><tr><td>@where</td>
+<td style="text-align:left">sql&#x8BED;&#x53E5;&#x7684;where&#x90E8;&#x5206;</td>
+</tr></tbody></table>
+
+<p>&#x7528;&#x6CD5;&#x793A;&#x4F8B;&#xFF1A;</p><pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">comment</span> <span class="hljs-attr">action</span>=<span class="hljs-string">&quot;lists&quot;</span> <span class="hljs-attr">catid</span>=<span class="hljs-string">&quot;10&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;30&quot;</span>&gt;</span>
+&#x5FAA;&#x73AF;&#x5217;&#x8868;&#xFF0C;&#x9ED8;&#x8BA4;&#x8FD4;&#x56DE;&#x6570;&#x636E;&#x662F;$data
+    <span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">volist</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;data&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;vo&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>&#x8BC4;&#x8BBA;&#x7528;&#x6237;&#xFF1A;{$vo.author}&#xFF0C;&#x8BC4;&#x8BBA;&#x5185;&#x5BB9;&#xFF1A;{$vo.content}<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">volist</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">comment</span>&gt;</span></code></pre>
+<h3 id="&#x83B7;&#x53D6;&#x8BC4;&#x8BBA;&#x6392;&#x884C;&#x699C;">&#x83B7;&#x53D6;&#x8BC4;&#x8BBA;&#x6392;&#x884C;&#x699C;</h3><table>
+<thead>
+<tr><th>&#x53C2;&#x6570;</th>
+<th style="text-align:left">&#x8BF4;&#x660E;</th>
+</tr></thead><tbody>
+<tr><td>@num</td>
+<td style="text-align:left">&#x8FD4;&#x56DE;&#x4FE1;&#x606F;&#x6570;</td>
+</tr></tbody></table>
+
+<p>&#x7528;&#x6CD5;&#x793A;&#x4F8B;&#xFF1A;</p><pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">comment</span> <span class="hljs-attr">action</span>=<span class="hljs-string">&quot;bang&quot;</span> <span class="hljs-attr">num</span>=<span class="hljs-string">&quot;10&quot;</span>&gt;</span>
+&#x5FAA;&#x73AF;&#x5217;&#x8868;&#xFF0C;&#x9ED8;&#x8BA4;&#x8FD4;&#x56DE;&#x6570;&#x636E;&#x662F;$data
+    <span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">volist</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;data&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;vo&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>&#x6807;&#x9898;&#xFF1A;{$vo.title}&#xFF0C;&#x5730;&#x5740;&#xFF1A;{$vo.url}<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">volist</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">comment</span>&gt;</span></code></pre>
+
                             </div>
                             
                         
@@ -548,7 +625,7 @@
                     <a href="#">Return to the top</a>
                 </li>
                 <li>
-                    <a href="#">Updated Sep 15th 16</a>
+                    <a href="#">Updated Sep 23rd 16</a>
                 </li>
             </ul>
         </div>
@@ -575,7 +652,7 @@
 
 <script>
 (function() {
-    gitbook.page.hasChanged({"page":{"title":"模板标签","level":"2.1.2","depth":2,"next":{"title":"content内容标签","level":"2.1.2.1","depth":3,"path":"template/tag/content.md","ref":"template/tag/content.md","articles":[]},"previous":{"title":"常用变量","level":"2.1.1","depth":2,"path":"template/common_variables.md","ref":"template/common_variables.md","articles":[]},"dir":"neutral"},"config":{"plugins":["theme-ztbcms-docs@1.0.0","-sharing","-fontsettings","sitemap"],"root":"./docs","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"sitemap":{"hostname":"https://toolchain.gitbook.com"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"theme-ztbcms-docs":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"version":"3.0.0"},"title":"ZtbCMS","gitbook":"3.2.0"},"file":{"path":"template/tag/README.md","mtime":"2016-09-15T14:01:33.000Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2016-09-23T07:50:12.276Z"},"basePath":"../..","book":{"language":""}});
+    gitbook.page.hasChanged({"page":{"title":"comment评论标签","level":"2.1.2.4","depth":3,"next":{"title":"position推荐位标签","level":"2.1.2.5","depth":3,"path":"template/tag/position.md","ref":"template/tag/position.md","articles":[]},"previous":{"title":"tags内容标签","level":"2.1.2.3","depth":3,"path":"template/tag/tags.md","ref":"template/tag/tags.md","articles":[]},"dir":"ltr"},"config":{"plugins":["theme-ztbcms-docs@1.0.0","-sharing","-fontsettings","sitemap"],"root":"./docs","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"sitemap":{"hostname":"https://toolchain.gitbook.com"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"theme-ztbcms-docs":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"version":"3.0.0"},"title":"ZtbCMS","gitbook":"3.2.0"},"file":{"path":"template/tag/comment.md","mtime":"2016-09-23T07:49:01.000Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2016-09-23T07:50:12.276Z"},"basePath":"../..","book":{"language":""}});
 })();
 </script>
 
