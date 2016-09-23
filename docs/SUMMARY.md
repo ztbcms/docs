@@ -13,6 +13,7 @@
         * [content内容标签](template/tag/content.md)
         * [spf内容标签](template/tag/spf.md)
         * [tags内容标签](template/tag/tags.md)
+        * [comment评论标签](template/tag/comment.md)
         * [position推荐位标签](template/tag/position.md)
         * [get数据获取标签](template/tag/get.md)
         * [template模板引入标签](template/tag/template.md)
