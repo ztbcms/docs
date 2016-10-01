@@ -8,10 +8,10 @@
 <url> <loc>https://toolchain.gitbook.com/template/tag/content.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://toolchain.gitbook.com/template/tag/spf.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://toolchain.gitbook.com/template/tag/tags.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
-<url> <loc>https://toolchain.gitbook.com/template/tag/comment.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://toolchain.gitbook.com/template/tag/position.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://toolchain.gitbook.com/template/tag/get.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://toolchain.gitbook.com/template/tag/template.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://toolchain.gitbook.com/template/tag/navigate.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://toolchain.gitbook.com/template/tag/pre.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://toolchain.gitbook.com/template/tag/next.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://toolchain.gitbook.com/template/tag/blockcache.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>

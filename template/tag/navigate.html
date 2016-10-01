@@ -2,7 +2,7 @@
 <!DOCTYPE HTML>
 <html lang="" >
     <head>
-        <title>模板标签 · ZtbCMS</title>
+        <title>navigate导航标签 · ZtbCMS</title>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
@@ -56,10 +56,10 @@
 
 
     
-    <link rel="next" href="content.html" />
+    <link rel="next" href="pre.html" />
     
     
-    <link rel="prev" href="../common_variables.html" />
+    <link rel="prev" href="template.html" />
     
 
     </head>
@@ -84,7 +84,7 @@
 
             
 
-<a href="https://github.com/ztbcms/docs/blob/develop/docs/template/tag/README.md" target="_blank" class="btn btn-link pull-right hidden-xs">
+<a href="https://github.com/ztbcms/docs/blob/develop/docs/template/tag/navigate.md" target="_blank" class="btn btn-link pull-right hidden-xs">
     修正当前页
 </a>
 
@@ -209,7 +209,7 @@
         
     
         
-        <a href="./" class="list-group-item active">
+        <a href="./" class="list-group-item ">
         
 
             
@@ -370,7 +370,7 @@
         
     
         
-        <a href="navigate.html" class="list-group-item ">
+        <a href="navigate.html" class="list-group-item active">
         
 
             
@@ -532,7 +532,25 @@
     
                             
                             <div class="gb-markdown book-page-inner">
-                                
+                                <h2 id="navigate&#x5BFC;&#x822A;&#x6807;&#x7B7E;">navigate&#x5BFC;&#x822A;&#x6807;&#x7B7E;</h2><p>&#x6807;&#x7B7E;:<code>&lt;navigate/&gt;</code></p><p>&#x4F5C;&#x7528;&#xFF1A;&#x83B7;&#x53D6;&#x5185;&#x5BB9;&#x6A21;&#x578B;&#x5F53;&#x524D;&#x4F4D;&#x7F6E;</p><p>&#x7528;&#x6CD5;&#x793A;&#x4F8B;&#xFF1A;</p><pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">navigate</span> <span class="hljs-attr">catid</span>=<span class="hljs-string">&quot;$catid&quot;</span> <span class="hljs-attr">space</span>=<span class="hljs-string">&quot; &amp;gt; &quot;</span> /&gt;</span></code></pre>
+<h3 id="&#x53C2;&#x6570;&#x8BF4;&#x660E;">&#x53C2;&#x6570;&#x8BF4;&#x660E;</h3><table>
+<thead>
+<tr><th>&#x53C2;&#x6570;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr></thead><tbody>
+<tr><td>@catid</td>
+<td style="text-align:left">&#x680F;&#x76EE;id&#xFF0C;&#x53EF;&#x4EE5;&#x4F20;&#x5165;&#x6570;&#x5B57;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x4F20;&#x9012;&#x53D8;&#x91CF; <code>$catid</code></td>
+</tr><tr><td>@space</td>
+<td style="text-align:left">&#x5206;&#x9694;&#x7B26;&#xFF0C;&#x652F;&#x6301;HTML&#x4EE3;&#x7801;&#xFF08;&#x4E0D;&#x652F;&#x6301;<code>&gt;</code>&#xFF0C;<code>&lt;</code>&#x7B49;&#x7279;&#x6B8A;&#x7B26;&#x53F7;,&#x53EF;&#x4EE5;&#x7528;<a href="http://tool.oschina.net/commons?type=2" target="_blank">HTML&#x8F6C;&#x4E49;&#x7B26;</a>&#x4EE3;&#x66FF;</td>
+</tr><tr><td>@blank</td>
+<td style="text-align:left">&#x662F;&#x5426;&#x65B0;&#x7A97;&#x53E3;&#x6253;&#x5F00;</td>
+</tr><tr><td>@cache</td>
+<td style="text-align:left">&#x7F13;&#x5B58;&#x65F6;&#x95F4;</td>
+</tr></tbody></table>
+
+<p>&#x6CE8;&#x610F;: &#x5728;space&#x53C2;&#x6570;&#x4F20;&#x9012;&#x8FC7;&#x7A0B;&#x4E2D;&#xFF0C;&#x4E0D;&#x80FD;&#x51FA;&#x73B0;<code>&lt;</code>&#xFF0C;<code>&gt;</code>&#x8FD9;&#x6837;&#x7684;&#x5B57;&#x7B26;,&#x4F46;&#x53EF;&#x4EE5;&#x7528;HTML&#x8F6C;&#x4E49;&#x7B26;</p><h3 id="&#x7528;&#x6CD5;&#x793A;&#x4F8B;">&#x7528;&#x6CD5;&#x793A;&#x4F8B;</h3><p>&#x5728;&#x5185;&#x5BB9;&#x9875;&#xFF0C;&#x680F;&#x76EE;&#x9875;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x8FD9;&#x6837;&#x4F7F;&#x7528;&#xFF1A;</p><pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">navigate</span> <span class="hljs-attr">catid</span>=<span class="hljs-string">&quot;$catid&quot;</span> <span class="hljs-attr">space</span>=<span class="hljs-string">&quot; &amp;gt; &quot;</span> /&gt;</span></code></pre>
+<p>&#x5728;&#x6CA1;&#x6709;$catid&#x53C2;&#x6570;&#x7684;&#x9875;&#x9762;&#xFF0C;&#x9700;&#x8981;&#x624B;&#x52A8;&#x4F20;&#x5165;&#x680F;&#x76EE;ID</p><pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">navigate</span> <span class="hljs-attr">catid</span>=<span class="hljs-string">&quot;8&quot;</span> <span class="hljs-attr">space</span>=<span class="hljs-string">&quot; &amp;gt; &quot;</span> /&gt;</span></code></pre>
+<h3 id="&#x53C2;&#x8003;&#x8D44;&#x6599;">&#x53C2;&#x8003;&#x8D44;&#x6599;</h3><p><a href="http://tool.oschina.net/commons?type=2" target="_blank">HTML&#x8F6C;&#x4E49;&#x7B26;&#x8868;</a></p>
                             </div>
                             
                         
@@ -568,7 +586,7 @@
                     <a href="#">Return to the top</a>
                 </li>
                 <li>
-                    <a href="#">Updated Sep 23rd 16</a>
+                    <a href="#">Updated Oct 1st 16</a>
                 </li>
             </ul>
         </div>
@@ -595,7 +613,7 @@
 
 <script>
 (function() {
-    gitbook.page.hasChanged({"page":{"title":"模板标签","level":"2.1.2","depth":2,"next":{"title":"content内容标签","level":"2.1.2.1","depth":3,"path":"template/tag/content.md","ref":"template/tag/content.md","articles":[]},"previous":{"title":"常用变量","level":"2.1.1","depth":2,"path":"template/common_variables.md","ref":"template/common_variables.md","articles":[]},"dir":"neutral"},"config":{"plugins":["theme-ztbcms-docs@1.0.0","-sharing","-fontsettings","sitemap"],"root":"./docs","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"sitemap":{"hostname":"https://toolchain.gitbook.com"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"theme-ztbcms-docs":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"version":"3.0.0"},"title":"ZtbCMS","gitbook":"3.2.0"},"file":{"path":"template/tag/README.md","mtime":"2016-09-23T07:50:31.000Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2016-10-01T15:04:41.626Z"},"basePath":"../..","book":{"language":""}});
+    gitbook.page.hasChanged({"page":{"title":"navigate导航标签","level":"2.1.2.8","depth":3,"next":{"title":"pre上一篇标签","level":"2.1.2.9","depth":3,"path":"template/tag/pre.md","ref":"template/tag/pre.md","articles":[]},"previous":{"title":"template模板引入标签","level":"2.1.2.7","depth":3,"path":"template/tag/template.md","ref":"template/tag/template.md","articles":[]},"dir":"ltr"},"config":{"plugins":["theme-ztbcms-docs@1.0.0","-sharing","-fontsettings","sitemap"],"root":"./docs","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"sitemap":{"hostname":"https://toolchain.gitbook.com"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"theme-ztbcms-docs":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"version":"3.0.0"},"title":"ZtbCMS","gitbook":"3.2.0"},"file":{"path":"template/tag/navigate.md","mtime":"2016-10-01T14:54:04.000Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2016-10-01T15:04:41.626Z"},"basePath":"../..","book":{"language":""}});
 })();
 </script>
 
