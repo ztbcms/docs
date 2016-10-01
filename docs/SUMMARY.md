@@ -17,6 +17,7 @@
         * [position推荐位标签](template/tag/position.md)
         * [get数据获取标签](template/tag/get.md)
         * [template模板引入标签](template/tag/template.md)
+        * [navigate导航标签](template/tag/navigate.md)
         * [pre上一篇标签](template/tag/pre.md)
         * [next下一篇标签](template/tag/next.md)
         * [blockcache区块缓存标签](template/tag/blockcache.md)
