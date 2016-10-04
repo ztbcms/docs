@@ -1,4 +1,4 @@
-ZtbCMS Documentation
+ZtbCMS Documentation [![Build Status](https://travis-ci.org/Jayin/docs.svg?branch=develop)](https://travis-ci.org/Jayin/docs)
 =======
 
 
