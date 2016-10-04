@@ -6,7 +6,6 @@ ZtbCMS Documentation [![Build Status](https://travis-ci.org/Jayin/docs.svg?branc
 
 ```shell
 $ npm install gitbook-cli -g
-$ gitbook versions:install 3.2.0
 $ gitbook install
 $ gitbook serve
 ```
