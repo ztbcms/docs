@@ -7,7 +7,7 @@ env:
   global:
     - GIT_NAME: Travis CI
     - GIT_EMAIL: TravisCI@ztbcms.com
-    - GITHUB_REPO: Jayin/docs
+    - GITHUB_REPO: ztbcms/docs
     - GIT_SOURCE: _book  
 node_js:
   - "stable"
@@ -18,7 +18,7 @@ before_install:
   - gitbook install
 script:
   - gitbook build
-	- cp CNAME _book/
-	- cp favicon.ico _book/
+  - cp CNAME _book/
+  - cp favicon.ico _book/
 after_success:
   - if [ "$TRAVIS_BRANCH" = "develop" -a "$TRAVIS_PULL_REQUEST" = "false" ]; then npm install git-update-ghpages && ./node_modules/.bin/git-update-ghpages -e; fi
