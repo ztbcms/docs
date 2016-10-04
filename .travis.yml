@@ -3,10 +3,20 @@ language: node_js
 os:
   - linux
   - osx
+env:
+  global:
+    - GIT_NAME: Travis CI
+    - GIT_EMAIL: TravisCI@ztbcms.com
+    - GITHUB_REPO: Jayin/docs
+    - GIT_SOURCE: _book  
 node_js:
   - "stable"
   - "4.1"
 before_install:
-  - npm install svgexport -g
+  - npm install gitbook-cli -g
+  - npm install 
+  - gitbook install
+script:
+  - make generate
 after_success:
-  - npm run lint
+  - if [ "$TRAVIS_BRANCH" = "master" -a "$TRAVIS_PULL_REQUEST" = "false" ]; then npm install git-update-ghpages && ./node_modules/.bin/git-update-ghpages -e; fi
