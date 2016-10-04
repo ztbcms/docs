@@ -3,7 +3,7 @@
 
 #### 获取全部省份
 
-http://{你的站点}/ztbcms/index.php?g=Area&m=Api&a=getProvinces
+`http://{你的站点}/ztbcms/index.php?g=Area&m=Api&a=getProvinces`
 
 返回数据：
 ```json
@@ -30,9 +30,11 @@ http://{你的站点}/ztbcms/index.php?g=Area&m=Api&a=getProvinces
 
 #### 获取省份下的市
 
-示例（广东省）：http://{你的站点}/ztbcms/index.php?g=Area&m=Api&a=getCitiesByProvinceId&id=440000
+示例（广东省）：
 
-id为省份id
+`http://{你的站点}/ztbcms/index.php?g=Area&m=Api&a=getCitiesByProvinceId&id=440000`
+
+注:`id`为省份id
 
 返回数据：
 ```json
@@ -62,9 +64,9 @@ id为省份id
 
 示例（佛山市）:
 
-http://{你的站点}/ztbcms/index.php?g=Area&m=Api&a=getDistrictsByCityId&id=440600
+`http://{你的站点}/ztbcms/index.php?g=Area&m=Api&a=getDistrictsByCityId&id=440600`
 
-注：id为城市id
+注：`id`为城市id
 
 返回数据：
 ```json
@@ -91,9 +93,11 @@ http://{你的站点}/ztbcms/index.php?g=Area&m=Api&a=getDistrictsByCityId&id=44
 
 #### 获取区县下的街道、镇
 
-示例（南海区）：http://{你的站点}/ztbcms/index.php?g=Area&m=Api&a=getStreetsByDistrictId&id=440605
+示例（南海区）：
 
-id为区县id
+`http://{你的站点}/ztbcms/index.php?g=Area&m=Api&a=getStreetsByDistrictId&id=440605`
+
+注: `id`为区县id
 
 返回数据：
 ```json
