@@ -5,13 +5,12 @@ os:
   - osx
 env:
   global:
-    - GIT_NAME: Travis CI
-    - GIT_EMAIL: TravisCI@ztbcms.com
+    - GIT_NAME: TravisCI
+    - GIT_EMAIL: tonjayin+robot@gmail.com
     - GITHUB_REPO: ztbcms/docs
     - GIT_SOURCE: _book  
 node_js:
   - "stable"
-  - "4.1"
 before_install:
   - npm install gitbook-cli -g
   - npm install 
