@@ -16,8 +16,6 @@ before_install:
   - npm install 
   - gitbook install
 script:
-  - gitbook build
-  - cp CNAME _book/
-  - cp favicon.ico _book/
+  - make generate
 after_success:
   - if [ "$TRAVIS_BRANCH" = "develop" -a "$TRAVIS_PULL_REQUEST" = "false" ]; then npm install git-update-ghpages && ./node_modules/.bin/git-update-ghpages -e; fi
