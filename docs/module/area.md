@@ -60,9 +60,11 @@ id为省份id
 
 #### 获取城市下的区、县
 
-示例（佛山市）：http://{你的站点}/ztbcms/index.php?g=Area&m=Api&a=getDistrictsByCityId&id=440600
+示例（佛山市）:
 
-id为城市id
+http://{你的站点}/ztbcms/index.php?g=Area&m=Api&a=getDistrictsByCityId&id=440600
+
+注：id为城市id
 
 返回数据：
 ```json
