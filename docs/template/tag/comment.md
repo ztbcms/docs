@@ -1,7 +1,7 @@
 ## comment评论标签 
 
 标签：
-```
+```html
 <comment></comment>
 ```
 
@@ -9,7 +9,7 @@
 
 用法示例：
 
-```
+```html
 <comment action="get_comment" catid="$catid" id="$id"> .. HTML ..</comment>
 ```
 
