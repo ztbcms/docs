@@ -8,7 +8,6 @@
 ### 二次开发
 
 * [模板](template/README.md)
-    * [常用变量](template/common_variables.md)
     * [模板标签](template/tag/README.md)
         * [content内容标签](template/tag/content.md)
         * [spf内容标签](template/tag/spf.md)
