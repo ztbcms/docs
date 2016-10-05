@@ -31,4 +31,8 @@
 * [附录](extra/README.md)
     * [系统函数](extra/system_function.md)
 
+### 最佳实践
+
+* [数据库的存储引擎](best_practic/ztbcms_storage_engine.md)
+
 
