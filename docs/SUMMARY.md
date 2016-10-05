@@ -28,8 +28,7 @@
 
 ### 附录
 
-* [附录](extra/README.md)
-    * [系统函数](extra/system_function.md)
+* [系统函数](extra/system_function.md)
 
 ### 最佳实践
 
