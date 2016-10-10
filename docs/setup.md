@@ -23,6 +23,8 @@ $ make setup-ubuntu-env
 $ make setup-env
 ```
 
+推荐：[CentOS/Debian/Ubuntu LAMP一键安装](https://github.com/teddysun/lamp)
+
 ### 根据安装程序安装好后，进入后台需要进行如下操作：
 
 * 更新站点缓存。
