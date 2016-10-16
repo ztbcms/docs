@@ -23,7 +23,8 @@
 
 ### 模块
 
-* [中国区域模块](module/area.md)
+* [中国区域](module/area.md)
+* [短信](module/sms.md)
 
 
 ### 附录
