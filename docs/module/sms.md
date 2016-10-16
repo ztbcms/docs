@@ -40,17 +40,18 @@ $data ：短信模板变量，JSON字符串，非必填字段，视短信模板�
 
 
 - 返回数据：
+
 ```json
 {
     "result": "{True/False}",
     "id": "{短信发送日志数据库ID}",
     "msg": "{错误信息}"
 }
-
 ```
 
 - 代码示例：
-```
+
+```php
 use Sms\Controller\ApiController as sms;
 
 class XXX {
@@ -59,3 +60,4 @@ class XXX {
     $result = $smsClient->sendSms($phone,$data);
   }
 }
+```
