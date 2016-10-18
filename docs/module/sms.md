@@ -37,7 +37,7 @@ sms\Controller\ApiController::sendSms($phone,$data)
 #### 参数解析：
 
 - $phone ：短信接收人，多个接收人号码之间使用英文半角逗号隔开   
--$data ：短信模板变量，JSON字符串，非必填字段，视短信模板而定   
+- $data ：短信模板变量，JSON字符串，非必填字段，视短信模板而定   
 
 
 返回数据：
