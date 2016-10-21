@@ -35,4 +35,8 @@
 
 * [数据库的存储引擎](best_practic/ztbcms_storage_engine.md)
 
+### 使用案例
+
+* [案例](case.md)
+
 
