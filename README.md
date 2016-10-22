@@ -1,4 +1,4 @@
-ZtbCMS 文档Documentation [![Build Status](https://travis-ci.org/ztbcms/docs.svg?branch=develop)](https://travis-ci.org/ztbcms/docs)
+ZtbCMS 文档 [![Build Status](https://travis-ci.org/ztbcms/docs.svg?branch=develop)](https://travis-ci.org/ztbcms/docs)
 =======
 
 
