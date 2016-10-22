@@ -1,12 +1,12 @@
-ZtbCMS Documentation [![Build Status](https://travis-ci.org/ztbcms/docs.svg?branch=develop)](https://travis-ci.org/ztbcms/docs)
+ZtbCMS 文档Documentation [![Build Status](https://travis-ci.org/ztbcms/docs.svg?branch=develop)](https://travis-ci.org/ztbcms/docs)
 =======
 
 
-### Requirement
+### 环境需求
 
 Node.js 4.x以上
 
-### setup
+### 开始构建
 
 ```shell
 $ npm install gitbook-cli -g
