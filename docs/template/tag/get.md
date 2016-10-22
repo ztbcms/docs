@@ -11,7 +11,7 @@
 用法示例A：
 
 ```html
-<get sql="SELECT * FROM shuipfcms_article  WHERE status=99 ORDER BY inputtime DESC" page="$page" num="5"> .. HTML ..</get> 
+<get sql="SELECT * FROM cms_article  WHERE status=99 ORDER BY inputtime DESC" page="$page" num="5"> .. HTML ..</get> 
 ```
 
 用法示例B：
@@ -38,8 +38,8 @@
 ### 普通SQL查询示例
 
 ```html
-<get sql="SELECT * FROM shuipfcms_article  WHERE status=99 ORDER BY inputtime DESC" page="$page" num="5">
-表前缀可以使用shuipfcms代替，系统会自动替换为你安装时所设置的表前缀！
+<get sql="SELECT * FROM cms_article  WHERE status=99 ORDER BY inputtime DESC" page="$page" num="5">
+表前缀可以使用cms代替，系统会自动替换为你安装时所设置的表前缀！
 循环列表，默认返回数据是$data
     <ul>
         <volist name="data" id="vo">
@@ -65,7 +65,7 @@
 
 ```php 
 <?php
-$sql = 'SELECT * FROM shuipfcms_article  WHERE status=99 ';
+$sql = 'SELECT * FROM cms_article  WHERE status=99 ';
 //接受外部数据
 $_catid = I('get.classid',0,'intval');
 if($_catid){
@@ -74,7 +74,7 @@ if($_catid){
 $sql .= ' ORDER BY inputtime DESC';
 ?>
 <get sql="$sql" page="$page" num="5">
-表前缀可以使用shuipfcms代替，系统会自动替换为你安装时所设置的表前缀！
+表前缀可以使用cms代替，系统会自动替换为你安装时所设置的表前缀！
 循环列表，默认返回数据是$data
     <ul>
         <volist name="data" id="vo">
