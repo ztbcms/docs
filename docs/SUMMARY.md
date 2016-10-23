@@ -5,7 +5,7 @@
 * [概述](README.md)
 * [环境搭建&安装](setup.md)
 
-### 二次开发
+### 开发指南
 
 * [模板](template/README.md)
     * [模板标签](template/tag/README.md)
@@ -25,6 +25,7 @@
 
 * [中国区域](module/area.md)
 * [短信](module/sms.md)
+* [计划任务](module/cron.md)
 
 
 ### 附录
