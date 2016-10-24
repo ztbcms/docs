@@ -12,7 +12,7 @@
 ![广州惟于实][10]
 ![E游牧][11]
 ![德润伟业（北京）健康管理有限公司 - 德润健康][12]
-![七点公社德润健康][12]
+![七点公社][13]
 
 
  
@@ -28,4 +28,4 @@
 [10]: https://dn-coding-net-production-static.qbox.me/380095a4-a820-4331-8a2e-faa506b3e013.jpeg
 [11]: https://dn-coding-net-production-pp.qbox.me/141018e9-1ac0-4f1d-a01a-709e29ced03b.png
 [12]: https://dn-coding-net-production-pp.qbox.me/528b9be1-1be6-4272-8c95-4679bd2e9cb1.png
-[12]: https://dn-coding-net-production-pp.qbox.me/187d349d-8538-4e4a-ab8d-b94e67ddc577.png
+[13]: https://dn-coding-net-production-pp.qbox.me/187d349d-8538-4e4a-ab8d-b94e67ddc577.png
