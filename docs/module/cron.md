@@ -26,3 +26,34 @@
 ```    
 <script type="text/javascript" src="http://网站地址/index.php?g=Cron&m=Index&a=index"></script>
 ```
+
+
+### 使用
+
+关于计划任务的添加，您需要上传相应执行文件到 
+
+1. 创建定时任务：在 `app/Cron/` 目录下,新建计划任务文件，文件名必须为`CMSxx.php`(以CMS开头)形式
+
+样例：
+```php
+<?php
+
+// +----------------------------------------------------------------------
+// | 计划任务 - 示例脚本
+// +----------------------------------------------------------------------
+
+namespace CronScript;
+
+class CMSDemo {
+
+	//任务主体
+	public function run($cronId) {
+		\Think\Log::record("我执行了计划任务事例 CMSDemo.php！");
+	}
+
+}
+```
+
+2. 在计划任务管理页面注册计划任务
+
+ ![图片](https://dn-coding-net-production-pp.qbox.me/8acc7c4f-7145-410a-99ec-c8c097c5c9d3.png) 
