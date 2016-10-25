@@ -34,6 +34,7 @@
 
 ### 最佳实践
 
+* [开发小Tip汇总](best_practic/dev_tips.md)
 * [数据库的存储引擎](best_practic/ztbcms_storage_engine.md)
 
 ### 使用案例
