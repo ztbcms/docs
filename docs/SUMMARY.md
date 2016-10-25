@@ -20,6 +20,8 @@
         * [pre上一篇标签](guide/template/tag/pre.md)
         * [next下一篇标签](guide/template/tag/next.md)
         * [blockcache区块缓存标签](guide/template/tag/blockcache.md)
+* [行为管理](guide/behaivor/readme.md)
+    * [行为规则使用说明](guide/behaivor/rule.md)
 
 ### 模块
 
