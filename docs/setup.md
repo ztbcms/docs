@@ -25,7 +25,7 @@ $ make setup-env
 
 推荐：[CentOS/Debian/Ubuntu LAMP一键安装](https://github.com/teddysun/lamp)
 
-## 下载安装
+### 下载安装
 
 下载最新**稳定版**
 ```shell
