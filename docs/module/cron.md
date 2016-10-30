@@ -58,4 +58,5 @@ class Demo extends Cron {
 
 2.在计划任务管理页面注册计划任务
 
- ![图片](https://dn-coding-net-production-pp.qbox.me/8acc7c4f-7145-410a-99ec-c8c097c5c9d3.png) 
+![图片](https://dn-coding-net-production-pp.qbox.me/529bcfa0-1f5a-46fd-8473-8c2c085ebb56.png) 
+
