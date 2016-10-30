@@ -31,7 +31,7 @@
 ### 使用
 
 
-1.创建计划任务：在 `app/Cron/` 目录下,新建计划任务文件，文件名必须为`CMSxx.php`(以CMS开头)形式
+1.创建计划任务：在 `app/Application/Cron/CronScript/` 目录下,新建计划任务文件
 
 样例：
 ```php
@@ -41,16 +41,19 @@
 // | 计划任务 - 示例脚本
 // +----------------------------------------------------------------------
 
-namespace CronScript;
+namespace Cron\CronScript;
 
-class CMSDemo {
+use Cron\Base\Cron;
+
+class Demo extends Cron {
 
 	//任务主体
 	public function run($cronId) {
-		\Think\Log::record("我执行了计划任务事例 CMSDemo.php！");
+		\Think\Log::record("我执行了计划任务事例 Demo.class.php！");
 	}
 
 }
+
 ```
 
 2.在计划任务管理页面注册计划任务
