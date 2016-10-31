@@ -18,6 +18,56 @@
 
 - Windows 使用计划任务
 
+Windows 默认Curl, Wget 等工具，你可以选择安装，并模仿linux上的调用写在bat脚本上即可。但是为了更具跨平台，可以参考下面的例子：
+
+1.首先编写一个发送HTTP请求的 `cron.php` (注意修改网站地址): 
+```php
+<?php
+
+class Curl {
+    public $headers;
+    public $user_agent;
+    public $compression;
+    public $proxy;
+    function __construct($compression = 'gzip', $proxy = '') {
+        $this->headers[] = 'Connection: Keep-Alive';
+        $this->headers[] = 'Content-type: application/x-www-form-urlencoded;charset=UTF-8';
+        $this->user_agent = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; .NET CLR 1.0.3705; .NET CLR 1.1.4322; Media Center PC 4.0)';
+        $this->compression = $compression;
+        $this->proxy = $proxy;
+    }
+    function get($url) {
+        $process = curl_init($url);
+        curl_setopt($process, CURLOPT_HTTPHEADER, $this->headers);
+        curl_setopt($process, CURLOPT_HEADER, 0);
+        curl_setopt($process, CURLOPT_USERAGENT, $this->user_agent);
+        curl_setopt($process, CURLOPT_ENCODING, $this->compression);
+        curl_setopt($process, CURLOPT_TIMEOUT, 10); //超时时间 10秒即可
+        if ($this->proxy) {
+            curl_setopt($process, CURLOPT_PROXY, $this->proxy);
+        }
+        curl_setopt($process, CURLOPT_RETURNTRANSFER, 1);
+        curl_setopt($process, CURLOPT_FOLLOWLOCATION, 1);
+        $return = curl_exec($process);
+        curl_close($process);
+        return $return;
+    }
+}
+$curl = new Curl();
+$curl->get('http://网站地址/index.php?g=Cron&m=Index&a=index');
+```
+
+2.编写bat脚本
+
+```
+php {你的项目路径}\cron.php
+```
+注意： 需要把 `php.exe` 的路径放到环境变量
+
+3.创建计划任务(控制面板->管理工具->计划任务)，运行bat
+
+参考：[百度百科-如何使用windows的计划任务？](http://jingyan.baidu.com/article/ca00d56c767cfae99febcf73.html)
+
 
 #### 2. 虚拟主机用户
 
