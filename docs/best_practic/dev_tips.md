@@ -31,12 +31,14 @@ CMS采用了`http://www.iconfont.cn/`上提供的iconfont,可以现在该网站�
 
 ![图片](https://dn-coding-net-production-pp.qbox.me/cfe76b28-c200-44ec-85ec-84070ed419a1.png) 
 
-自定义搜索条件有3部分(必须一一对应)：
+自定义搜索条件有3部分(必须一一对应)： 
+
 1. 搜索的字段(_filter) 
 2. 操作符(_operater)， 参考: [ThinkPHP 3.2-表达式查询](http://document.thinkphp.cn/manual_3_2.html#express_query)
 3. 搜索值(_value)
 
 CMS中的默认例子：
+
 ```html
 <section style="display: inline;">
     <!-- 搜索字段 -->
@@ -61,6 +63,7 @@ CMS中的默认例子：
 ```
 
 注意：
+
 1. 若有多个，则继续新增`_filter[1]`,`_operater[1]`, `_value[1]`....如此类推
 2. 更复杂的，若不能不足需求，那么请重写`Content/ContentController::classlist`方法
 
