@@ -53,7 +53,7 @@ class WapBehavior {
 
 2. 注册 `Behavior` 到行为管理
 
-设置->行为管理->选择对应的行为进行编辑，规则参考[行为规则使用说明][rule.md]
+设置->行为管理->选择对应的行为进行编辑，规则参考[行为规则使用说明](rule.md)
 
 ![图片](https://dn-coding-net-production-pp.qbox.me/f700eadb-a253-499f-8743-c2e35fcd8d54.png) 
 
