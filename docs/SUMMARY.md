@@ -26,7 +26,9 @@
 
 ### 模块
 
-* [中国区域](module/area.md)
+* [区域](module/area/README.md)
+    * [中国区域](module/area/area.md)
+    * [中国高校](module/area/school.md)
 * [短信](module/sms.md)
 * [计划任务](module/cron.md)
 
