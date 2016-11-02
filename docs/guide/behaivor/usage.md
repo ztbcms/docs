@@ -7,7 +7,7 @@ CMS中的行为系统改写了ThinkPHP的系统行为实现`app/Libs/System/Hook
 
 CMS中有部分模块使用到了行为管理进行开发。以`Wap`模块为例：
 
-使用方法：
+### 使用方法：
 
 1. 创建 Behavior
 
