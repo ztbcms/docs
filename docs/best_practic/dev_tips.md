@@ -33,9 +33,9 @@ CMS采用了`http://www.iconfont.cn/`上提供的iconfont,可以现在该网站�
 
 自定义搜索条件有3部分(必须一一对应)： 
 
-1. 搜索的字段(_filter) 
-2. 操作符(_operater)， 参考: [ThinkPHP 3.2-表达式查询](http://document.thinkphp.cn/manual_3_2.html#express_query)
-3. 搜索值(_value)
+1. 搜索的字段(`_filter`) 
+2. 操作符(`_operater`)， 参考: [ThinkPHP 3.2-表达式查询](http://document.thinkphp.cn/manual_3_2.html#express_query)
+3. 搜索值(`_value`)
 
 CMS中的默认例子：
 
