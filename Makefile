@@ -8,7 +8,7 @@ commit-push:
 generate:
 	-gitbook build
 	-cp CNAME _book/
-	-cp favicon.ico _book/
+	-cp favicon.ico _book/gitbook/images/
 
 deploy: generate
 	-git checkout gh-pages && cp -r _book/* ./ && git add -A && git commit -m 'Site build' && git push -f origin gh-pages && git checkout develop
