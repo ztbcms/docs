@@ -9,7 +9,7 @@ module.exports = {
     gitbook: '3.2.0',
 
     // Use the "official" theme
-    plugins: ['theme-ztbcms-docs@1.0.0', '-sharing', '-fontsettings', 'sitemap'],
+    plugins: ['theme-ztbcms-docs@1.0.1', '-sharing', '-fontsettings', 'sitemap'],
 
     variables: {
         version: pkg.version
