@@ -49,12 +49,12 @@ PS：
 
 对于旧版本的用户来说，需要接入这个功能，可以参考修改[源码](https://github.com/ztbcms/ztbcms/commit/b16bcd395eb22c4c3b59d5b452cdf972d889faa1?diff=split)
 
-审计步骤：
+升级步骤：
 
-1. 修改classlist的搜索实现
+1.修改classlist的搜索实现
 
 `app/Application/Content/Controller/ContentController.class.php` 中替换 `classlist`方法
 
-2. 修改默认列表页的搜索条件
+2.修改默认列表页的搜索条件
 
 文件：`app/Application/Content/View/Content/classlist.php`，修改成上述CMS的默认例子 
