@@ -4,6 +4,11 @@
 
 ![图片](https://dn-coding-net-production-pp.qbox.me/cfe76b28-c200-44ec-85ec-84070ed419a1.png) 
 
+默认的搜索条件是：
+
+![图片](https://dn-coding-net-production-pp.qbox.me/6be73617-ab82-4603-9255-66afa0b0e823.png) 
+
+
 自定义搜索条件有3部分(必须一一对应)： 
 
 1. 搜索的字段(`_filter`) 
