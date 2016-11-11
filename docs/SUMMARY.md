@@ -39,7 +39,11 @@
 
 ### 最佳实践
 
-* [开发小Tips汇总](best_practic/dev_tips.md)
+* [开发Tips汇总](best_practic/dev_tips.md)
+    * [模块](best_practic/tips/module.md)
+    * [自定义后台iconfont](best_practic/tips/custom_admin_icon.md)
+    * [自定义成功(失败)页面](best_practic/tips/custom_page.md)
+    * [自定义栏目列表搜索条件](best_practic/tips/category_search_custom.md)
 * [数据库的存储引擎](best_practic/ztbcms_storage_engine.md)
 * [行为管理最佳实践](best_practic/behavior_manage.md)
 
