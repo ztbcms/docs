@@ -23,6 +23,7 @@
 * [行为管理](guide/behaivor/readme.md)
     * [行为规则](guide/behaivor/rule.md)
     * [使用方法](guide/behaivor/usage.md)
+    * [测试Behaivor](guide/behaivor/testing_behaivor.md)
 
 ### 模块
 
