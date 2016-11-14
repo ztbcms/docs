@@ -42,6 +42,7 @@ CMS中的默认例子：
 
 注意：
 
+0. 若`_value[X]`为空字符串时，会忽略整个字段，即该`_filter[X]`,`_operater[X]`均不起作用
 1. 若有多个，则继续新增`_filter[1]`,`_operater[1]`, `_value[1]`....如此类推
 2. 更复杂的，若不能不足需求，那么请重写`Content/ContentController::classlist`方法
 
