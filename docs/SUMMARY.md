@@ -49,6 +49,8 @@
     
 * [数据库的存储引擎](best_practic/ztbcms_storage_engine.md)
 * [行为管理最佳实践](best_practic/behavior_manage.md)
+* [性能优化](best_practic/performance_optimization.md)
+
 
 ### 使用案例
 
