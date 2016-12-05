@@ -65,14 +65,14 @@ class WapBehavior {
 
 上述Wap模块只是使用到了系统默认的行为 `app_begin` ，那么如何创建自己的行为呢？
 
-1. 添加行为到行为系统
+##### 1.添加行为到行为系统
 
 设置->行为管理->添加行为
 
 ![图片](https://dn-coding-net-production-pp.qbox.me/4c304ddd-d29e-4aeb-a3db-94356f1cb8f1.png)
 
 
-2. 行为埋点触发
+##### 2.行为埋点触发
 
 ![图片](https://dn-coding-net-production-pp.qbox.me/d79b716d-9055-4599-8429-6ca18be1c1fc.png)   
 
