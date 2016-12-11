@@ -12,7 +12,7 @@
 自定义搜索条件有3部分(必须一一对应)： 
 
 1. 搜索的字段(`_filter`) 
-2. 操作符(`_operater`)， 参考: [ThinkPHP 3.2-表达式查询](http://document.thinkphp.cn/manual_3_2.html#express_query)
+2. 操作符(`_opterator`)， 参考: [ThinkPHP 3.2-表达式查询](http://document.thinkphp.cn/manual_3_2.html#express_query)
 3. 搜索值(`_value`)
 
 CMS中的默认例子：
@@ -26,14 +26,14 @@ CMS中的默认例子：
         <option value="title" <if condition=" $_filter[0] == 'title' "> selected</if>>标题</option>
     </select>
     <!-- 操作符 -->
-    <select name="_operater[0]" class="select_2">
-        <option value="EQ" <if condition=" $_operater[0] == 'EQ' "> selected</if>>等于</option>
-        <option value="NEQ" <if condition=" $_operater[0] == 'NEQ' "> selected</if>>不等于</option>
-        <option value="GT" <if condition=" $_operater[0] == 'GT' "> selected</if>>大于</option>
-        <option value="EGT" <if condition=" $_operater[0] == 'EGT' "> selected</if>>大于等于</option>
-        <option value="LT" <if condition=" $_operater[0] == 'LT' "> selected</if>>小于</option>
-        <option value="ELT" <if condition=" $_operater[0] == 'ELT' "> selected</if>>小于等于</option>
-        <option value="LIKE" <if condition=" $_operater[0] == 'LIKE' "> selected</if>>模糊查询</option>
+    <select name="_opterator[0]" class="select_2">
+        <option value="EQ" <if condition=" $_opterator[0] == 'EQ' "> selected</if>>等于</option>
+        <option value="NEQ" <if condition=" $_opterator[0] == 'NEQ' "> selected</if>>不等于</option>
+        <option value="GT" <if condition=" $_opterator[0] == 'GT' "> selected</if>>大于</option>
+        <option value="EGT" <if condition=" $_opterator[0] == 'EGT' "> selected</if>>大于等于</option>
+        <option value="LT" <if condition=" $_opterator[0] == 'LT' "> selected</if>>小于</option>
+        <option value="ELT" <if condition=" $_opterator[0] == 'ELT' "> selected</if>>小于等于</option>
+        <option value="LIKE" <if condition=" $_opterator[0] == 'LIKE' "> selected</if>>模糊查询</option>
     </select>
     <!-- 搜索值 -->
     <input class="input length_2" type="text" name="_value[0]" value="{$_value[0]}">
@@ -42,8 +42,8 @@ CMS中的默认例子：
 
 注意：
 
-0. 若`_value[X]`为空字符串时，会忽略整个字段，即该`_filter[X]`,`_operater[X]`均不起作用
-1. 若有多个，则继续新增`_filter[1]`,`_operater[1]`, `_value[1]`....如此类推
+0. 若`_value[X]`为空字符串时，会忽略整个字段，即该`_filter[X]`,`_opterator[X]`均不起作用
+1. 若有多个，则继续新增`_filter[1]`,`_opterator[1]`, `_value[1]`....如此类推
 2. 更复杂的，若不能不足需求，那么请重写`Content/ContentController::classlist`方法
 
 PS：
