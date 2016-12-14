@@ -45,7 +45,8 @@
 参数	|说明
 ----- |:-----|
 @action	|调用方法（必填）
-@catid	|栏目id（必填），列表页，内容页可以使用 $catid 获取当前栏目。
+@catid	|栏目id（必填），列表页，内容页可以使用 $catid 获取当前栏目
+@id	    |id，内容页可以使用 $id 获取当前id
 @hot	|排序方式｛0：最新｝
 @date	|时间格式 Y-m-d H:i:s A
 @where	|sql语句的where部分
