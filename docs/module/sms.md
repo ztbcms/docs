@@ -1,10 +1,10 @@
-## 短信模块 
+## 短信平台 
 
 短信模块已经内置了`阿里大于`和`云之讯`两个短信平台，默认启用的是`阿里大于`，可在后台自行切换。
 
 ### 配置短信平台参数
 
-短信平台在使用前需要在后台「模块 - 短信模块 - 平台设置」处配置参数。
+短信平台在使用前需要在后台「模块 - 短信模块 - 短信模版管理」处添加模版获得模版 ID。详细参数如下，
 
 #### 阿里大于
 
@@ -26,29 +26,26 @@
 - appid: 应用ID  
 - templateid ： 短信模板ID  
 
+如果需要额外参数，可在「模块 - 短信模块 - 模型管理」处增减参数字段。
+
 ### 发送短信
 
-当选择好短信平台并配置好平台参数后，就可以发送短信了。sms 模块提供的发送短信接口为 :
+当选择好短信平台并配置好短信模版后，就可以发送短信了。sms 模块提供的发送短信接口为 :
 
 ```php
-sms\Controller\ApiController::sendSms($phone,$data)
+sms\Controller\ApiController::sendSms($templateID,$phone,$data,$operator)
 ```
 
 #### 参数解析：
 
+- $templateID : 短信模版，从后台配置得到  
 - $phone ：短信接收人，多个接收人号码之间使用英文半角逗号隔开   
 - $data ：短信模板变量，JSON字符串，非必填字段，视短信模板而定   
-
+- $operator : 短信平台表名，如果没有传入则使用默认短信平台
 
 返回数据：
 
-```json
-{
-    "result": "{True/False}",
-    "id": "{短信发送日志数据库ID}",
-    "msg": "{错误信息}"
-}
-```
+查看看具体短信平台文档。
 
 代码示例：
 
@@ -56,9 +53,9 @@ sms\Controller\ApiController::sendSms($phone,$data)
 use Sms\Controller\ApiController as sms;
 
 class XXX {
-  function sendSMS($phone, $data){
+  function sendSMS($templateID,$phone, $data){
     $smsClient = new sms();
-    $result = $smsClient->sendSms($phone,$data);
+    $result = $smsClient->sendSms($templateID,$phone,$data);
   }
 }
 ```
