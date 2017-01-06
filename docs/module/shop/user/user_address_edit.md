@@ -27,9 +27,10 @@ is_default | int|否|是否默认收货地址|
 
 ```
 {
+  "info": "操作成功",
   "status": 1,
-  "msg": "添加成功",
-  "result": ""
+  "url": "",
+  "state": "success"
 }
 ```
 

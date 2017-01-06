@@ -19,10 +19,8 @@ password | varchar|是|用户登录密码|
 
 ```
 {
-  "status": 1,
-  "msg": "登陆成功",
-  "result": {
-    "userid": "0",
+  "info": {
+    "userid": "4",
     "email": "",
     "sex": "0",
     "birthday": "0",
@@ -31,11 +29,11 @@ password | varchar|是|用户登录密码|
     "distribut_money": "0.00",
     "pay_points": "0",
     "address_id": "0",
-    "reg_time": "1479724594",
+    "reg_time": "1483706475",
     "last_login": "0",
     "last_ip": "",
     "qq": "",
-    "mobile": "15088132354",
+    "mobile": "15088132446",
     "mobile_validated": "1",
     "oauth": "",
     "openid": "",
@@ -44,7 +42,7 @@ password | varchar|是|用户登录密码|
     "city": "0",
     "district": "0",
     "email_validated": "0",
-    "nickname": "15088132354",
+    "nickname": "15088132446",
     "level": "0",
     "discount": "0.00",
     "total_amount": "0.00",
@@ -53,9 +51,11 @@ password | varchar|是|用户登录密码|
     "first_leader": "0",
     "second_leader": "0",
     "third_leader": "0",
-    "token": "674df50d9f543ab6e5eed40021823d4d"
+    "token": "68d05dd1204804e48ca02e0cdfea5d7a"
   },
-  "url": ""
+  "status": 1,
+  "url": "",
+  "state": "success"
 }
 ```
 

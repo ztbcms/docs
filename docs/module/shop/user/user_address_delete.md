@@ -18,8 +18,10 @@ id | int|是|收货地址id|
 
 ```
 {
+  "info": "操作成功",
   "status": 1,
-  "msg": "操作成功"
+  "url": "",
+  "state": "success"
 }
 ```
 
