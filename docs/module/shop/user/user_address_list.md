@@ -19,11 +19,10 @@
 
 ```
 {
-  "status": 1,
-  "data": [
+  "info": [
     {
-      "address_id": "360",
-      "userid": "18",
+      "address_id": "3",
+      "userid": "4",
       "consignee": "黄振炼",
       "email": "",
       "country": "0",
@@ -31,35 +30,19 @@
       "city": "110100",
       "district": "110101",
       "twon": "0",
-      "address": "123123",
+      "address": "2222",
       "zipcode": "",
-      "mobile": "15088132444",
-      "is_default": "1",
-      "is_pickup": "0",
-      "province_name": "北京",
-      "city_name": "北京市",
-      "district_name": "东城区"
-    },
-    {
-      "address_id": "361",
-      "userid": "18",
-      "consignee": "黄振炼",
-      "email": "",
-      "country": "0",
-      "province": "110000",
-      "city": "110100",
-      "district": "110101",
-      "twon": "0",
-      "address": "123123",
-      "zipcode": "",
-      "mobile": "15088132444",
+      "mobile": "13800138000",
       "is_default": "0",
       "is_pickup": "0",
       "province_name": "北京",
       "city_name": "北京市",
       "district_name": "东城区"
     }
-  ]
+  ],
+  "status": 1,
+  "url": "",
+  "state": "success"
 }
 ```
 

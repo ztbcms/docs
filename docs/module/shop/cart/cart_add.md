@@ -5,7 +5,7 @@
 
  **method** ：post
  
- **URL**： `index.php?g=Shop&m=Cart&a=ajaxAddCart`
+ **URL**： `index.php?g=Shop&m=Cart&a=add_cart`
  
 
  
@@ -19,9 +19,10 @@ goods_spec | array|是|商品规格，goods_spec[尺寸],goods_spec[内存],good
 
 ```
 {
+  "info": "2", //当前购物车的数量
   "status": 1,
-  "msg": "成功加入购物车",
-  "result": "1"
+  "url": "",
+  "state": "success"
 }
 ```
 

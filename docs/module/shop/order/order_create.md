@@ -23,7 +23,9 @@ cart_ids|varchar|是|购物车多个id，eg：12,3,33
 {
   "status": 1,
   "msg": "提交订单成功",
-  "result": "811"
+  "result": "811",
+  "url": "",
+  "state": "success"
 }
 ```
 
