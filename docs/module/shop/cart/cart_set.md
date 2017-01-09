@@ -19,10 +19,10 @@ goods_spec | array|是|商品规格，goods_spec[尺寸],goods_spec[内存],good
 
 ```
 {
+  "info": 4,
   "status": 1,
-  "msg": "成功加入购物车",
-  "result": "1",
-  "set_num": 1
+  "url": "",
+  "state": "success"
 }
 ```
 

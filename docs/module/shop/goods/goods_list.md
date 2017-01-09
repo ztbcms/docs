@@ -6,7 +6,7 @@
 
  **method** ：get
  
- **URL**： `index.php?g=Shop&m=GoodsApi&a=goods_list`
+ **URL**： `index.php?g=Shop&m=GoodsApi&a=add_cart`
  
 
  
