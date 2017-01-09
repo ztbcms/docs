@@ -15,8 +15,7 @@
 
 ```
 {
-  "status": 1,
-  "data": {
+  "info": {
     "order_status": [
       "待确认",
       "已确认",
@@ -35,21 +34,21 @@
       "已支付"
     ],
     "order_info": {
-      "order_id": "810",
-      "order_sn": "201611230923168476",
+      "order_id": "805",
+      "order_sn": "201611222055132500",
       "user_id": "15",
       "order_status": "0",
       "shipping_status": "0",
       "pay_status": "0",
-      "consignee": "黄振炼",
+      "consignee": "",
       "country": "0",
-      "province": "110000",
-      "city": "110100",
-      "district": "110101",
+      "province": "0",
+      "city": "0",
+      "district": "0",
       "twon": "0",
-      "address": "123123",
+      "address": "",
       "zipcode": "",
-      "mobile": "15088132444",
+      "mobile": "",
       "email": "",
       "shipping_code": "",
       "shipping_name": "",
@@ -64,7 +63,7 @@
       "integral_money": "0.00",
       "order_amount": "2.08",
       "total_amount": "2.08",
-      "add_time": "1479864196",
+      "add_time": "1479819313",
       "shipping_time": "0",
       "confirm_time": "0",
       "pay_time": "0",
@@ -75,47 +74,25 @@
       "admin_note": "",
       "parent_sn": "",
       "is_distribut": "0",
-      "goods_list": [
-        {
-          "rec_id": "926",
-          "order_id": "810",
-          "goods_id": "1",
-          "goods_name": "Apple iPhone 6s Plus 16G 玫瑰金 移动联通电信4G手机",
-          "goods_sn": "TP000000",
-          "goods_num": "26",
-          "market_price": "6107.00",
-          "goods_price": "0.08",
-          "cost_price": "0.00",
-          "member_goods_price": "0.08",
-          "give_integral": "0",
-          "spec_key": "11_100_102",
-          "spec_key_name": "网络:4G 颜色:玫瑰金 内存:128G",
-          "bar_code": "",
-          "is_comment": "0",
-          "prom_type": "0",
-          "prom_id": "0",
-          "is_send": "0",
-          "delivery_id": "0",
-          "sku": "",
-          "original_img": "/Public/upload/goods/2016/03-09/56e01a4088d3b.jpg"
-        }
-      ]
+      "goods_list": []
     },
     "order_action": [
       {
-        "action_id": "1038",
-        "order_id": "810",
+        "action_id": "1032",
+        "order_id": "805",
         "action_user": "15",
         "order_status": "0",
         "shipping_status": "0",
         "pay_status": "0",
         "action_note": "您提交了订单，请等待系统确认",
-        "log_time": "1479864196",
+        "log_time": "1479819313",
         "status_desc": "提交订单"
       }
     ]
   },
-  "msg": "ok"
+  "status": 1,
+  "url": "",
+  "state": "success"
 }
 ```
 

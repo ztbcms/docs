@@ -15,9 +15,8 @@
 
 ```
 {
-  "status": 1,
-  "data": {
-    "total": "8",
+  "info": {
+    "total": "12",
     "page": 1,
     "limit": 10,
     "order_status": [
@@ -39,12 +38,12 @@
     ],
     "lists": [
       {
-        "order_id": "810",
-        "order_sn": "201611230923168476",
+        "order_id": "814",
+        "order_sn": "201701090946061545",
         "user_id": "15",
         "order_status": "0",
         "shipping_status": "0",
-        "pay_status": "0",
+        "pay_status": "1",
         "consignee": "黄振炼",
         "country": "0",
         "province": "110000",
@@ -60,18 +59,18 @@
         "pay_code": "",
         "pay_name": "",
         "invoice_title": "",
-        "goods_price": "2.08",
+        "goods_price": "0.00",
         "shipping_price": "0.00",
         "user_money": "0.00",
         "coupon_price": "0.00",
         "integral": "0",
         "integral_money": "0.00",
-        "order_amount": "2.08",
-        "total_amount": "2.08",
-        "add_time": "1479864196",
+        "order_amount": "0.00",
+        "total_amount": "0.00",
+        "add_time": "1483926366",
         "shipping_time": "0",
         "confirm_time": "0",
-        "pay_time": "0",
+        "pay_time": "1483926366",
         "order_prom_id": "0",
         "order_prom_amount": "0.00",
         "discount": "0.00",
@@ -79,35 +78,14 @@
         "admin_note": "",
         "parent_sn": "",
         "is_distribut": "0",
-        "goods_list": [
-          {
-            "rec_id": "926",
-            "order_id": "810",
-            "goods_id": "1",
-            "goods_name": "Apple iPhone 6s Plus 16G 玫瑰金 移动联通电信4G手机",
-            "goods_sn": "TP000000",
-            "goods_num": "26",
-            "market_price": "6107.00",
-            "goods_price": "0.08",
-            "cost_price": "0.00",
-            "member_goods_price": "0.08",
-            "give_integral": "0",
-            "spec_key": "11_100_102",
-            "spec_key_name": "网络:4G 颜色:玫瑰金 内存:128G",
-            "bar_code": "",
-            "is_comment": "0",
-            "prom_type": "0",
-            "prom_id": "0",
-            "is_send": "0",
-            "delivery_id": "0",
-            "sku": "",
-            "original_img": "/Public/upload/goods/2016/03-09/56e01a4088d3b.jpg"
-          }
-        ]
-      }
+        "goods_list": null
+      },
+      ……
     ]
   },
-  "msg": "ok"
+  "status": 1,
+  "url": "",
+  "state": "success"
 }
 ```
 
