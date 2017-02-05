@@ -55,6 +55,7 @@
 * [数据导入导出](module/transport/README.md)
     * [使用](module/transport/usage.md)
     * [实战提示](module/transport/tips.md)
+* [插件管理](module/addons/README.md)
 
 
 
