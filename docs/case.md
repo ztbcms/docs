@@ -14,6 +14,7 @@
 ![德润伟业（北京）健康管理有限公司 - 德润健康][12]
 ![七点公社][13]
 ![全天健康][14]
+![广东天讯达][15]
 
 
 
@@ -32,3 +33,4 @@
 [12]: https://dn-coding-net-production-pp.qbox.me/528b9be1-1be6-4272-8c95-4679bd2e9cb1.png
 [13]: https://dn-coding-net-production-pp.qbox.me/187d349d-8538-4e4a-ab8d-b94e67ddc577.png
 [14]: https://dn-coding-net-production-pp.qbox.me/e3ebf98d-87d6-4bd5-9c4e-c4bcb0bc5f99.jpg
+[15]: https://dn-coding-net-production-pp.qbox.me/83543636-19fe-4384-8234-f7b77c6a1ce3.png
