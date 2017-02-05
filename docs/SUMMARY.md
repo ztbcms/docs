@@ -57,6 +57,15 @@
     * [实战提示](module/transport/tips.md)
 * [插件管理](module/addons/README.md)
 * [采集](module/collection/README.md)
+* [评论](module/comments/README.md)
+* [域名](module/domains/README.md)
+* [表单](module/formguide/README.md)
+* [友情链接](module/links/README.md)
+* [搜索](module/search/README.md)
+* [交易记录](module/trade/README.md)
+* [投票](module/vote/README.md)
+* [WAP手机版](module/wap/README.md)
+* [微信管理](module/wechat/README.md)
 
 
 
