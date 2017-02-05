@@ -50,9 +50,9 @@
     * [商品](module/shop/goods/README.md)
         * [商品列表](module/shop/goods/goods_list.md)
         * [商品详情](module/shop/goods/goods_info.md)
-* [短信](module/sms.md)
-* [计划任务](module/cron.md)
-* [数据导入导出](module/transport/readme.md)
+* [短信](module/sms/README.md)
+* [计划任务](module/cron/README.md)
+* [数据导入导出](module/transport/README.md)
     * [使用](module/transport/usage.md)
     * [实战提示](module/transport/tips.md)
 
