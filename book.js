@@ -3,7 +3,7 @@ var pkg = require('./package.json');
 module.exports = {
     // Documentation for GitBook is stored under "docs"
     root: './docs',
-    title: 'ZtbCMS',
+    title: 'ZTBCMS',
 
     // Enforce use of GitBook v3
     gitbook: '3.2.0',
