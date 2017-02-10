@@ -1,5 +1,12 @@
 ## 中国区域
 
+### 快速入门
+
+1. 区域模块查询接口都在`app/Application/Area/Model`目录下，包含省份(Province)、城市(City)、区县(District)
+2. HTTP接口在`app/Application/Area/Controller`目录下
+
+
+### 接口示例
 
 #### 获取全部省份
 
