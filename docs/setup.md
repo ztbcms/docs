@@ -1,12 +1,12 @@
 ### 环境要求
 
 - Mysql 5.5+
-- curl
 - mysql-client 
-- apache2 
+- apache2 (推荐2.4) 
 - php5(5.5+)
     - php5-curl 
     - php5-gd
+    - php5-mysql
 
 环境需要支持PDO数据库连接
 注：http://blog.163.com/song_0803/blog/static/4609759720113163623385/
