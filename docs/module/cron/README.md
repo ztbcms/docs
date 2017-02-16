@@ -1,4 +1,4 @@
-### 计划任务 [![version](https://img.shields.io/github/release/ztbcms/ztbcms-Cron.svg?maxAge=36000)](https://github.com/ztbcms/ztbcms-Cron)
+## 计划任务 [![version](https://img.shields.io/github/release/ztbcms/ztbcms-Cron.svg?maxAge=36000)](https://github.com/ztbcms/ztbcms-Cron)
 
 计划任务是一项使系统在规定时间自动执行某些特定任务的功能,合理设置执行时间，能有效地为服务器减轻负担。触发任务除系统指定的时间外，用户行为也可触发。触发任务的任务周期只是初始值。
 
