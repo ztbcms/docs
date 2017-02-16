@@ -1,4 +1,4 @@
-## 短信平台 
+## 短信平台 ![version](https://img.shields.io/github/release/ztbcms/ztbcms-Sms.svg?maxAge=36000)
 
 短信模块已经内置了`阿里大于`和`云之讯`两个短信平台，默认启用的是`阿里大于`，可在后台自行切换。
 
