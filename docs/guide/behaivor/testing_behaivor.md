@@ -12,7 +12,10 @@ Behavior 遵循TP的自动加载方式，所以直接创建对应的Behavior 并
  */
 class PaidChongzhiOrderBehavior extends BaseBehavior  {
 
-    public function run(PaidOrderBehaviorParam &$param) {
+    /**
+     * @param PaidOrderBehaviorParam $param
+     */
+    public function run(&$param) {
         parent::run($param);
 
         //你的代码
