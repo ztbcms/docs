@@ -7,6 +7,7 @@
     - php5-curl 
     - php5-gd
     - php5-mysql
+- 可选的配置URL重写，参考[ThinkPHP - URL重写](http://document.thinkphp.cn/manual_3_2.html#url_rewrite)
 
 环境需要支持PDO数据库连接
 注：http://blog.163.com/song_0803/blog/static/4609759720113163623385/
