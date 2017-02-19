@@ -6,7 +6,7 @@
 
 #### 独立主机
 
-独立主机用户可以在系统增加计划任务间隔20秒执行访问[http://网站地址/index.php?g=Cron&m=Index&a=index]
+独立主机用户可以在系统增加计划任务间隔20秒执行访问 http://example.com/index.php?g=Cron&m=Index&a=index`
 
 - Linux 下
 
