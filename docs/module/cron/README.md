@@ -11,7 +11,7 @@
 - Linux 下
 
 ```
-0/20 0/1 * * * curl http://网站地址/index.php?g=Cron&m=Index&a=index
+* * * * * curl http://网站地址/index.php?g=Cron&m=Index&a=index
 ```
 
 参考：[Cron表达式生成器](http://www.pdtools.net/tools/becron.jsp)
