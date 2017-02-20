@@ -58,7 +58,7 @@ return array(
 
 - Linux 下
 
-```
+```shell
 * * * * * curl http://网站地址/index.php?g=Cron&m=Index&a=index
 ```
 
@@ -107,7 +107,7 @@ $curl->get('http://网站地址/index.php?g=Cron&m=Index&a=index');
 
 2.编写bat脚本
 
-```
+```shell
 php {你的项目路径}\cron.php
 ```
 注意： 需要把 `php.exe` 的路径放到环境变量
@@ -121,7 +121,7 @@ php {你的项目路径}\cron.php
 
 虚拟主机用户，需要在网站模板中最底部增加一个js调用:
 
-```    
+```html
 <script type="text/javascript" src="http://网站地址/index.php?g=Cron&m=Index&a=index"></script>
 ```
 
