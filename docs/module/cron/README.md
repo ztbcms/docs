@@ -42,11 +42,11 @@ class Demo extends Cron {
 `Application/Cron/Conf/config.php`:
 ```php
 return array(
-    'CRON_SECRET_KEY' => 'ztbcms666' //计划任务私钥,随机字符串即可,不含空格，等号`=`,问号`?`,或号`&`,示例：ztbcms666
+    'CRON_SECRET_KEY' => 'ztbcms' //计划任务私钥,随机字符串即可,不含空格，等号`=`,问号`?`,或号`&`,示例：ztbcms
 );
 ```
 
-触发执行计划任务入口改为：`http://网站地址/index.php?g=Cron&m=Index&a=index&cron_secret_key=ztbcms666`
+触发执行计划任务入口改为：`http://网站地址/index.php?g=Cron&m=Index&a=index&cron_secret_key=ztbcms`
 
 ### 环境部署
 
@@ -54,12 +54,12 @@ return array(
 
 #### 1.独立主机
 
-独立主机用户可以在系统增加计划任务间隔1分钟执行访问 `http://example.com/index.php?g=Cron&m=Index&a=index`
+独立主机用户可以在系统增加计划任务间隔1分钟执行访问 `http://example.com/index.php?g=Cron&m=Index&a=index&cron_secret_key=ztbcms`
 
 - Linux 下
 
 ```shell
-* * * * * curl http://网站地址/index.php?g=Cron&m=Index&a=index
+* * * * * curl 'http://网站地址/index.php?g=Cron&m=Index&a=index&cron_secret_key=ztbcms'
 ```
 
 参考：[Cron表达式生成器](http://www.pdtools.net/tools/becron.jsp)
@@ -102,7 +102,7 @@ class Curl {
     }
 }
 $curl = new Curl();
-$curl->get('http://网站地址/index.php?g=Cron&m=Index&a=index');
+$curl->get('http://网站地址/index.php?g=Cron&m=Index&a=index&cron_secret_key=ztbcms');
 ```
 
 2.编写bat脚本
@@ -122,7 +122,7 @@ php {你的项目路径}\cron.php
 虚拟主机用户，需要在网站模板中最底部增加一个js调用:
 
 ```html
-<script type="text/javascript" src="http://网站地址/index.php?g=Cron&m=Index&a=index"></script>
+<script type="text/javascript" src="http://网站地址/index.php?g=Cron&m=Index&a=index&cron_secret_key=ztbcms"></script>
 ```
 
 
