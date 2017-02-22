@@ -46,7 +46,7 @@ return array(
 );
 ```
 
-触发执行计划任务入口改为：`http://网站地址/index.php?g=Cron&m=Index&a=index?cron_secret_key=ztbcms666`
+触发执行计划任务入口改为：`http://网站地址/index.php?g=Cron&m=Index&a=index&cron_secret_key=ztbcms666`
 
 ### 环境部署
 
