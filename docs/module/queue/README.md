@@ -50,7 +50,7 @@ $ php index.php /queue/worker/run/queue/high,mid,low
 
 用于功能的实现基于Controller-Action,可能会被恶意请求URL，因此我们提供了私钥校验
 
-1. 设置队列的私钥
+1.设置队列的私钥
 
 ```php
 return array(
@@ -58,7 +58,7 @@ return array(
 );
 ```
 
-2. 启动时带着私钥参数`_qsk`
+2.启动时带着私钥参数`_qsk`
 
 ```shell
 $ php index.php /queue/worker/run/queue/high,mid,low/_qsk=ztbcms
