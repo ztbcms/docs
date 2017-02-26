@@ -58,7 +58,7 @@ return array(
 );
 ```
 
-2 启动时带着私钥参数`_qsk`
+2. 启动时带着私钥参数`_qsk`
 
 ```shell
 $ php index.php /queue/worker/run/queue/high,mid,low/_qsk=ztbcms
