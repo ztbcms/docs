@@ -4,7 +4,8 @@
 
 1.创建任务
 
-继承 ` Queue\Libs\Job` 并实现handle()方法
+要点：继承 ` Queue\Libs\Job` 并实现`handle()`方法
+
 ```php
 use Queue\Libs\Job;
 
