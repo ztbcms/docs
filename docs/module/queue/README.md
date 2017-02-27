@@ -4,6 +4,7 @@
 
 1.创建任务
 
+继承 ` Queue\Libs\Job` 并实现handle()方法
 ```php
 use Queue\Libs\Job;
 
@@ -26,7 +27,7 @@ class UpdateJob extends Job {
 }
 ```
 
-2.把任务推送到队列中
+2.把任务推送到指定队列中
 
 ```php
  $job = new UpdateJob(time(), 'ztbcms');
