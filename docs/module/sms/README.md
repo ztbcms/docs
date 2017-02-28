@@ -33,7 +33,7 @@
 当选择好短信平台并配置好短信模版后，就可以发送短信了。sms 模块提供的发送短信接口为 :
 
 ```php
-sms\Controller\ApiController::sendSms($templateID,$phone,$data,$operator)
+Sms\Controller\ApiController::sendSms($templateID,$phone,$data,$operator)
 ```
 
 #### 参数解析：
