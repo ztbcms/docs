@@ -44,7 +44,7 @@ $result = $queue->push('high', $job);//注: high即为队列名
 1.1. 启动队列
 
 ```shell
-$ php index.php /queue/worker/run/queue/high,mid,low
+$ php index.php /queue/worker/run/queue/high,mid,low/_qsk/{你的私钥}
 ```
 
 上述命令监听了3个名为high,mid,low的队列。路由解析方式跟TP重写URL原理一样，`/queue/worker/run`分别对应Module,Controller,Action,后面则是key-value的
@@ -53,7 +53,7 @@ $ php index.php /queue/worker/run/queue/high,mid,low
 1.2. 平滑停止
 
 ```shell
-$ php index.php /queue/worker/stop
+$ php index.php /queue/worker/stop/_qsk/{你的私钥}
 ```
 
 ##### 2. 更安全的部署方式
