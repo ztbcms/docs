@@ -10,4 +10,4 @@
 
 ### 赞助商
 
-[![主题邦科技](https://dn-coding-net-production-pp.qbox.me/e0cde391-f2db-43f1-aad0-4008d42d73c0.png)](http://zhutibang.cn)
+[![主题邦科技](https://dn-coding-net-production-pp.qbox.me/da8e8b23-f828-4f13-9465-d5442890845c.png)](http://zhutibang.cn)
