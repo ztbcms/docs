@@ -41,12 +41,20 @@ $result = $queue->push('high', $job);//注: high即为队列名
 
 ##### 1.简单部署，本地测试时可以选择这种方式
 
+1.启动队列
+
 ```shell
 $ php index.php /queue/worker/run/queue/high,mid,low
 ```
 
 上述命令监听了3个名为high,mid,low的队列。路由解析方式跟TP重写URL原理一样，`/queue/worker/run`分别对应Module,Controller,Action,后面则是key-value的
 参数
+
+2.平滑停止
+
+```shell
+$ php index.php /queue/worker/stop
+```
 
 ##### 2. 更安全的部署方式
 
