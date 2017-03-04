@@ -18,8 +18,13 @@
 
 ##### 3. 执行任务、预览
 
+1.选择任务，创建执行日志
 ![图片](https://dn-coding-net-production-pp.qbox.me/0d6a048a-ed88-4ea6-a7ad-417f19195e30.png) 
 
+2.创建执行日志，如果是导入则上传Excel文件
 ![图片](https://dn-coding-net-production-pp.qbox.me/ce61851b-83ac-4437-8198-28322a014962.png) 
 
+3.预览和执行
+
+建议：先预览，看是否对应，然后再执行
 ![图片](https://dn-coding-net-production-pp.qbox.me/547f1e8a-2892-4160-8baa-bb6f16f8b255.png) 
