@@ -2,11 +2,12 @@
 
 ### 导入
 
-- 导入时，支持上传`.xls`或`.xlsx`后缀的文件，但建议统一上传xls,因为文档解析兼容性问题。如下图
+1.导入时，支持上传`.xls`或`.xlsx`后缀的文件，但建议统一上传xls,因为文档解析兼容性问题。如下图  
 
-![image](https://cloud.githubusercontent.com/assets/6230834/23577517/2f456ce8-00fc-11e7-9112-f619aec29832.png)
+![image](https://cloud.githubusercontent.com/assets/6230834/23577517/2f456ce8-00fc-11e7-9112-f619aec29832.png)  
 
-- 导入时，Excel的字段顺序需要跟设置的字段顺序一致
+
+2.导入时，Excel的字段顺序需要跟设置的字段顺序一致
 
 
 #### 过滤处理器(FieldFilter)
