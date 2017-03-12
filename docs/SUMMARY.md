@@ -3,7 +3,8 @@
 ### 开始使用
 
 * [概述](README.md)
-* [环境搭建&安装](setup.md)
+* [环境搭建&安装](basic/setup.md)
+* [目录结构](basic/structure.md)
 
 ### 开发指南
 
