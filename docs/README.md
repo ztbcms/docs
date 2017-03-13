@@ -8,6 +8,6 @@
 * 同时系统对扩展方面也支持比较大，可以使用内置的行为控制，对现有功能进行扩展
 
 
-### 赞助商
+### 特别鸣谢
 
 [![主题邦科技](https://dn-coding-net-production-pp.qbox.me/da8e8b23-f828-4f13-9465-d5442890845c.png)](http://zhutibang.cn)
