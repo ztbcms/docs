@@ -52,6 +52,8 @@
         * [商品列表](module/shop/goods/goods_list.md)
         * [商品详情](module/shop/goods/goods_info.md)
 * [短信](module/sms/README.md)
+    * [v2](module/sms/2.x.md)
+    * [v3](module/sms/3.x.md)
 * [计划任务](module/cron/README.md)
 * [队列](module/queue/README.md)
 * [数据导入导出](module/transport/README.md)
