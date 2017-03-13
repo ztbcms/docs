@@ -7,7 +7,7 @@
 │   │   ├── Admin 后台管理模块
 │   │   ├── Api 接口模块
 │   │   ├── Attachment 附件模块
-│   │   ├── Content
+│   │   ├── Content 内容管理
 │   │   │   ├── Fields 字段模板
 │   │   │   ├── TagLib 标签库
 │   │   │   └── View
@@ -17,7 +17,7 @@
 │   │   │       ├── Listtemplate  内容列表模板页
 │   │   │       ├── Tags 标签模板页
 │   │   ├── Install 系统安装模块
-│   │   ├── Migrate 数据迁移莫亏啊
+│   │   ├── Migrate 数据迁移模块，数据迁移脚本
 │   │   ├── System  应用Model,Service
 │   │   ├── Template 模板模块
 │   │   ├── Testing 测试样例模块
