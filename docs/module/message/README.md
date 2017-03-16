@@ -114,6 +114,7 @@ class TestController extends AdminBase {
 
 #### 4.消息处理
 
+使用 `Message\Service\MessageService::handleMessage($msg_id)` 处理(发送)消息
 
 ```php
 use Message\Service\MessageService;
@@ -135,7 +136,7 @@ class TestController extends AdminBase {
 
 #### Tips：
 
-1.有多少不同类型的消息，就建多少种 Message
-2.有多少个消息分发渠道就建多少种 Sender
+1. 有多少不同类型的消息就建多少种 Message
+2. 有多少个消息分发渠道就建多少种 Sender
 
 
