@@ -13,7 +13,7 @@
  
 字段 | 类型|是否必须|描述
 ---|---|---|---|
-id | int|是|收货地址id|
+address_id | int|是|收货地址id|
 consignee | string|是|收货人地址|
 province | int|是|省份id|
 city | int|是|城市id|
