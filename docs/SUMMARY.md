@@ -38,7 +38,7 @@
         * [收货地址](module/shop/user/user_address_list.md)
         * [添加收货地址](module/shop/user/user_address_add.md)
         * [编辑收货地址](module/shop/user/user_address_edit.md)
-        * [编辑收货地址](module/shop/user/user_address_delete.md)
+        * [删除收货地址](module/shop/user/user_address_delete.md)
         * [设置默认收货地址](module/shop/user/user_address_default.md)
     * [购物车管理](module/shop/cart/README.md)
         * [添加购物车](module/shop/cart/cart_add.md)
