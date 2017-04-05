@@ -31,7 +31,7 @@ class UpdateJob extends Job {
 2.把任务推送到指定队列中
 
 ```php
- $job = new UpdateJob(time(), 'ztbcms');
+$job = new UpdateJob(time(), 'ztbcms');
 
 $queue = Queue::getInstance();
 $result = $queue->push('high', $job);//注: high即为队列名
