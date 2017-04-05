@@ -1,4 +1,4 @@
-## 队列 ![version](https://img.shields.io/github/release/ztbcms/ztbcms-Queue.svg?maxAge=36000)
+## [队列](https://github.com/ztbcms/ztbcms-Queue) ![version](https://img.shields.io/github/release/ztbcms/ztbcms-Queue.svg?maxAge=36000)
 
 ### 使用
 
