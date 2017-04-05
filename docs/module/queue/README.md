@@ -83,7 +83,8 @@ $ php index.php /queue/worker/run/queue/high,mid,low/_qsk/ztbcms
 #### 1.定期删除已完成任务
 
 安装[计划任务模块]，添加计划任务`Queue\DeleteFinishJob`，推荐每日执行一次，每次删除7日前的已完成的任务。当然，可以根据你的业务逻辑调整其执行频率。
-```
+
+```php
 class DeleteFinishJob extends Cron {
 
     public function run($cronId) {
