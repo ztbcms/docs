@@ -1,6 +1,6 @@
-### 队列 ![version](https://img.shields.io/github/release/ztbcms/ztbcms-Queue.svg?maxAge=36000)
+## 队列 ![version](https://img.shields.io/github/release/ztbcms/ztbcms-Queue.svg?maxAge=36000)
 
-#### 使用
+### 使用
 
 1.创建任务
 
@@ -37,9 +37,9 @@ $queue = Queue::getInstance();
 $result = $queue->push('high', $job);//注: high即为队列名
 ```
 
-#### 部署
+### 部署
 
-##### 1.简单部署，本地测试时可以选择这种方式
+#### 1.简单部署，本地测试时可以选择这种方式
 
 1.1. 启动队列
 
@@ -56,7 +56,7 @@ $ php index.php /queue/worker/run/queue/high,mid,low/_qsk/{你的私钥}
 $ php index.php /queue/worker/stop/_qsk/{你的私钥}
 ```
 
-##### 2. 更安全的部署方式
+#### 2. 更安全的部署方式
 
 用于功能的实现基于Controller-Action,可能会被恶意请求URL，因此我们提供了私钥校验
 
@@ -74,8 +74,20 @@ return array(
 $ php index.php /queue/worker/run/queue/high,mid,low/_qsk/ztbcms
 ```
 
-##### 3. 更稳定，多进程部署
+#### 3. 更稳定，多进程部署
 
 使用进程管理软件进行配置。如:[supervisor](http://supervisord.org/), [PM2](http://pm2.io/)
 
+### 最佳实践
 
+#### 1.定期删除已完成任务
+
+安装[计划任务模块]，添加计划任务`Queue\DeleteFinishJob`，推荐每日执行一次，每次删除7日前的已完成的任务。当然，可以根据你的业务逻辑调整其执行频率。
+```
+class DeleteFinishJob extends Cron {
+
+    public function run($cronId) {
+        $hour = 7 * 24; //删除X小时前已完成的任务，你可以
+    }
+}
+```
