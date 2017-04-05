@@ -89,6 +89,7 @@ class DeleteFinishJob extends Cron {
 
     public function run($cronId) {
         $hour = 7 * 24; //删除X小时前已完成的任务，你可以
+        //....
     }
 }
 ```
