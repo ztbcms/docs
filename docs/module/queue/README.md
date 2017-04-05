@@ -35,6 +35,9 @@ $job = new UpdateJob(time(), 'ztbcms');
 
 $queue = Queue::getInstance();
 $result = $queue->push('high', $job);//注: high即为队列名
+
+//或者延迟小时执行
+$result = $queue->push('high', $job, 1*60*60);//注: 第三个参数即为延迟执行时长，单位：秒
 ```
 
 ### 部署
