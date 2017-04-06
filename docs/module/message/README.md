@@ -116,6 +116,7 @@ class TestController extends AdminBase {
 
 使用 `Message\Service\MessageService::handleMessage($msg_id)` 处理(发送)消息
 
+4.1 手动处理一条消息
 ```php
 use Message\Service\MessageService;
 
@@ -132,7 +133,7 @@ class TestController extends AdminBase {
 }
 ```
 
-或者你可以添加计划任务，`Message/CronScript/HandleMessage`
+4.2 或者你可以添加计划任务，`Message/CronScript/HandleMessage`，建议每隔1分钟处理一次。
 
 #### Tips：
 
