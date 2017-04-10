@@ -48,7 +48,6 @@
 * [表单](module/formguide/README.md)
 * [友情链接](module/links/README.md)
 * [搜索](module/search/README.md)
-* [交易记录](module/trade/README.md)
 * [投票](module/vote/README.md)
 * [WAP手机版](module/wap/README.md)
 * [微信管理](module/wechat/README.md)
