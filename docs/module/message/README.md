@@ -135,12 +135,9 @@ class TestController extends AdminBase {
 
 4.2 或者你可以添加计划任务，`Message/CronScript/HandleMessage`，建议每隔1分钟处理一次。
 
-### Tips：
+### 最佳实践与提示
 
 1. 有多少不同类型的消息就建多少种 Message
 2. 有多少个消息分发渠道就建多少种 Sender
-
-
-### PS
-
-其实 Sender 相当于一个事件处理器(Handler)，不要认为只能用来发消息(模板消息，短信等)。
+3. 其实 Sender 相当于一个事件处理器(Handler)，不要认为只能用来发消息(模板消息，短信等)
+4. Message 里 `setContent()`, `setReceiver()`, `setTarget()` 都不是必须，只是传入对应的参数方便 Sender 中自由的根据消息的来源信息自由修改发送内容
