@@ -33,8 +33,8 @@ class SimpleMessage extends Message {
     /**
      * SimpleMessage constructor.
      *
-     * @param string $sender
-     * @param string $receiver 接收人ID
+     * @param string $sender 发送人
+     * @param string $receiver 接收人
      * @param string $content  消息ID
      */
     public function __construct($sender, $receiver, $content = '') {
