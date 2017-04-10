@@ -31,17 +31,17 @@ use Record\Libs\Record;
 class TradeRecord extends Record {
     public $table_name = 'RecordTrade';
 
-    public function __construct($userid, $type, $record_no) {
-        $this->setUserid($userid);
-        $this->setType($type);
-        $this->setRecordNo($record_no);
+    public function __construct($to, $target_type, $target) {
+        $this->setTo($to);
+        $this->setTargetType($target_type);
+        $this->setTarget($target);
     }
 }
 
 ```
 
 
-#### 2.创建消息
+#### 2.添加记录
 
 使用 `Record\Service\RecordService::createRrcord($record)` 添加消息
 
@@ -52,13 +52,16 @@ namespace Record\Controller;
 
 
 use Common\Controller\AdminBase;
+use Record\Records\TradeRecord;
 use Record\Service\RecordService;
+use Record\Service\TradeRecordService;
 
 class TestController extends AdminBase {
-    public function index() {        
+    public function index() {
         $recode = new TradeRecord('1', 'wxpay', '1232122');
         $recode->setIncome(100);
-        RecordService::createRecord($recode);
+        $this->ajaxReturn(RecordService::createRrcord($recode));
+//        $this->ajaxReturn(TradeRecordService::createTradeRecord('1', 'wxpay', '1232122', 100, 50));
     }
 }
 
@@ -71,28 +74,56 @@ class TestController extends AdminBase {
 <?php
 namespace Record\Service;
 
+use Record\Libs\Record;
 use Record\Model\RecordModel;
-use Record\Records\TradeRecord;
+use System\Service\BaseService;
 
-class TradeRecordService extends RecordService {
-    static function createTradeRecord(
-        $userid,
-        $type,
-        $record_no,
-        $income = 0,
-        $pay = 0,
-        $status = RecordModel::STATUS_VAILD,
-        $detail = '',
-        $remark = ''
-    ) {
-        $trade_recored = new TradeRecord($userid, $type, $record_no);
-        $trade_recored->setIncome($income);
-        $trade_recored->setPay($pay);
-        $trade_recored->setStatus($status);
-        $trade_recored->setDetail($detail);
-        $trade_recored->setRemark($remark);
+class RecordService extends BaseService {
+    static function createRrcord(Record $record) {
+        //获取上一条合法的record id
+        $where['status'] = RecordModel::STATUS_VAILD;
+        $where['to'] = $record->getTo();
+        $where['to_type'] = $record->getToType();
+        $last_vaild_record = M($record->table_name)->where($where)->order('id desc')->find();
+        $last_vaild_balance = self::getBalance($record)['data']; //获取最近的余额信息
 
-        return self::createRrcord($trade_recored);
+        $data = [
+            'parent_id' => $last_vaild_record ? $last_vaild_record['id'] : 0,
+            'to' => $record->getTo(),
+            'to_type' => $record->getToType(),
+            'from' => $record->getFrom(),
+            'from_type' => $record->getFromType(),
+            'target' => $record->getTarget(),
+            'target_type' => $record->getTargetType(),
+            'income' => $record->getIncome(),
+            'pay' => $record->getPay(),
+            'balance' => ($last_vaild_balance + $record->getIncome() - $record->getPay()),//计算当前记录的余额
+            'detail' => $record->getDetail(),
+            'status' => $record->getStatus(),
+            'create_time' => time(),
+            'remark' => $record->getRemark()
+        ];
+        $result = M($record->table_name)->add($data);
+        if ($result) {
+            return self::createReturn(true, $result);
+        }
+
+        return self::createReturn(false, null, '操作失败');
+    }
+
+    static function getBalance(Record $record) {
+        $where = [
+            'to' => $record->getTo(),
+            'to_type' => $record->getToType(),
+            'status' => RecordModel::STATUS_VAILD
+        ];
+        $lists = M($record->table_name)->field('income,pay')->where($where)->select();
+        $total = 0;
+        for ($i = 0; $i < count($lists); $i++) {
+            $total = $total + $lists[$i]['income'] - +$lists[$i]['pay'];
+        }
+
+        return self::createReturn(true, $total, 'ok');
     }
 }
 

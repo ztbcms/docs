@@ -42,6 +42,8 @@
     * [最佳实践](module/transport/tips.md)
 * [消息系统](module/message/README.md)
 * [记录](module/record/README.md)
+    * [数据结构](module/record/dataStructure.md)
+    * [使用指南](module/record/user.md)
 * [插件管理](module/addons/README.md)
 * [采集](module/collection/README.md)
 * [评论](module/comments/README.md)
