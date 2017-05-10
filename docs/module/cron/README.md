@@ -51,10 +51,14 @@ return array(
 
 独立主机用户可以在系统增加计划任务间隔1分钟执行访问 `http://example.com/index.php?g=Cron&m=Index&a=index&cron_secret_key=ztbcms`
 
-- Linux 下
+- Linux 下，添加 crontab 任务
 
 ```shell
+# 借用 curl 来发起 http 请求
 * * * * * curl 'http://网站地址/index.php?g=Cron&m=Index&a=index&cron_secret_key=ztbcms'
+
+# 以 CLI 模式启动运行
+* * * * * php /你的应用根目录/index.php /Cron/Index/index/cron_secret_key/ztbcms
 ```
 
 参考：[Cron表达式生成器](http://www.pdtools.net/tools/becron.jsp)
