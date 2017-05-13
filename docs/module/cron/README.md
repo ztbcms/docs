@@ -112,18 +112,9 @@ php {你的项目路径}\cron.php
 <script type="text/javascript" src="http://网站地址/index.php?g=Cron&m=Index&a=index&cron_secret_key=ztbcms"></script>
 ```
 
-### 计划任务执行日志
-
-开启记录计划任务执行日志,有助于监控计划任务的执行情况，如单个任务的执行时长，太长的计划可以作进一步优化
-
-`Cron/Conf/config.php`
-```php
-return array(
-    'CRON_LOG' => true //开启计划任务日志，默认关闭
-);
-```
-
 ### 最佳实战
+
+#### 1. 更安全的触发计划任务
 
 由于触发定时任务的入口链接是固定的，暴露出去容易被恶意攻击。因此提供了可配置的`CRON_SECRET_KEY`私钥，请求计划任务入口链接的时带上私钥即可！
 
@@ -135,5 +126,20 @@ return array(
 ```
 
 触发执行计划任务入口改为：`http://网站地址/index.php?g=Cron&m=Index&a=index&cron_secret_key=ztbcms`
+
+### 2. 计划任务执行日志
+
+开启记录计划任务执行日志,有助于监控计划任务的执行情况，如单个任务的执行时长，太长的计划可以作进一步优化
+
+`Cron/Conf/config.php`
+```php
+return array(
+    'CRON_LOG' => true //开启计划任务日志，默认开启
+);
+```
+
+### 3. 添加『DeleteCronLog - 删除计划任务日志』计划任务
+
+定期(默认每30日)删除计划任务日志，减少大量的日志带来的空间压力。
 
 
