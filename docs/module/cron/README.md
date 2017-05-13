@@ -138,7 +138,7 @@ return array(
 );
 ```
 
-### 3. 添加『DeleteCronLog - 删除计划任务日志』计划任务
+### 3. 添加『 Cron\CronScriptDeleteCronLog - 删除计划任务日志』计划任务
 
 定期(默认每30日)删除计划任务日志，减少大量的日志带来的空间压力。
 
