@@ -47,7 +47,7 @@ $result = $queue->push('high', $job, 1*60*60);//注: 第三个参数即为延迟
 1.1. 启动队列
 
 ```shell
-$ php index.php /queue/worker/run/queue/high,mid,low/_qsk/{你的私钥}
+$ php index.php /queue/worker/run/queue/high,mid,low
 ```
 
 上述命令监听了3个名为high,mid,low的队列。路由解析方式跟TP重写URL原理一样，`/queue/worker/run`分别对应Module,Controller,Action,后面则是key-value的
