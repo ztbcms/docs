@@ -15,3 +15,8 @@
 编写FieldFilter时，把单元格 `$value` 值可能会在值的前后新增空格(如Excel会在值未全数字单元格的前面加上空格，以避免自动转化为科学计数法显示)，如有无需要自行清除多余空格
 
 ![图片](https://dn-coding-net-production-pp.qbox.me/d32554ce-0ce9-4443-9c08-d52062b20544.png)
+
+
+导入导出时默认值这样设置
+ ![图片](https://dn-coding-net-production-pp.qbox.me/de5a5f27-db05-4f1d-9a06-f92c808572eb.png) 
+ ![图片](https://dn-coding-net-production-pp.qbox.me/76698155-e497-45dd-890c-aff437aceee5.png) 
