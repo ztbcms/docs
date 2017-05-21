@@ -83,7 +83,7 @@ $ php index.php /queue/worker/run/queue/high,mid,low/_qsk/ztbcms
 
 ### 最佳实践
 
-### 0.根据业务调整配置
+#### 0.根据业务调整配置
 
 `Queue/Confi/config.php`:
 ```php
