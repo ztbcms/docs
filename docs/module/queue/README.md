@@ -83,6 +83,18 @@ $ php index.php /queue/worker/run/queue/high,mid,low/_qsk/ztbcms
 
 ### 最佳实践
 
+### 0.根据业务调整配置
+
+`Queue/Confi/config.php`:
+```php
+return array(
+    'QUEUE_SLEEP' => '3',//队列空闲时，休眠时间
+    'QUEUE_MAX_RETRY' => 3, //最大重试次数
+);
+```
+
+若日常队列任务不多，`QUEUE_SLEEP`可以适当延长
+
 #### 1.定期删除已完成任务
 
 安装[计划任务模块]，添加计划任务`Queue\DeleteFinishJob`，推荐每日执行一次，每次删除7日前的已完成的任务。当然，可以根据你的业务逻辑调整其执行频率。
@@ -96,3 +108,5 @@ class DeleteFinishJob extends Cron {
     }
 }
 ```
+
+
