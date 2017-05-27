@@ -69,7 +69,7 @@ class TestController extends AdminBase {
 
 #### 3.进一步封装 service
 
-```
+```php
 
 <?php
 namespace Record\Service;
