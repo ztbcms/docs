@@ -36,7 +36,7 @@
     * [v2](module/sms/2.x.md)
     * [v3](module/sms/3.x.md)
 * [计划任务](module/cron/README.md)
-* [队列](module/queue/README.md)
+* [任务队列](module/queue/README.md)
 * [数据导入导出](module/transport/README.md)
     * [使用](module/transport/usage.md)
     * [最佳实践](module/transport/tips.md)
