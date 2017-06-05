@@ -10,8 +10,6 @@ env:
     - GIT_EMAIL: tonjayin+robot@gmail.com
     - GITHUB_REPO: ztbcms/docs
     - GIT_SOURCE: _book  
-node_js:
-  - "stable"
 before_install:
   - npm install gitbook-cli -g
   - npm install 
