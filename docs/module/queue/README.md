@@ -1,5 +1,7 @@
 ## [任务队列](https://github.com/ztbcms/ztbcms-Queue) ![version](https://img.shields.io/github/release/ztbcms/ztbcms-Queue.svg?maxAge=36000)
 
+任务队列适用后台长时间，批量、异步执行任务，如邮件、短信发送，每日生成报表等。
+
 ### 使用
 
 1.创建任务
