@@ -13,7 +13,8 @@ use Queue\Libs\Job;
 
 class UpdateJob extends Job {
 
-    //定义 你的Job数据
+    //定义 你的Job数据  
+    //注意：必须为public,否则不保存该数据！
     public $userid;
     public $username;
 
