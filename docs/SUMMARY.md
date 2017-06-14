@@ -9,6 +9,8 @@
 ### 开发指南
 
 * [模板](guide/template/README.md)
+    * [前台模板](guide/template/frontend_template.md)
+    * [后台模板](guide/template/backend_template.md)
     * [模板标签](guide/template/tag/README.md)
         * [content内容标签](guide/template/tag/content.md)
         * [spf内容标签](guide/template/tag/spf.md)
