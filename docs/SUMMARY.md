@@ -58,6 +58,7 @@
 * [投票](module/vote/README.md)
 * [WAP手机版](module/wap/README.md)
 * [微信管理](module/wechat/README.md)
+* [图表模块](module/chart/1.x.md)
 
 
 
