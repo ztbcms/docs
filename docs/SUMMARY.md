@@ -59,7 +59,7 @@
 * [WAP手机版](module/wap/README.md)
 * [微信管理](module/wechat/README.md)
 * [图表模块](module/chart/1.x.md)
-* [图表模块](module/mirror/README.md)
+* [监控模块](module/mirror/README.md)
 
 
 
