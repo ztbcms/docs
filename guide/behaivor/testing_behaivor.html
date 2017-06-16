@@ -1,0 +1,969 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <title>测试Behaivor · ZTBCMS</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.0">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../../styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+
+    
+    <link rel="next" href="../module/READMD.html" />
+    
+    
+    <link rel="prev" href="usage.html" />
+    
+
+
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?0c94f14dc8eb5aafbbb35de1766e5ec8";
+            var s = document.getElementsByTagName("script")[0]; 
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+
+    </head>
+    <body>
+        
+<div class="gb-page-wrapper">
+    <header class="gb-page-header">
+        <div class="container">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+
+            <a href="../.." class="logo">
+                <img src="../../gitbook/images/logo.png">
+                <h1>ZTBCMS</h1>
+            </a>
+
+            
+
+            
+
+
+
+<a href="https://github.com/ztbcms/docs/blob/develop/docs/guide/behaivor/testing_behaivor.md" target="_blank" class="btn btn-link pull-right hidden-xs">
+    修正当前页
+</a>
+
+<a href="https://github.com/ztbcms/ztbcms" class="btn btn-link pull-right hidden-xs">
+    <img src="https://img.shields.io/github/release/ztbcms/ztbcms.svg?maxAge=36000" alt="version">
+</a>
+<!--
+<a href="../../faq.md" class="btn btn-link pull-right hidden-xs">
+    F.A.Q
+</a>
+-->
+
+<!--<a href="https://github.com/ztbcms/ztbcms" target="_blank" class="btn btn-link pull-right hidden-xs">
+    3.0.0
+</a>-->
+
+
+
+        
+        </div>
+    </header>
+
+    <div class="gb-page-body">
+        <div class="gb-page-inner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        
+
+
+
+    
+    <div class="panel panel-default">
+        
+        <div class="panel-heading">
+            <h3 class="panel-title">开始使用</h3>
+        </div>
+        
+
+        <div class="list-group">
+            
+    
+        
+        <a href="../../" class="list-group-item ">
+        
+
+            
+
+            
+
+            概述
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../../basic/setup.html" class="list-group-item ">
+        
+
+            
+
+            
+
+            环境搭建&安装
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../../basic/structure.html" class="list-group-item ">
+        
+
+            
+
+            
+
+            目录结构
+
+        
+        </a>
+        
+
+        
+    
+
+        </div>
+    </div>
+    
+    <div class="panel panel-default">
+        
+        <div class="panel-heading">
+            <h3 class="panel-title">开发指南</h3>
+        </div>
+        
+
+        <div class="list-group">
+            
+    
+        
+        <a href="../template/" class="list-group-item ">
+        
+
+            
+
+            
+            <i class="octicon octicon-chevron-right"></i>
+            
+
+            模板
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="readme.html" class="list-group-item ">
+        
+
+            
+
+            
+            <i class="octicon octicon-chevron-down"></i>
+            
+
+            行为管理
+
+        
+        </a>
+        
+
+        
+        
+    
+        
+        <a href="rule.html" class="list-group-item ">
+        
+
+            
+            <i class="octicon octicon-chevron-down" style="opacity: 0"></i>
+            
+
+            
+
+            行为规则
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="usage.html" class="list-group-item ">
+        
+
+            
+            <i class="octicon octicon-chevron-down" style="opacity: 0"></i>
+            
+
+            
+
+            使用方法
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="testing_behaivor.html" class="list-group-item active">
+        
+
+            
+            <i class="octicon octicon-chevron-down" style="opacity: 0"></i>
+            
+
+            
+
+            测试Behaivor
+
+        
+        </a>
+        
+
+        
+    
+
+        
+    
+        
+        <a href="../module/READMD.html" class="list-group-item ">
+        
+
+            
+
+            
+
+            模块开发
+
+        
+        </a>
+        
+
+        
+    
+
+        </div>
+    </div>
+    
+    <div class="panel panel-default">
+        
+        <div class="panel-heading">
+            <h3 class="panel-title">模块</h3>
+        </div>
+        
+
+        <div class="list-group">
+            
+    
+        
+        <a href="../../module/area/" class="list-group-item ">
+        
+
+            
+
+            
+            <i class="octicon octicon-chevron-right"></i>
+            
+
+            区域
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../../module/shop/" class="list-group-item ">
+        
+
+            
+
+            
+
+            商城
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../../module/sms/" class="list-group-item ">
+        
+
+            
+
+            
+            <i class="octicon octicon-chevron-right"></i>
+            
+
+            短信
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../../module/cron/" class="list-group-item ">
+        
+
+            
+
+            
+
+            计划任务
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../../module/queue/" class="list-group-item ">
+        
+
+            
+
+            
+
+            任务队列
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../../module/transport/" class="list-group-item ">
+        
+
+            
+
+            
+            <i class="octicon octicon-chevron-right"></i>
+            
+
+            数据导入导出
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../../module/message/" class="list-group-item ">
+        
+
+            
+
+            
+
+            消息系统
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../../module/record/" class="list-group-item ">
+        
+
+            
+
+            
+            <i class="octicon octicon-chevron-right"></i>
+            
+
+            记录
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../../module/log/" class="list-group-item ">
+        
+
+            
+
+            
+
+            日志
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../../module/addons/" class="list-group-item ">
+        
+
+            
+
+            
+
+            插件管理
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../../module/collection/" class="list-group-item ">
+        
+
+            
+
+            
+
+            采集
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../../module/comments/" class="list-group-item ">
+        
+
+            
+
+            
+
+            评论
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../../module/domains/" class="list-group-item ">
+        
+
+            
+
+            
+
+            域名
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../../module/formguide/" class="list-group-item ">
+        
+
+            
+
+            
+
+            表单
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../../module/links/" class="list-group-item ">
+        
+
+            
+
+            
+
+            友情链接
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../../module/search/" class="list-group-item ">
+        
+
+            
+
+            
+
+            搜索
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../../module/vote/" class="list-group-item ">
+        
+
+            
+
+            
+
+            投票
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../../module/wap/" class="list-group-item ">
+        
+
+            
+
+            
+
+            WAP手机版
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../../module/wechat/" class="list-group-item ">
+        
+
+            
+
+            
+
+            微信管理
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../../module/chart/1.x.html" class="list-group-item ">
+        
+
+            
+
+            
+
+            图表模块
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../../module/mirror/" class="list-group-item ">
+        
+
+            
+
+            
+
+            图表模块
+
+        
+        </a>
+        
+
+        
+    
+
+        </div>
+    </div>
+    
+    <div class="panel panel-default">
+        
+        <div class="panel-heading">
+            <h3 class="panel-title">附录</h3>
+        </div>
+        
+
+        <div class="list-group">
+            
+    
+        
+        <a href="../../extra/system_function.html" class="list-group-item ">
+        
+
+            
+
+            
+
+            系统函数
+
+        
+        </a>
+        
+
+        
+    
+
+        </div>
+    </div>
+    
+    <div class="panel panel-default">
+        
+        <div class="panel-heading">
+            <h3 class="panel-title">最佳实践</h3>
+        </div>
+        
+
+        <div class="list-group">
+            
+    
+        
+        <a href="../../best_practic/dev_tips.html" class="list-group-item ">
+        
+
+            
+
+            
+            <i class="octicon octicon-chevron-right"></i>
+            
+
+            开发Tips汇总
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../../best_practic/ztbcms_storage_engine.html" class="list-group-item ">
+        
+
+            
+
+            
+
+            数据库的存储引擎
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../../best_practic/behavior_manage.html" class="list-group-item ">
+        
+
+            
+
+            
+
+            行为管理最佳实践
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../../best_practic/performance_optimization.html" class="list-group-item ">
+        
+
+            
+
+            
+
+            性能优化
+
+        
+        </a>
+        
+
+        
+    
+
+        </div>
+    </div>
+    
+    <div class="panel panel-default">
+        
+        <div class="panel-heading">
+            <h3 class="panel-title">使用案例</h3>
+        </div>
+        
+
+        <div class="list-group">
+            
+    
+        
+        <a href="../../case.html" class="list-group-item ">
+        
+
+            
+
+            
+
+            用户与案例
+
+        
+        </a>
+        
+
+        
+    
+
+        </div>
+    </div>
+    
+
+
+
+                    </div>
+                    <div class="col-md-9">
+                        
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                            
+                            <div class="gb-markdown book-page-inner">
+                                <h2 id="&#x6D4B;&#x8BD5;behavior">&#x6D4B;&#x8BD5;Behavior</h2><p>Behavior &#x9075;&#x5FAA;TP&#x7684;&#x81EA;&#x52A8;&#x52A0;&#x8F7D;&#x65B9;&#x5F0F;&#xFF0C;&#x6240;&#x4EE5;&#x76F4;&#x63A5;&#x521B;&#x5EFA;&#x5BF9;&#x5E94;&#x7684;Behavior &#x5E76;&#x586B;&#x5199;&#x6A21;&#x62DF;&#x53C2;&#x6570;&#x8C03;&#x7528;run()&#x65B9;&#x6CD5;&#x5373;&#x53EF;</p><p>&#x6837;&#x4F8B;&#xFF1A;</p><p>&#x884C;&#x4E3A;<code>PaidChongzhiOrderBehavior.class.php</code></p><pre><code class="lang-php"><span class="hljs-comment">/**
+ * &#x652F;&#x4ED8;&#x5145;&#x503C;&#x8BA2;&#x5355;&#x540E;
+ */</span>
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">PaidChongzhiOrderBehavior</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">BaseBehavior</span>  </span>{
+
+    <span class="hljs-comment">/**
+     * <span class="hljs-doctag">@param</span> PaidOrderBehaviorParam $param
+     */</span>
+    <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">run</span><span class="hljs-params">(&amp;$param)</span> </span>{
+        <span class="hljs-keyword">parent</span>::run($param);
+
+        <span class="hljs-comment">//&#x4F60;&#x7684;&#x4EE3;&#x7801;</span>
+    }
+}</code></pre>
+<p>Behavior&#x53C2;&#x6570;&#x7C7B;<code>PaidOrderBehaviorParam.class.php</code></p><pre><code class="lang-php"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">PaidOrderBehaviorParam</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">BaseBehaviorParam</span> </span>{
+
+    <span class="hljs-comment">/**
+     * <span class="hljs-doctag">@var</span> &#x8BA2;&#x5355;&#x53F7;
+     */</span>
+    <span class="hljs-keyword">public</span> $orderid;
+
+}</code></pre>
+<p>&#x8C03;&#x7528;&#x6837;&#x4F8B;&#xFF1A;</p><pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span>
+
+<span class="hljs-keyword">namespace</span> <span class="hljs-title">Payment</span>\<span class="hljs-title">Controller</span>;
+
+<span class="hljs-keyword">use</span> <span class="hljs-title">Common</span>\<span class="hljs-title">Controller</span>\<span class="hljs-title">Base</span>;
+<span class="hljs-keyword">use</span> <span class="hljs-title">Payment</span>\<span class="hljs-title">Behavior</span>\<span class="hljs-title">PaidChongzhiOrderBehavior</span>;
+<span class="hljs-keyword">use</span> <span class="hljs-title">Payment</span>\<span class="hljs-title">BehaviorParam</span>\<span class="hljs-title">PaidOrderBehaviorParam</span>;
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">TestController</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Base</span> </span>{
+
+    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">testPaidChongzhiOrderBehavior</span><span class="hljs-params">()</span></span>{
+        $b = <span class="hljs-keyword">new</span> PaidChongzhiOrderBehavior();
+        $bp = PaidOrderBehaviorParam::create([<span class="hljs-string">&apos;orderid&apos;</span> =&gt; <span class="hljs-string">&apos;2016111011144970299&apos;</span>]);
+        $b-&gt;run($bp);
+    }
+}</code></pre>
+<h3 id="&#x5EFA;&#x8BAE;">&#x5EFA;&#x8BAE;</h3><p>&#x4E3A;&#x6BCF;&#x4E2A;&#x884C;&#x4E3A;&#x90FD;&#x914D;&#x5408;&#x5199;&#x4E00;&#x4E2A; PaidOrderBehaviorParam &#xFF0C;&#x8FD9;&#x6837;&#x660E;&#x786E;&#x4E86;&#xFF0C;&#x6267;&#x884C;&#x8BE5;&#x884C;&#x4E3A;&#x7684;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x65F6;
+&#x5230;&#x5E95;&#x542B;&#x6709;&#x54EA;&#x4E00;&#x4E9B;&#x53C2;&#x6570;</p><p><code>BaseBehavior.class</code>&#x53C2;&#x8003;&#x5982;&#x4E0B;&#xFF08;&#x672A;&#x6765;&#x5C06;&#x4F1A;&#x5185;&#x7F6E;&#x5230; CMS &#x4E2D;&#xFF09;&#xFF1A;</p><pre><code class="lang-php">
+<span class="hljs-meta">&lt;?php</span>
+
+<span class="hljs-keyword">namespace</span> <span class="hljs-title">Common</span>\<span class="hljs-title">BehaviorParam</span>;
+<span class="hljs-comment">/**
+ * &#x884C;&#x4E3A;&#x56DE;&#x8C03;&#x53C2;&#x6570;
+ *
+ */</span>
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">BaseBehaviorParam</span> </span>{
+    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">__get</span><span class="hljs-params">($name)</span> </span>{
+        <span class="hljs-keyword">return</span> $this-&gt;$name;
+    }
+    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">__set</span><span class="hljs-params">($name, $value)</span> </span>{
+        $this-&gt;$name = $value;
+    }
+    <span class="hljs-comment">/**
+     * &#x521B;&#x5EFA;&#x53C2;&#x6570;&#x5B9E;&#x4F8B;
+     * <span class="hljs-doctag">@param</span> array $data
+     * <span class="hljs-doctag">@return</span> mixed
+     */</span>
+    <span class="hljs-keyword">static</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">create</span><span class="hljs-params">(array $data)</span> </span>{
+        $class = <span class="hljs-keyword">__CLASS__</span>;
+        $param = <span class="hljs-keyword">new</span> $class;
+        <span class="hljs-keyword">foreach</span> ($data <span class="hljs-keyword">as</span> $key =&gt; $val){
+            <span class="hljs-keyword">if</span>(<span class="hljs-keyword">empty</span>($param-&gt;$key)){
+                $param-&gt;$key = $val;
+            }
+        }
+        <span class="hljs-keyword">return</span> $param;
+    }
+}</code></pre>
+
+                            </div>
+                            
+                        
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="gb-page-footer">
+        <div class="container">
+            <ul class="menu">
+                <li class="pull-right">
+                    <span class="service-info">Copyright ZtbCMS 2017</span>
+                </li>
+                <li>
+                    <a href="#">Return to the top</a>
+                </li>
+                <li>
+                    <a href="#">Updated Feb 18th 17</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</div>
+
+<script src="../../gitbook/gitbook.js"></script>
+
+    
+    <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+    
+
+    
+    <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+    
+
+    
+    <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+    
+
+<script>
+(function() {
+    gitbook.page.hasChanged({"page":{"title":"测试Behaivor","level":"2.2.3","depth":2,"next":{"title":"模块开发","level":"2.3","depth":1,"path":"guide/module/READMD.md","ref":"guide/module/READMD.md","articles":[]},"previous":{"title":"使用方法","level":"2.2.2","depth":2,"path":"guide/behaivor/usage.md","ref":"guide/behaivor/usage.md","articles":[]},"dir":"ltr"},"config":{"plugins":["theme-ztbcms-docs@1.0.1","-sharing","-fontsettings","sitemap"],"root":"./docs","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"sitemap":{"hostname":"https://www.ztbcms.com"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"theme-ztbcms-docs":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"version":"3.0.0"},"title":"ZTBCMS","gitbook":"3.2.0"},"file":{"path":"guide/behaivor/testing_behaivor.md","mtime":"2017-02-18T04:05:48.000Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2017-06-16T02:23:09.592Z"},"basePath":"../..","book":{"language":""}});
+})();
+</script>
+
+        
+    </body>
+</html>
+
