@@ -28,7 +28,7 @@
     * [使用方法](guide/behaivor/usage.md)
     * [测试Behaivor](guide/behaivor/testing_behaivor.md)
 * [模块开发](guide/module/README.md)
-* [权限](guide/permission/README.md)
+* [后台权限](guide/permission/README.md)
 
 ### 模块
 
