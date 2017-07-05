@@ -134,7 +134,8 @@ return array(
 `Cron/Conf/config.php`
 ```php
 return array(
-    'CRON_LOG' => true //开启计划任务日志，默认开启
+    'CRON_LOG' => true, //开启计划任务日志，默认开启
+    'CRON_SCHEDULING_LOG' => true //是否开启计划任务调度运行日志
 );
 ```
 
