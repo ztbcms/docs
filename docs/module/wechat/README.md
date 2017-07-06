@@ -2,26 +2,30 @@
 
 ### 配置
 
-微信模块的正常使用需要提供一些微信信息，为了所有的模块都能使用这些微信配置，我们使用后台的站点配置来设置这些信息。
+微信模块的正常使用需要提供一些微信信息，
 
-配置位置：系统设置 -> 站点设置 -> 扩展配置
-
- ![图片](https://dn-coding-net-production-pp.qbox.me/4268d248-a811-4e36-a9b7-caf6cbfeed8b.png) 
-
-
-需要配置的信息如下：
+#### 需要配置的信息如下：
 
 - wx_app_id ： 微信公众号 app_id
 - wx_secret ： 微信公众号 app_secret
 
+#### 配置位置：
+
+为了所有的模块都能使用这些微信配置，我们使用后台的站点配置来设置这些信息。（系统设置 -> 站点设置 -> 扩展配置）
+
+ ![图片](https://dn-coding-net-production-pp.qbox.me/4268d248-a811-4e36-a9b7-caf6cbfeed8b.png) 
 
 ### 获取js-sdk
 
-地址：Wechat\Service\AppService::getJsSdk
+#### 地址：
 
-调用方式：静态方法
+Wechat\Service\AppService::getJsSdk
 
-参数：
+#### 调用方式：
+
+静态方法
+
+#### 参数：
 
 | 参数名 | 说明 | 必要 | 默认 |
 | -- | -- | -- | -- |
@@ -30,7 +34,7 @@
 | beta | - | 否 | false |
 | json | 是否返回 Json 格式结果 | 否 | true |
 
-调用示例：
+#### 调用示例：
 
 后台返回方式
 ```php
