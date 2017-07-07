@@ -35,7 +35,6 @@
 * [区域](module/area/README.md)
     * [中国区域](module/area/area.md)
     * [中国高校](module/area/school.md)
-* [商城](module/shop/README.md)
 * [短信](module/sms/README.md)
     * [v2](module/sms/2.x.md)
     * [v3](module/sms/3.x.md)
@@ -49,6 +48,9 @@
     * [数据结构](module/record/dataStructure.md)
     * [使用指南](module/record/user.md)
 * [日志](module/log/README.md)    
+* [图表模块](module/chart/1.x.md)
+* [监控模块](module/mirror/README.md)
+* [单商户商城](module/shop/README.md)
 * [插件管理](module/addons/README.md)
 * [采集](module/collection/README.md)
 * [评论](module/comments/README.md)
@@ -59,9 +61,6 @@
 * [投票](module/vote/README.md)
 * [WAP手机版](module/wap/README.md)
 * [微信管理](module/wechat/README.md)
-* [图表模块](module/chart/1.x.md)
-* [监控模块](module/mirror/README.md)
-
 
 
 ### 附录
