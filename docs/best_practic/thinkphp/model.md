@@ -27,3 +27,12 @@ class OrderModel extends RelationModel {
     );
 }
 ```
+
+### 模型缓存
+
+开启配置
+```php
+$result = M('Search')->where($where)->cache(true, $cachetime)->select();
+```
+
+该模型缓存采用的时候，会以文件形式缓存改数据。
