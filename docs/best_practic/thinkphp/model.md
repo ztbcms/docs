@@ -4,6 +4,7 @@
 ### 关联模型 - RelationModel
 
 ```php
+use Common\Model\RelationModel;
 class OrderModel extends RelationModel {
 
     /**
