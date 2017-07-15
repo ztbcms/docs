@@ -64,5 +64,7 @@
 <url> <loc>https://www.ztbcms.com/best_practic/ztbcms_storage_engine.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://www.ztbcms.com/best_practic/behavior_manage.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://www.ztbcms.com/best_practic/performance_optimization.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://www.ztbcms.com/best_practic/thinkphp/readme.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://www.ztbcms.com/best_practic/thinkphp/model.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://www.ztbcms.com/case.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 </urlset>
