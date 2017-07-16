@@ -15,6 +15,12 @@ ft_min_word_len = 2
 
 ![图片](https://dn-coding-net-production-pp.qbox.me/40168369-816a-4a9d-8163-2c0f2d4956d9.png)
 
+### 搜索页面入口？
+
+```
+http://you_domain.com/index.php?g=Search
+```
+
 ### 如何主动更新索引？
 
 更新索引，更新需要检索字段的分词
@@ -23,7 +29,6 @@ $SearModel::search_api($id, $data, $modelid);
 
 # data 为传入该行数据 ，由$modelid + $id 两条件筛选出来
 ```
-
 
 ### 如何根据输入的关键字获取索引结果？
 
