@@ -55,6 +55,7 @@
 <url> <loc>https://www.ztbcms.com/module/wechat/</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://www.ztbcms.com/extra/system_function.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://www.ztbcms.com/best_practic/rule.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://www.ztbcms.com/best_practic/common_error/template.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://www.ztbcms.com/best_practic/dev_tips.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://www.ztbcms.com/best_practic/tips/module.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://www.ztbcms.com/best_practic/tips/custom_admin_icon.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
