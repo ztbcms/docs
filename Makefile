@@ -8,6 +8,7 @@ commit-push:
 generate:
 	-gitbook build
 	-cp CNAME _book/
+	-cp .nojeklly _book/
 	-cp favicon.ico _book/gitbook/images/
 
 deploy: generate
