@@ -20,6 +20,7 @@
 ![粤公记][18]
 ![新鲜寿光小程序-寿光广电][19]
 ![广州亿乐库仓储有限公司-亿乐库小程序][20]
+![e美人商城][21]
 
 
 
@@ -44,6 +45,6 @@
 [18]: https://dn-coding-net-production-static.qbox.me/d50a576c-87c7-4990-a114-0da0841721ad.png
 [19]: https://dn-coding-net-production-pp.qbox.me/309520d1-8d88-4f06-a270-6d39ad79fcff.png
 [20]: https://dn-coding-net-production-pp.qbox.me/e3db9a94-8cfa-425e-a4d2-47cabdc7e652.png
-
+[21]: https://dn-coding-net-production-pp.qbox.me/598cdd24-4e25-499f-8eeb-4b03a9a3c8fa.png
 
 
