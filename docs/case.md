@@ -19,6 +19,8 @@
 ![辽宁联通][17]
 ![粤公记][18]
 ![新鲜寿光小程序-寿光广电][19]
+![广州亿乐库仓储有限公司-亿乐库小程序][20]
+
 
 
 [0]: https://dn-coding-net-production-pp.qbox.me/da8e8b23-f828-4f13-9465-d5442890845c.png
@@ -41,6 +43,7 @@
 [17]: https://dn-coding-net-production-pp.qbox.me/91d1ad20-ef26-4463-bcbf-9b3af0c174d4.png
 [18]: https://dn-coding-net-production-static.qbox.me/d50a576c-87c7-4990-a114-0da0841721ad.png
 [19]: https://dn-coding-net-production-pp.qbox.me/309520d1-8d88-4f06-a270-6d39ad79fcff.png
+[20]: https://dn-coding-net-production-pp.qbox.me/124c106a-d37c-408a-8f7c-0bdea55afb22.png
 
 
 
