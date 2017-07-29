@@ -70,6 +70,8 @@
 ### 最佳实践
 
 * [规范和约定](best_practic/rule.md)
+* [常见错误](best_practic/common_error/template.md)
+    * [模板](best_practic/common_error/template.md)
 * [开发Tips汇总](best_practic/dev_tips.md)
     * [模块](best_practic/tips/module.md)
     * [自定义后台iconfont](best_practic/tips/custom_admin_icon.md)
