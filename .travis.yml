@@ -8,7 +8,7 @@ env:
   global:
     - GIT_NAME: TravisCI
     - GIT_EMAIL: tonjayin+robot@gmail.com
-    - GITHUB_REPO: ztbcms/docs
+    - GITHUB_REPO: ztbcms/ztbcms.github.io
     - GIT_SOURCE: _book  
 before_install:
   - npm install gitbook-cli -g
