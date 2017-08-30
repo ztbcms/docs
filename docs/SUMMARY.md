@@ -63,9 +63,7 @@
 * [微信管理](module/wechat/README.md)
 
 
-### 附录
 
-* [系统函数](extra/system_function.md)
 
 ### 最佳实践
 
@@ -84,6 +82,11 @@
 * [ThinkPHP](best_practic/thinkphp/readme.md)
     * [模型](best_practic/thinkphp/model.md)
 
+### 附录
+
+* [系统函数](extra/system_function.md)
+* [版本发布](extra/version/readme.md)
+    * [v3.7.2.0](extra/version/v3720.md)
 
 ### 使用案例
 
