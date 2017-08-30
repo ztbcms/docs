@@ -87,6 +87,7 @@
 * [系统函数](extra/system_function.md)
 * [版本发布](extra/version/readme.md)
     * [v3.7.2.0](extra/version/v3720.md)
+    * [v3.7.2.1](extra/version/v3721.md)
 
 ### 使用案例
 
