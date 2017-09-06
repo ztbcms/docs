@@ -81,6 +81,8 @@
 * [性能优化](best_practic/performance_optimization.md)
 * [ThinkPHP](best_practic/thinkphp/readme.md)
     * [模型](best_practic/thinkphp/model.md)
+* [HOW TO](best_practic/howto/readme.md)
+    * [发送邮件](best_practic/howto/send_email.md)
 
 ### 附录
 
