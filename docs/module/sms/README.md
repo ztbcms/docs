@@ -26,9 +26,11 @@
 - appid: 应用ID  
 - templateid ： 短信模板ID  
 
-#### 阿里短信服务
+#### 阿里消息服务(短信消息)
 
-使用前，请先阅读 [阿里短信服务-API文档](https://help.aliyun.com/document_detail/55451.html)
+> 注意，这里不是[短信服务](https://www.aliyun.com/product/sms)，而是[消息服务下的短信消息](https://www.aliyun.com/product/mns)
+
+使用前，请**务必**先阅读 [消息服务>SDK 参考>PHP SDK>发布短信消息示例](https://help.aliyun.com/document_detail/51929.html)
 
 阿里短信服务需要配置的参数有 7 个
 
@@ -42,7 +44,7 @@
 
 以上字段，除注明外，均为必填字段，如业务需求，需要额外参数，可在「模块 - 短信模块 - 模型管理」处增减参数字段。
 
-注:
+
 
 #### 短信发送
 
