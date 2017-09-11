@@ -41,4 +41,4 @@ v3.7.2.2或以后的可以调用`EmailService::send`
 
 SMTP服务地址： smtpdm.aliyun.com ，SMTP服务端口号：25或80或465(SSL加密)。
 
-更详细说明请参阅阿里云[邮件推送文档](https://help.aliyun.com/product/29412.html)
+更详细说明请参阅阿里云[邮件推送文档](https://help.aliyun.com/product/29412.html)
