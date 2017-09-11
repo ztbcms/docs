@@ -47,7 +47,7 @@
 * [记录 Record](module/record/README.md)
     * [数据结构](module/record/dataStructure.md)
     * [使用指南](module/record/user.md)
-* [日志 Log](module/log/README.md)    
+* [日志 Log](module/log/README.md)
 * [图表模块 Chart](module/chart/1.x.md)
 * [监控模块 Mirror](module/mirror/README.md)
 * [WAP手机版 Wap](module/wap/README.md)
@@ -87,9 +87,11 @@
 
 * [系统函数](extra/system_function.md)
 * [版本发布](extra/version/readme.md)
-    * [v3.7.2.0](extra/version/v3720.md)
-    * [v3.7.2.1](extra/version/v3721.md)
+    * [v3.7.2.3](extra/version/v3723.md)
     * [v3.7.2.2](extra/version/v3722.md)
+    * [v3.7.2.1](extra/version/v3721.md)
+    * [v3.7.2.0](extra/version/v3720.md)
+
 
 ### 使用案例
 
