@@ -30,7 +30,7 @@
 
 > 注意，这里不是[短信服务](https://www.aliyun.com/product/sms)，而是[消息服务下的短信消息](https://www.aliyun.com/product/mns)
 
-使用前，请**务必**先阅读 [消息服务>SDK 参考>PHP SDK>发布短信消息示例](https://help.aliyun.com/document_detail/51929.html)
+使用前，请**务必**先阅读一次 [消息服务>SDK 参考>PHP SDK>发布短信消息示例](https://help.aliyun.com/document_detail/51929.html)
 
 阿里短信服务需要配置的参数有 7 个
 
@@ -44,7 +44,19 @@
 
 以上字段，除注明外，均为必填字段，如业务需求，需要额外参数，可在「模块 - 短信模块 - 模型管理」处增减参数字段。
 
+### 阿里云短信服务
+> 阿里云正式整合了阿里大于和阿里云消息服务下的短信消息，整理后就是阿里云短信服务。若是没有历史问题，请使用阿里云短信服务。
 
+使用前，请**务必**先阅读一次 [短信服务 > 开发指南 > API文档 > PHP > 短信发送API(SendSms)---PHP](https://help.aliyun.com/document_detail/55451.html) 
+
+阿里云短信服务配置
+
+- access_id : 阿里云API密钥
+- access_key: 阿里云API密钥
+- sign : 短信签名
+- template : 短信模版 Code
+
+上述文档的配置参数请按照说明文档中步骤去申请获取。
 
 ### 短信发送接口
 
