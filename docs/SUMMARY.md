@@ -32,6 +32,7 @@
 
 ### 模块
 
+* [微信管理 Wechat](module/wechat/README.md)
 * [区域 Area](module/area/README.md)
     * [中国区域](module/area/area.md)
     * [中国高校](module/area/school.md)
@@ -39,7 +40,6 @@
     * [v2](module/sms/2.x.md)
     * [v3](module/sms/3.x.md)
 * [计划任务 Cron](module/cron/README.md)
-* [任务队列 Queue](module/queue/README.md)
 * [数据导入导出 Transport](module/transport/README.md)
     * [使用](module/transport/usage.md)
     * [最佳实践](module/transport/tips.md)
@@ -49,9 +49,9 @@
     * [使用指南](module/record/user.md)
 * [日志 Log](module/log/README.md)
 * [图表模块 Chart](module/chart/1.x.md)
+* [任务队列 Queue](module/queue/README.md)
 * [监控模块 Mirror](module/mirror/README.md)
 * [WAP手机版 Wap](module/wap/README.md)
-* [微信管理 Wechat](module/wechat/README.md)
 * [单商户商城 Shop](module/shop/README.md)
 * [搜索 Search](module/search/README.md)
 * [插件管理 Addons](module/addons/README.md)
