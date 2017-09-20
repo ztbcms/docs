@@ -33,8 +33,8 @@
 ### 模块
 
 * [微信管理 Wechat](module/wechat/v3.md)
-    * [微信管理 Wechat](module/wechat/v3.md)
-    * [微信管理 Wechat](module/wechat/v2.md)
+    * [v3.x](module/wechat/v3.md)
+    * [v2.x](module/wechat/v2.md)
 * [区域 Area](module/area/README.md)
     * [中国区域](module/area/area.md)
     * [中国高校](module/area/school.md)
