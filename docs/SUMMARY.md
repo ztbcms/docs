@@ -32,13 +32,15 @@
 
 ### 模块
 
-* [微信管理 Wechat](module/wechat/README.md)
+* [微信管理 Wechat](module/wechat/v3.md)
+    * [微信管理 Wechat](module/wechat/v3.md)
+    * [微信管理 Wechat](module/wechat/v2.md)
 * [区域 Area](module/area/README.md)
     * [中国区域](module/area/area.md)
     * [中国高校](module/area/school.md)
 * [短信 Sms](module/sms/README.md)
-    * [v2](module/sms/2.x.md)
     * [v3](module/sms/3.x.md)
+    * [v2](module/sms/2.x.md)
 * [计划任务 Cron](module/cron/README.md)
 * [数据导入导出 Transport](module/transport/README.md)
     * [使用](module/transport/usage.md)
