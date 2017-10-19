@@ -70,3 +70,7 @@
 ```
 你的验证码为 ${code} 请勿将验证码告知他人
 ```
+
+### 测试短息
+
+ ![图片](https://dn-coding-net-production-pp.qbox.me/9d4dbf84-b488-4672-a86d-bf459d86b2c8.png)
