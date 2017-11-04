@@ -49,6 +49,7 @@
 * [记录 Record](module/record/README.md)
     * [数据结构](module/record/dataStructure.md)
     * [使用指南](module/record/user.md)
+* [小程序 Wxapp](module/wxapp/README.md)
 * [日志 Log](module/log/README.md)
 * [图表模块 Chart](module/chart/1.x.md)
 * [任务队列 Queue](module/queue/README.md)
