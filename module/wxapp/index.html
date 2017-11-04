@@ -2,7 +2,7 @@
 <!DOCTYPE HTML>
 <html lang="" >
     <head>
-        <title>中国高校 · ZTBCMS</title>
+        <title>小程序 Wxapp · ZTBCMS</title>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
@@ -57,10 +57,10 @@
 
 
     
-    <link rel="next" href="../sms/" />
+    <link rel="next" href="../log/" />
     
     
-    <link rel="prev" href="area.html" />
+    <link rel="prev" href="../record/user.html" />
     
 
 
@@ -105,7 +105,7 @@
 
 
 
-<a href="https://github.com/ztbcms/docs/blob/develop/docs/module/area/school.md" target="_blank" class="btn btn-link pull-right hidden-xs">
+<a href="https://github.com/ztbcms/docs/blob/develop/docs/module/wxapp/README.md" target="_blank" class="btn btn-link pull-right hidden-xs">
     修正当前页
 </a>
 
@@ -311,13 +311,13 @@
         
     
         
-        <a href="./" class="list-group-item ">
+        <a href="../area/" class="list-group-item ">
         
 
             
 
             
-            <i class="octicon octicon-chevron-down"></i>
+            <i class="octicon octicon-chevron-right"></i>
             
 
             区域 Area
@@ -325,46 +325,6 @@
         
         </a>
         
-
-        
-        
-    
-        
-        <a href="area.html" class="list-group-item ">
-        
-
-            
-            <i class="octicon octicon-chevron-down" style="opacity: 0"></i>
-            
-
-            
-
-            中国区域
-
-        
-        </a>
-        
-
-        
-    
-        
-        <a href="school.html" class="list-group-item active">
-        
-
-            
-            <i class="octicon octicon-chevron-down" style="opacity: 0"></i>
-            
-
-            
-
-            中国高校
-
-        
-        </a>
-        
-
-        
-    
 
         
     
@@ -455,7 +415,7 @@
         
     
         
-        <a href="../wxapp/" class="list-group-item ">
+        <a href="./" class="list-group-item active">
         
 
             
@@ -953,47 +913,7 @@
     
                             
                             <div class="gb-markdown book-page-inner">
-                                <h2 id="&#x4E2D;&#x56FD;&#x9AD8;&#x6821;">&#x4E2D;&#x56FD;&#x9AD8;&#x6821;</h2><h3 id="&#x5FEB;&#x901F;&#x5165;&#x95E8;">&#x5FEB;&#x901F;&#x5165;&#x95E8;</h3><ol><li>&#x533A;&#x57DF;&#x67E5;&#x8BE2;&#x63A5;&#x53E3;&#x90FD;&#x5728;<code>app/Application/Area/Model</code>&#x76EE;&#x5F55;&#x4E0B;&#xFF0C;&#x5305;&#x542B;&#x7701;&#x4EFD;(Province)&#x3001;&#x57CE;&#x5E02;(City)&#x3001;&#x533A;&#x53BF;(District)
-</li>
-<li>HTTP&#x63A5;&#x53E3;&#x5728;<code>app/Application/Area/Controller</code>&#x76EE;&#x5F55;&#x4E0B;
-</li></ol>
-<h3 id="&#x63A5;&#x53E3;&#x793A;&#x4F8B;">&#x63A5;&#x53E3;&#x793A;&#x4F8B;</h3><h4 id="&#x901A;&#x8FC7;&#x5173;&#x952E;&#x5B57;&#x83B7;&#x53D6;&#x5B66;&#x6821;&#x5217;&#x8868;">&#x901A;&#x8FC7;&#x5173;&#x952E;&#x5B57;&#x83B7;&#x53D6;&#x5B66;&#x6821;&#x5217;&#x8868;</h4><p>&#x6CE8;:<code>keyword</code>&#x4E3A;&#x5B66;&#x6821;&#x540D;&#x79F0;&#x5173;&#x952E;&#x5B57;&#xFF08;&#x793A;&#x4F8B;&#xFF1A;&#x5E7F;&#x4E1C;&#xFF09;</p><p><code>http://{&#x4F60;&#x7684;&#x7AD9;&#x70B9;}/ztbcms/index.php?g=Area&amp;m=Api&amp;a=getSchoolList&amp;keyword=&#x5E7F;&#x4E1C;</code></p><p>&#x8FD4;&#x56DE;&#x6570;&#x636E;&#xFF1A;</p><pre><code class="lang-json">{
-  <span class="hljs-string">&quot;status&quot;</span>: <span class="hljs-string">&quot;success&quot;</span>,
-  <span class="hljs-string">&quot;data&quot;</span>: [
-    {
-      <span class="hljs-string">&quot;school_id&quot;</span>: <span class="hljs-string">&quot;1814&quot;</span>,
-      <span class="hljs-string">&quot;school_name&quot;</span>: <span class="hljs-string">&quot;&#x5E7F;&#x4E1C;&#x5DE5;&#x4E1A;&#x5927;&#x5B66;&quot;</span>,
-      <span class="hljs-string">&quot;province_id&quot;</span>: <span class="hljs-string">&quot;440000&quot;</span>,
-      <span class="hljs-string">&quot;type_id&quot;</span>: <span class="hljs-string">&quot;1&quot;</span>
-    },{
-      <span class="hljs-string">&quot;school_id&quot;</span>: <span class="hljs-string">&quot;1816&quot;</span>,
-      <span class="hljs-string">&quot;school_name&quot;</span>: <span class="hljs-string">&quot;&#x5E7F;&#x4E1C;&#x6D77;&#x6D0B;&#x5927;&#x5B66;&quot;</span>,
-      <span class="hljs-string">&quot;province_id&quot;</span>: <span class="hljs-string">&quot;440000&quot;</span>,
-      <span class="hljs-string">&quot;type_id&quot;</span>: <span class="hljs-string">&quot;1&quot;</span>
-  }
-  ],
-   <span class="hljs-string">&quot;state&quot;</span>: <span class="hljs-string">&quot;success&quot;</span>
-}
-</code></pre>
-<h4 id="&#x901A;&#x8FC7;&#x7701;&#x4EFD;id&#x83B7;&#x53D6;&#x5B66;&#x6821;&#x5217;&#x8868;">&#x901A;&#x8FC7;&#x7701;&#x4EFD;id&#x83B7;&#x53D6;&#x5B66;&#x6821;&#x5217;&#x8868;</h4><p>&#x6CE8;:<code>province_id</code> &#x6240;&#x5C5E;&#x7701;&#x4EFD;id</p><p><code>http://{&#x4F60;&#x7684;&#x7AD9;&#x70B9;}/ztbcms/index.php?g=Area&amp;m=Api&amp;a=getSchoolListByProvinceId&amp;province_id=440000</code></p><p>&#x8FD4;&#x56DE;&#x6570;&#x636E;&#xFF1A;</p><pre><code class="lang-json">{
-  <span class="hljs-string">&quot;status&quot;</span>: <span class="hljs-string">&quot;success&quot;</span>,
-  <span class="hljs-string">&quot;data&quot;</span>: [
-    {
-      <span class="hljs-string">&quot;school_id&quot;</span>: <span class="hljs-string">&quot;1808&quot;</span>,
-      <span class="hljs-string">&quot;school_name&quot;</span>: <span class="hljs-string">&quot;&#x4E2D;&#x5C71;&#x5927;&#x5B66;&quot;</span>,
-      <span class="hljs-string">&quot;province_id&quot;</span>: <span class="hljs-string">&quot;440000&quot;</span>,
-      <span class="hljs-string">&quot;type_id&quot;</span>: <span class="hljs-string">&quot;1&quot;</span>
-    },
-    {
-      <span class="hljs-string">&quot;school_id&quot;</span>: <span class="hljs-string">&quot;1809&quot;</span>,
-      <span class="hljs-string">&quot;school_name&quot;</span>: <span class="hljs-string">&quot;&#x534E;&#x5357;&#x7406;&#x5DE5;&#x5927;&#x5B66;&quot;</span>,
-      <span class="hljs-string">&quot;province_id&quot;</span>: <span class="hljs-string">&quot;440000&quot;</span>,
-      <span class="hljs-string">&quot;type_id&quot;</span>: <span class="hljs-string">&quot;1&quot;</span>
-    }
-  ],
-   <span class="hljs-string">&quot;state&quot;</span>: <span class="hljs-string">&quot;success&quot;</span>
-}</code></pre>
-
+                                <h3 id="&#x5C0F;&#x7A0B;&#x5E8F;">&#x5C0F;&#x7A0B;&#x5E8F;</h3><p>&#x6587;&#x6863;&#x8FC1;&#x79FB;&#x81F3;&#xFF1A;<a href="https://www.kancloud.cn/ztbcms/wxapp" target="_blank">https://www.kancloud.cn/ztbcms/wxapp</a></p>
                             </div>
                             
                         
@@ -1056,7 +976,7 @@
 
 <script>
 (function() {
-    gitbook.page.hasChanged({"page":{"title":"中国高校","level":"3.2.2","depth":2,"next":{"title":"短信 Sms","level":"3.3","depth":1,"path":"module/sms/README.md","ref":"module/sms/README.md","articles":[{"title":"v3","level":"3.3.1","depth":2,"path":"module/sms/3.x.md","ref":"module/sms/3.x.md","articles":[]},{"title":"v2","level":"3.3.2","depth":2,"path":"module/sms/2.x.md","ref":"module/sms/2.x.md","articles":[]}]},"previous":{"title":"中国区域","level":"3.2.1","depth":2,"path":"module/area/area.md","ref":"module/area/area.md","articles":[]},"dir":"ltr"},"config":{"plugins":["theme-ztbcms-docs@1.0.1","-sharing","-fontsettings","sitemap"],"root":"./docs","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"sitemap":{"hostname":"https://www.ztbcms.com"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"theme-ztbcms-docs":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"version":"3.0.0"},"title":"ZTBCMS","gitbook":"3.2.0"},"file":{"path":"module/area/school.md","mtime":"2017-11-04T01:27:43.515Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2017-11-04T01:28:56.980Z"},"basePath":"../..","book":{"language":""}});
+    gitbook.page.hasChanged({"page":{"title":"小程序 Wxapp","level":"3.8","depth":1,"next":{"title":"日志 Log","level":"3.9","depth":1,"path":"module/log/README.md","ref":"module/log/README.md","articles":[]},"previous":{"title":"使用指南","level":"3.7.2","depth":2,"path":"module/record/user.md","ref":"module/record/user.md","articles":[]},"dir":"ltr"},"config":{"plugins":["theme-ztbcms-docs@1.0.1","-sharing","-fontsettings","sitemap"],"root":"./docs","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"sitemap":{"hostname":"https://www.ztbcms.com"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"theme-ztbcms-docs":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"version":"3.0.0"},"title":"ZTBCMS","gitbook":"3.2.0"},"file":{"path":"module/wxapp/README.md","mtime":"2017-11-04T01:27:43.519Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2017-11-04T01:28:56.980Z"},"basePath":"../..","book":{"language":""}});
 })();
 </script>
 
