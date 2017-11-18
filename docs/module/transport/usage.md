@@ -28,3 +28,10 @@
 
 建议：先预览，看是否对应，然后再执行
 ![图片](https://dn-coding-net-production-pp.qbox.me/547f1e8a-2892-4160-8baa-bb6f16f8b255.png) 
+
+
+### 更进一步
+
+上述只是制定了静态的导出方案，无法实现动态导出，例如我只想导出`userid=$userid`的用户数据，其中$userid为变量，上诉无法满足需求。
+
+解决方案：支持代码级别的设置，请参考`Transport\Controller\ExportController:classlist()`的实现
