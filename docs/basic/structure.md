@@ -29,6 +29,6 @@
 ├── d  上传数据目录
 ├── runtime  缓存目录
 ├── statics 静态文件
-└── vendor composer第三方法依赖目录
+└── vendor composer 依赖
 
 ```
