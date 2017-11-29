@@ -23,4 +23,5 @@
  
  ### 3.如何自定义导入导出
  
- 请看参考`TestController:testExport()`和`TestController:testImport()`
+ 导出参考：`Transport\Controller\TestController:testExport()`、`Transport\Controller\ExportController:classlist()`
+ 导出参考：`Transport\Controller\TestController:testImport()`
