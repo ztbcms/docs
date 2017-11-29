@@ -6,6 +6,9 @@
 
 ![image](https://cloud.githubusercontent.com/assets/6230834/23577517/2f456ce8-00fc-11e7-9112-f619aec29832.png)  
 
+兼容性:
+![图片](https://dn-coding-net-production-pp.qbox.me/c2c27d64-51b9-4997-8c88-0c6f0f5fad66.png)
+
 
 2.导入时，Excel的字段顺序需要跟设置的字段顺序一致
 
