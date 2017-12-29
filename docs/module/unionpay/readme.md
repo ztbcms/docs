@@ -1,4 +1,4 @@
-## 银联支付：
+## 银联支付 ![version](https://img.shields.io/github/release/ztbcms/ztbcms-Unionpay.svg?maxAge=36000)
 
 - PC/Wap（会自动检测是否在手机环境）
 - 支付超时配置1小时；
