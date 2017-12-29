@@ -1,5 +1,10 @@
 ## 银联支付 ![version](https://img.shields.io/github/release/ztbcms/ztbcms-Unionpay.svg?maxAge=36000)
 
+### TODO:申请银联支付
+### TODO:配置测试
+### TODO:下单以及结果异步通知
+
+
 - PC/Wap（会自动检测是否在手机环境）
 - 支付超时配置1小时；
 - 生产和测试环境的配置（证书路径(注意系统日志)，回调地址（请注意生产环境）等）
