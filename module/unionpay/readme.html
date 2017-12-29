@@ -2,7 +2,7 @@
 <!DOCTYPE HTML>
 <html lang="" >
     <head>
-        <title>数据导入导出 Transport · ZTBCMS</title>
+        <title>银联支付 Unionpay · ZTBCMS</title>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
@@ -57,10 +57,10 @@
 
 
     
-    <link rel="next" href="usage.html" />
+    <link rel="next" href="../chart/1.x.html" />
     
     
-    <link rel="prev" href="../cron/" />
+    <link rel="prev" href="../alipay/alipay.html" />
     
 
 
@@ -105,7 +105,7 @@
 
 
 
-<a href="https://github.com/ztbcms/docs/blob/develop/docs/module/transport/README.md" target="_blank" class="btn btn-link pull-right hidden-xs">
+<a href="https://github.com/ztbcms/docs/blob/develop/docs/module/unionpay/readme.md" target="_blank" class="btn btn-link pull-right hidden-xs">
     修正当前页
 </a>
 
@@ -299,7 +299,7 @@
             
 
             
-            <i class="octicon octicon-chevron-right"></i>
+            <i class="octicon octicon-chevron-down"></i>
             
 
             微信管理 Wechat
@@ -307,6 +307,46 @@
         
         </a>
         
+
+        
+        
+    
+        
+        <a href="../wechat/v3.html" class="list-group-item ">
+        
+
+            
+            <i class="octicon octicon-chevron-down" style="opacity: 0"></i>
+            
+
+            
+
+            v3.x
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../wechat/v2.html" class="list-group-item ">
+        
+
+            
+            <i class="octicon octicon-chevron-down" style="opacity: 0"></i>
+            
+
+            
+
+            v2.x
+
+        
+        </a>
+        
+
+        
+    
 
         
     
@@ -363,13 +403,13 @@
         
     
         
-        <a href="./" class="list-group-item active">
+        <a href="../transport/" class="list-group-item ">
         
 
             
 
             
-            <i class="octicon octicon-chevron-down"></i>
+            <i class="octicon octicon-chevron-right"></i>
             
 
             数据导入导出 Transport
@@ -377,46 +417,6 @@
         
         </a>
         
-
-        
-        
-    
-        
-        <a href="usage.html" class="list-group-item ">
-        
-
-            
-            <i class="octicon octicon-chevron-down" style="opacity: 0"></i>
-            
-
-            
-
-            使用
-
-        
-        </a>
-        
-
-        
-    
-        
-        <a href="tips.html" class="list-group-item ">
-        
-
-            
-            <i class="octicon octicon-chevron-down" style="opacity: 0"></i>
-            
-
-            
-
-            最佳实践
-
-        
-        </a>
-        
-
-        
-    
 
         
     
@@ -503,7 +503,7 @@
         
     
         
-        <a href="../unionpay/readme.html" class="list-group-item ">
+        <a href="readme.html" class="list-group-item active">
         
 
             
@@ -985,7 +985,23 @@
     
                             
                             <div class="gb-markdown book-page-inner">
-                                <h2 id="&#x6570;&#x636E;&#x5BFC;&#x5165;&#x5BFC;&#x51FA;-">&#x6570;&#x636E;&#x5BFC;&#x5165;&#x5BFC;&#x51FA; <img alt="version" src="https://img.shields.io/github/release/ztbcms/ztbcms-Transport.svg?maxAge=36000"></h2><p>&#x8BE5;&#x6A21;&#x5757;&#x63D0;&#x4F9B;&#x4E86;&#x5BFC;&#x51FA;&#x6A21;&#x578B;&#x6570;&#x636E;&#x5230;Excel&#xFF0C;&#x5BFC;&#x5165;Excel&#x6570;&#x636E;&#x5230;&#x6307;&#x5B9A;&#x6A21;&#x578B;&#x8868;&#x4E2D;</p>
+                                <h2 id="&#x94F6;&#x8054;&#x652F;&#x4ED8;&#xFF1A;">&#x94F6;&#x8054;&#x652F;&#x4ED8;&#xFF1A;</h2><ul><li>PC/Wap&#xFF08;&#x4F1A;&#x81EA;&#x52A8;&#x68C0;&#x6D4B;&#x662F;&#x5426;&#x5728;&#x624B;&#x673A;&#x73AF;&#x5883;&#xFF09;
+</li>
+<li>&#x652F;&#x4ED8;&#x8D85;&#x65F6;&#x914D;&#x7F6E;1&#x5C0F;&#x65F6;&#xFF1B;
+</li>
+<li>&#x751F;&#x4EA7;&#x548C;&#x6D4B;&#x8BD5;&#x73AF;&#x5883;&#x7684;&#x914D;&#x7F6E;&#xFF08;&#x8BC1;&#x4E66;&#x8DEF;&#x5F84;(&#x6CE8;&#x610F;&#x7CFB;&#x7EDF;&#x65E5;&#x5FD7;)&#xFF0C;&#x56DE;&#x8C03;&#x5730;&#x5740;&#xFF08;&#x8BF7;&#x6CE8;&#x610F;&#x751F;&#x4EA7;&#x73AF;&#x5883;&#xFF09;&#x7B49;&#xFF09;
+</li>
+<li>&#x94F6;&#x8054;&#x7684;&#x65E5;&#x5FD7;&#x653E;&#x5728; /runtime/unionpay/log/
+</li>
+<li>&#x751F;&#x4EA7;&#x73AF;&#x5883;&#x8BF7;&#x7528; Unionpay/Sdk/acp_sdk.ini.prd &#x7684;&#x914D;&#x7F6E; &#x66FF;&#x6362;Unionpay/Sdk/acp_sdk.ini,
+</li>
+<li>acp_sdk.ini.dev &#x4E3A;&#x6D4B;&#x8BD5;&#x73AF;&#x5883;&#x914D;&#x7F6E;&#xFF0C;acp_sdk.ini.prd &#x4E3A;&#x751F;&#x4EA7;&#x73AF;&#x5883;&#x914D;&#x7F6E;
+</li></ul>
+<p>&#x5F00;&#x53D1;&#x6587;&#x6863;&#xFF1A;<a href="https://open.unionpay.com/ajweb/product/newProDetail?proId=1" target="_blank">https://open.unionpay.com/ajweb/product/newProDetail?proId=1</a>
+&#x94F6;&#x8054;SDK&#x7248;&#x672C;&#xFF1A;V1.1.9</p><p>&#x6D4B;&#x8BD5;&#x94F6;&#x8054;&#x652F;&#x4ED8;&#x9875;&#x9762;&#x8BBF;&#x95EE;</p><pre><code>http://localhost/Unionpay/Test/unionpay?orderid={&#x4F60;&#x7684;&#x8BA2;&#x5355;&#x53F7;}</code></pre>
+<p>&#x540E;&#x53F0;&#x901A;&#x77E5;&#x5730;&#x5740;&#xFF0C;&#x586B;&#x5199;&#x63A5;&#x6536;&#x94F6;&#x8054;&#x540E;&#x53F0;&#x901A;&#x77E5;&#x7684;&#x5730;&#x5740;&#xFF0C;&#x5FC5;&#x987B;&#x5916;&#x7F51;&#x80FD;&#x8BBF;&#x95EE;
+acpsdk.backUrl=<a href="http://xx.com/Unionpay/Payment/pay_notify" target="_blank">http://xx.com/Unionpay/Payment/pay_notify</a></p><p>&#x524D;&#x53F0;&#x901A;&#x77E5;&#x5730;&#x5740;&#xFF0C;&#x586B;&#x5199;&#x5904;&#x7406;&#x94F6;&#x8054;&#x524D;&#x53F0;&#x901A;&#x77E5;&#x7684;&#x5730;&#x5740;&#xFF0C;&#x5FC5;&#x987B;&#x5916;&#x7F51;&#x80FD;&#x8BBF;&#x95EE;
+acpsdk.frontUrl=<a href="http://xx.cn/Unionpay/Payment/pay_return" target="_blank">http://xx.cn/Unionpay/Payment/pay_return</a></p>
                             </div>
                             
                         
@@ -1048,7 +1064,7 @@
 
 <script>
 (function() {
-    gitbook.page.hasChanged({"page":{"title":"数据导入导出 Transport","level":"3.5","depth":1,"next":{"title":"使用","level":"3.5.1","depth":2,"path":"module/transport/usage.md","ref":"module/transport/usage.md","articles":[]},"previous":{"title":"计划任务 Cron","level":"3.4","depth":1,"path":"module/cron/README.md","ref":"module/cron/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["theme-ztbcms-docs@1.0.1","-sharing","-fontsettings","sitemap"],"root":"./docs","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"sitemap":{"hostname":"https://www.ztbcms.com"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"theme-ztbcms-docs":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"version":"3.0.0"},"title":"ZTBCMS","gitbook":"3.2.0"},"file":{"path":"module/transport/README.md","mtime":"2017-12-29T09:01:57.587Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2017-12-29T09:03:28.588Z"},"basePath":"../..","book":{"language":""}});
+    gitbook.page.hasChanged({"page":{"title":"银联支付 Unionpay","level":"3.11","depth":1,"next":{"title":"图表模块 Chart","level":"3.12","depth":1,"path":"module/chart/1.x.md","ref":"module/chart/1.x.md","articles":[]},"previous":{"title":"支付宝支付 Alipay","level":"3.10","depth":1,"path":"module/alipay/alipay.md","ref":"module/alipay/alipay.md","articles":[]},"dir":"ltr"},"config":{"plugins":["theme-ztbcms-docs@1.0.1","-sharing","-fontsettings","sitemap"],"root":"./docs","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"sitemap":{"hostname":"https://www.ztbcms.com"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"theme-ztbcms-docs":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"version":"3.0.0"},"title":"ZTBCMS","gitbook":"3.2.0"},"file":{"path":"module/unionpay/readme.md","mtime":"2017-12-29T09:01:57.587Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2017-12-29T09:03:28.588Z"},"basePath":"../..","book":{"language":""}});
 })();
 </script>
 
