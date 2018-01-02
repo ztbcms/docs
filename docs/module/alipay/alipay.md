@@ -18,6 +18,13 @@
 
  ![图片](https://dn-coding-net-production-pp.qbox.me/26b7c1b5-3456-4d3f-913e-4b21bcb73e0a.png)
 
+## 支付回调
+
+### 不可以使用U方法
+
+![图片](https://dn-coding-net-production-pp.qbox.me/6d0636c3-30a7-4ea5-8231-9b91a917d29c.png)
+
+
 ## 用户授权需注意
 1.  需要授权的权限
 例如：这里只写auth_userinfo的话，拿到的access_token只能用来获取用户信息，无法获取到芝麻分的
