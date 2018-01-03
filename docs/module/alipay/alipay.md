@@ -20,7 +20,7 @@
 
 ## 支付回调
 
-### 不可以使用U方法
+### 不可以使用U方法,URL不能含有query参数(如`?`，`&`),只能填写路径
 
 ![图片](https://dn-coding-net-production-pp.qbox.me/6d0636c3-30a7-4ea5-8231-9b91a917d29c.png)
 
