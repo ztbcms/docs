@@ -53,6 +53,7 @@
 * [日志 Log](module/log/README.md)
 * [支付宝支付 Alipay](module/alipay/alipay.md)
 * [银联支付 Unionpay](module/unionpay/readme.md)
+* [云存储 Oss](module/oss/readme.md)
 * [图表模块 Chart](module/chart/1.x.md)
 * [任务队列 Queue](module/queue/README.md)
 * [监控模块 Mirror](module/mirror/README.md)
