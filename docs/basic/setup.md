@@ -24,7 +24,9 @@ $ make setup-ubuntu-env
 $ make setup-env
 ```
 
-推荐：[CentOS/Debian/Ubuntu LAMP一键安装](https://github.com/teddysun/lamp)
+推荐：
+- [CentOS/Debian/Ubuntu LAMP一键安装](https://github.com/teddysun/lamp)
+- [宝塔面板](https://www.bt.cn/)
 
 ### 下载安装
 
