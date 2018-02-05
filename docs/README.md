@@ -1,6 +1,6 @@
 <h2 align="center">ZTBCMS</h2>
 
-![ZTBCMS](https://dn-coding-net-production-pp.qbox.me/9c032f69-a88a-4bde-8baa-71301df0e12e.png)
+![ZTBCMS](https://dn-coding-net-production-pp.qbox.me/31ecb2bb-aa98-4c7f-9786-1cac72d8ef22.png)
 
 ### 特点
 
