@@ -74,6 +74,7 @@
 ### 最佳实践
 
 * [规范和约定](best_practic/rule.md)
+* [部署](best_practic/deploy.md)
 * [常见错误](best_practic/common_error/template.md)
     * [模板](best_practic/common_error/template.md)
 * [开发Tips汇总](best_practic/dev_tips.md)
