@@ -59,7 +59,7 @@
 * [任务队列 Queue](module/queue/README.md)
 * [监控模块 Mirror](module/mirror/README.md)
 * [WAP手机版 Wap](module/wap/README.md)
-* [单商户商城 Shop](module/shop/README.md)
+* [多商户商城 Shop](module/shop/README.md)
 * [搜索 Search](module/search/README.md)
 * [插件管理 Addons](module/addons/README.md)
 * [采集 Collection](module/collection/README.md)
