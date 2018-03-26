@@ -10,8 +10,8 @@
 │   │   ├── Content 内容管理
 │   │   │   ├── Fields 字段模板
 │   │   │   ├── TagLib 标签库
-│   │   │   └── View
-│   │   │       ├── Addtemplate 内容添加模板页
+│   │   │   └── View 模板
+│   │   │       ├── Addtemplate 内容添加模板页
 │   │   │       ├── Category 栏目列表模板页 
 │   │   │       ├── Edittemplate  内容编辑模板页
 │   │   │       ├── Listtemplate  内容列表模板页
