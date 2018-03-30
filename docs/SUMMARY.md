@@ -68,6 +68,7 @@
 * [表单 Form](module/formguide/README.md)
 * [友情链接 Link](module/links/README.md)
 * [投票 Vote](module/vote/README.md)
+* [会员 Member](module/member/README.md)
 
 
 
