@@ -1,6 +1,10 @@
 # 通用授权
 > 基于http header的授权
 
+### 修改配置文件
+为前端自动登录页面
+![图片](https://dn-coding-net-production-pp.qbox.me/e6812fb8-dfc5-4b0a-ac9e-fe4cf9c5ba8c.png)
+
 ### 自动登录
 1. 调用登录接口 http://ztbcms.loc/Auth/AppLogin/appLogin
 ![图片](https://dn-coding-net-production-pp.qbox.me/f47f956a-7f0b-4fde-ba0a-2e4dee7ec603.png)
