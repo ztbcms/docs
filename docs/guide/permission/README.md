@@ -101,3 +101,11 @@
 
 确认选择之后，就给“内容管理角色”设置好了“后台内容管理”这个权限组，然后退出系统，使用创建的管理员“PHP开发”登录进去系统，系统只显示内容管理这个菜单。
 ![图片](https://dn-coding-net-production-pp.qbox.me/496c4240-4bd7-459c-bb5c-b8a79d37681b.png)
+
+#### 4、icon设置
+![图片](https://dn-coding-net-production-pp.qbox.me/afe45fce-69a9-4cd7-8d38-e2908aa70e8f.png)
+![图片](https://dn-coding-net-production-pp.qbox.me/7579b6d2-a62e-411e-8bfd-f5e286980dc9.png)
+##### icon设置需要引入iconfont.css
+http://www.iconfont.cn
+##### 系统默认图标 statics/css/iconfont/iconfont.css
+![图片](https://dn-coding-net-production-pp.qbox.me/868aa9ab-953f-4970-b83c-14e1bd7e5cbc.png)
