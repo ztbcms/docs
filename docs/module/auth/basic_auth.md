@@ -1,11 +1,20 @@
 # 通用授权
 > 基于http header的授权
 
-### 修改配置文件
-为前端自动登录页面
+### 后台 
+1. 修改配置文件为前端自动登录页面
 ![图片](https://dn-coding-net-production-pp.qbox.me/e6812fb8-dfc5-4b0a-ac9e-fe4cf9c5ba8c.png)
+2. 修改APP登录接口
+![图片](https://dn-coding-net-production-pp.qbox.me/efae2f8f-33e5-4f34-9a9e-0f993e8f0552.png)
 
-### 自动登录
+### 前端 自动登录页面
+1. 获取url上的参数 login_code,redirect
+2. 调用接口 http://ztbcms.loc/Auth/AppLogin/loginByLoginCode
+3. 登录成功保存access_token,登录失败则不保存
+4. 跳转目标页redirect
+![图片](https://dn-coding-net-production-pp.qbox.me/c37f5d97-07a9-4036-80b8-c846d31f5ebc.png)
+
+### APP端 自动登录
 1. 调用登录接口 http://ztbcms.loc/Auth/AppLogin/appLogin
 ![图片](https://dn-coding-net-production-pp.qbox.me/f47f956a-7f0b-4fde-ba0a-2e4dee7ec603.png)
 2. 缓存数据 userid,access_token,platform
@@ -44,10 +53,3 @@ platform=iOS&redirect=http%3A%2F%2Fjingshui.front.ztbcms.cn%2F%23%2Fcontrol&time
 ```
 9583ca6d15af2987960e163a85299f21
 ```
-
-### 前端自动登录页面
-1. 获取url上的参数 login_code,redirect
-2. 调用接口 http://ztbcms.loc/Auth/AppLogin/loginByLoginCode
-3. 登录成功保存access_token,登录失败则不保存
-4. 跳转目标页redirect
-![图片](https://dn-coding-net-production-pp.qbox.me/c37f5d97-07a9-4036-80b8-c846d31f5ebc.png)
