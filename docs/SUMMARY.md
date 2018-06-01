@@ -34,6 +34,7 @@
 
 ### 模块
 
+* [授权 Auth](module/auth/README.md)
 * [微信管理 Wechat](module/wechat/v3.md)
     * [v3.x](module/wechat/v3.md)
     * [v2.x](module/wechat/v2.md)
