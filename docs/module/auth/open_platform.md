@@ -13,22 +13,34 @@
 
 ### 签名规则
 
-假设传送的参数如下：
+- 假如GET请求的参数中含有url,url参数需要urlencode,参与签名的url不需要urlencode
+
+假设传送的GET参数如下：
 ```
 app_id：ZTB488696289
 timestamp：1527488472
 content：123
+url: http%3a%2f%2fwww.zhutibang.cn%3fp1%3dtest1%26p2%3dtest2
 ```
 
 第一步：对参数按照key=value的格式，并按照参数名ASCII字典序排序如下：
 ```
-app_id=ZTB488696289&content=123&timestamp=1527488472
+app_id=ZTB488696289&content=123&timestamp=1527488472&url=http://www.zhutibang.cn?p1=test1&p2=test2
 ```
 第二步：拼接app_secret
 ```
-app_id=ZTB488696289&content=123&timestamp=1527488472&app_secret=zATURBDPMvpYBAqV1vntHYxdjTFzxhdM
+app_id=ZTB488696289&content=123&timestamp=1527488472&url=http://www.zhutibang.cn?p1=test1&p2=test2&app_secret=zATURBDPMvpYBAqV1vntHYxdjTFzxhdM
 ```
 第三步：md5，获得签名
 ```
 9583ca6d15af2987960e163a85299f21
 ```
+第四步：最终参数为
+```
+app_id：ZTB488696289
+timestamp：1527488472
+content：123
+url: http%3a%2f%2fwww.zhutibang.cn%3fp1%3dtest1%26p2%3dtest2
+sign: 9583ca6d15af2987960e163a85299f21
+```
+
