@@ -46,7 +46,7 @@ class Demo extends Cron {
 * * * * * curl 'http://网站地址/index.php?g=Cron&m=Index&a=index&cron_secret_key=ztbcms'
 
 # 以 CLI 模式启动运行
-* * * * * php /你的应用根目录/index.php /Cron/Index/index/cron_secret_key/ztbcms
+* * * * * cd /你的应用根目录 && php ./index.php /Cron/Index/index/cron_secret_key/ztbcms
 ```
 
 参考：[Cron表达式生成器](http://www.pdtools.net/tools/becron.jsp)
