@@ -1083,50 +1083,7 @@
     
                             
                             <div class="gb-markdown book-page-inner">
-                                <h1 id="&#x901A;&#x7528;&#x6388;&#x6743;">&#x901A;&#x7528;&#x6388;&#x6743;</h1><blockquote><p>&#x57FA;&#x4E8E;http header&#x7684;&#x6388;&#x6743;</p></blockquote><h3 id="&#x540E;&#x53F0;">&#x540E;&#x53F0;</h3><ol><li>&#x4FEE;&#x6539;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x4E3A;&#x524D;&#x7AEF;&#x81EA;&#x52A8;&#x767B;&#x5F55;&#x9875;&#x9762;
-<img alt="&#x56FE;&#x7247;" src="https://dn-coding-net-production-pp.qbox.me/e6812fb8-dfc5-4b0a-ac9e-fe4cf9c5ba8c.png">
-</li>
-<li>&#x4FEE;&#x6539;APP&#x767B;&#x5F55;&#x63A5;&#x53E3;
-<img alt="&#x56FE;&#x7247;" src="https://dn-coding-net-production-pp.qbox.me/efae2f8f-33e5-4f34-9a9e-0f993e8f0552.png">
-</li></ol>
-<h3 id="&#x524D;&#x7AEF;-&#x81EA;&#x52A8;&#x767B;&#x5F55;&#x9875;&#x9762;">&#x524D;&#x7AEF; &#x81EA;&#x52A8;&#x767B;&#x5F55;&#x9875;&#x9762;</h3><ol><li>&#x83B7;&#x53D6;url&#x4E0A;&#x7684;&#x53C2;&#x6570; login_code,redirect
-</li>
-<li>&#x8C03;&#x7528;&#x63A5;&#x53E3; <a href="http://ztbcms.loc/Auth/AppLogin/loginByLoginCode" target="_blank">http://ztbcms.loc/Auth/AppLogin/loginByLoginCode</a>
-</li>
-<li>&#x767B;&#x5F55;&#x6210;&#x529F;&#x4FDD;&#x5B58;access_token,&#x767B;&#x5F55;&#x5931;&#x8D25;&#x5219;&#x4E0D;&#x4FDD;&#x5B58;
-</li>
-<li>&#x8DF3;&#x8F6C;&#x76EE;&#x6807;&#x9875;redirect
-<img alt="&#x56FE;&#x7247;" src="https://dn-coding-net-production-pp.qbox.me/c37f5d97-07a9-4036-80b8-c846d31f5ebc.png">
-</li></ol>
-<h3 id="app&#x7AEF;-&#x81EA;&#x52A8;&#x767B;&#x5F55;">APP&#x7AEF; &#x81EA;&#x52A8;&#x767B;&#x5F55;</h3><ol><li>&#x8C03;&#x7528;&#x767B;&#x5F55;&#x63A5;&#x53E3; <a href="http://ztbcms.loc/Auth/AppLogin/appLogin" target="_blank">http://ztbcms.loc/Auth/AppLogin/appLogin</a>
-<img alt="&#x56FE;&#x7247;" src="https://dn-coding-net-production-pp.qbox.me/f47f956a-7f0b-4fde-ba0a-2e4dee7ec603.png">
-</li>
-<li>&#x7F13;&#x5B58;&#x6570;&#x636E; userid,access_token,platform
-</li>
-<li>&#x7B7E;&#x540D;&#xFF0C;&#x89C4;&#x5219;&#x8BF7;&#x770B;&#x4E0B;&#x9762;
-</li>
-<li>&#x6784;&#x9020;&#x81EA;&#x52A8;&#x767B;&#x5F55;&#x94FE;&#x63A5;
-```
-<a href="http://ztbcms.loc/Auth/AppLogin/loginRedirect?uid=1&amp;timestamp=1527833183&amp;platform=iOS&amp;redirect=http%3a%2f%2fwww.zhutibang.cn&amp;sign=27e5a7cf706d1a6c06133d8443ebdee6" target="_blank">http://ztbcms.loc/Auth/AppLogin/loginRedirect?uid=1&amp;timestamp=1527833183&amp;platform=iOS&amp;redirect=http%3a%2f%2fwww.zhutibang.cn&amp;sign=27e5a7cf706d1a6c06133d8443ebdee6</a>
-</li></ol>
-<p>uid=xxx //&#x7528;&#x6237;ID&#xFF0C;&#x767B;&#x9646;&#x63A5;&#x53E3;&#x4E2D;&#x8FD4;&#x56DE;&#x7684;user_id
-timestamp=xxx //&#x521B;&#x5EFA;&#x53C2;&#x6570;&#x65F6;&#x7684;&#x65F6;&#x95F4;&#x6233;,&#x5355;&#x4F4D;:&#x79D2; 10&#x4F4D;&#x6570;&#x5B57;&#xFF0C;&#x7528;&#x4E8E;&#x5224;&#x65AD;&#x64CD;&#x4F5C;&#x662F;&#x5426;&#x8D85;&#x65F6;&#xFF0C;&#x76EE;&#x524D;&#x9ED8;&#x8BA4;5&#x5206;&#x949F;&#x540E;&#x8FC7;&#x671F;
-platform=xxx //&#x6765;&#x81EA;&#x54EA;&#x4E2A;&#x5E73;&#x53F0;&#xFF0C;&#x5B89;&#x5353;&#x7AEF;&#x8BF7;&#x586B;&#x5199; Android &#x82F9;&#x679C;&#x7AEF;&#x8BF7;&#x586B;&#x5199; iOS
-redirect= //&#x8DF3;&#x8F6C;&#x76EE;&#x6807;&#x9875;&#xFF0C;&#x9700;&#x8981;urlencode
-sign=xxx //&#x53C2;&#x6570;&#x7B7E;&#x540D;&#xFF0C;&#x89C4;&#x5219;&#x8BF7;&#x770B;&#x4E0B;&#x9762;</p><pre><code>5. &#x8DF3;&#x8F6C;&#x5230;&#x6B64;&#x94FE;&#x63A5;&#x5373;&#x53EF;&#x5B8C;&#x6210;&#x767B;&#x5F55;
-
-### &#x7B7E;&#x540D;&#x89C4;&#x5219;
-
-&#x5047;&#x8BBE;&#x4F20;&#x9001;&#x7684;&#x53C2;&#x6570;&#x5982;&#x4E0B;&#xFF1A;</code></pre>
-<p>uid&#xFF1A;12
-timestamp&#xFF1A;1527488472
-platform&#xFF1A;iOS
-redirect&#xFF1A;http%3a%2f%2fjingshui.front.ztbcms.cn%2f%23%2fcontrol</p><pre><code>
-&#x7B2C;&#x4E00;&#x6B65;&#xFF1A;&#x5BF9;&#x53C2;&#x6570;&#x6309;&#x7167;key=value&#x7684;&#x683C;&#x5F0F;&#xFF0C;&#x5E76;&#x6309;&#x7167;&#x53C2;&#x6570;&#x540D;ASCII&#x5B57;&#x5178;&#x5E8F;&#x6392;&#x5E8F;&#x5982;&#x4E0B;&#xFF1A;</code></pre>
-<p>platform=iOS&amp;redirect=http%3A%2F%2Fjingshui.front.ztbcms.cn%2F%23%2Fcontrol&amp;timestamp=1527488472&amp;uid=12</p><pre><code>&#x7B2C;&#x4E8C;&#x6B65;&#xFF1A;&#x62FC;&#x63A5;access_token&#xFF0C;access_token&#x4E3A;&#x767B;&#x5F55;&#x63A5;&#x53E3;&#x8FD4;&#x56DE;</code></pre>
-<p>platform=iOS&amp;redirect=http%3A%2F%2Fjingshui.front.ztbcms.cn%2F%23%2Fcontrol&amp;timestamp=1527488472&amp;uid=12&amp;access_token=qydRzZEYq6bPiq58LdgpwoVLCjWAlh9MXiGNFpEGOADv4dXllZhVi7D0zvxNSwn2wlL8XhI5oUXquaP8iVLvErnvpStEAleeGvGTpATZRUhHYXA6DcKUhKCGhmA47hGv</p><pre><code>&#x7B2C;&#x4E09;&#x6B65;&#xFF1A;md5&#xFF0C;&#x83B7;&#x5F97;&#x7B7E;&#x540D;</code></pre>
-<p>9583ca6d15af2987960e163a85299f21
-```</p>
+                                <h1 id="&#x901A;&#x7528;&#x6388;&#x6743;">&#x901A;&#x7528;&#x6388;&#x6743;</h1><blockquote><p>&#x4F7F;&#x7528;&#x573A;&#x666F;&#xFF1A;&#x7528;&#x6237;&#x5728;&#x5FAE;&#x4FE1;&#x7AEF;&#x8C03;&#x7528;&#x63A5;&#x53E3;&#x767B;&#x5F55;&#xFF0C;&#x767B;&#x5F55;&#x540E;&#x8FDB;&#x884C;&#x8D2D;&#x7269;&#x7B49;&#x64CD;&#x4F5C;&#x3002;&#x8FD9;&#x4E2A;&#x6A21;&#x5757;&#x5C31;&#x662F;&#x7528;&#x4E8E;&#x5904;&#x7406;&#x767B;&#x5F55;&#x65F6;&#x83B7;&#x53D6;&#x8BBF;&#x95EE;&#x51ED;&#x8BC1;access_token,&#x8C03;&#x7528;&#x63A5;&#x53E3;&#x65F6;&#x6821;&#x9A8C;&#x8BBF;&#x95EE;&#x51ED;&#x8BC1;access_token</p></blockquote><h1 id="&#x4F7F;&#x7528;&#x8BF4;&#x660E;">&#x4F7F;&#x7528;&#x8BF4;&#x660E;</h1><h2 id="1&#x767B;&#x5F55;">1.&#x767B;&#x5F55;</h2><p>&#x8BF7;&#x8BBF;&#x95EE;&#x63A5;&#x53E3; <code>/Auth/login/web</code>,</p><h2 id="2&#x9274;&#x6743;">2.&#x9274;&#x6743;</h2><p>&#x53C2;&#x8003;<code>Auth\Controller\TestAuthController</code>&#x7684;&#x5B9E;&#x73B0;&#x3002;&#x6216;&#x76F4;&#x63A5;&#x7EE7;&#x627F;<code>Auth\Controller\AuthorizedController</code>&#x5373;&#x53EF;</p>
                             </div>
                             
                         
@@ -1162,7 +1119,7 @@ redirect&#xFF1A;http%3a%2f%2fjingshui.front.ztbcms.cn%2f%23%2fcontrol</p><pre><c
                     <a href="#">Return to the top</a>
                 </li>
                 <li>
-                    <a href="#">Updated Apr 6th 19</a>
+                    <a href="#">Updated Aug 24th 19</a>
                 </li>
             </ul>
         </div>
@@ -1189,7 +1146,7 @@ redirect&#xFF1A;http%3a%2f%2fjingshui.front.ztbcms.cn%2f%23%2fcontrol</p><pre><c
 
 <script>
 (function() {
-    gitbook.page.hasChanged({"page":{"title":"通用授权","level":"3.1.1","depth":2,"next":{"title":"开放平台授权","level":"3.1.2","depth":2,"path":"module/auth/open_platform.md","ref":"module/auth/open_platform.md","articles":[]},"previous":{"title":"授权 Auth","level":"3.1","depth":1,"path":"module/auth/README.md","ref":"module/auth/README.md","articles":[{"title":"通用授权","level":"3.1.1","depth":2,"path":"module/auth/basic_auth.md","ref":"module/auth/basic_auth.md","articles":[]},{"title":"开放平台授权","level":"3.1.2","depth":2,"path":"module/auth/open_platform.md","ref":"module/auth/open_platform.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["theme-ztbcms-docs@1.0.1","-sharing","-fontsettings","sitemap"],"root":"./docs","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"sitemap":{"hostname":"https://www.ztbcms.com"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"theme-ztbcms-docs":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"version":"3.0.0"},"title":"ZTBCMS","gitbook":"3.2.0"},"file":{"path":"module/auth/basic_auth.md","mtime":"2019-04-06T07:09:39.394Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2019-04-06T07:10:43.453Z"},"basePath":"../..","book":{"language":""}});
+    gitbook.page.hasChanged({"page":{"title":"通用授权","level":"3.1.1","depth":2,"next":{"title":"开放平台授权","level":"3.1.2","depth":2,"path":"module/auth/open_platform.md","ref":"module/auth/open_platform.md","articles":[]},"previous":{"title":"授权 Auth","level":"3.1","depth":1,"path":"module/auth/README.md","ref":"module/auth/README.md","articles":[{"title":"通用授权","level":"3.1.1","depth":2,"path":"module/auth/basic_auth.md","ref":"module/auth/basic_auth.md","articles":[]},{"title":"开放平台授权","level":"3.1.2","depth":2,"path":"module/auth/open_platform.md","ref":"module/auth/open_platform.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["theme-ztbcms-docs@1.0.1","-sharing","-fontsettings","sitemap"],"root":"./docs","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"sitemap":{"hostname":"https://www.ztbcms.com"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"theme-ztbcms-docs":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"version":"3.0.0"},"title":"ZTBCMS","gitbook":"3.2.0"},"file":{"path":"module/auth/basic_auth.md","mtime":"2019-08-24T09:02:37.948Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2019-08-24T09:03:59.452Z"},"basePath":"../..","book":{"language":""}});
 })();
 </script>
 
