@@ -36,6 +36,7 @@
 
 * [授权 Auth](module/auth/README.md)
     * [通用授权](module/auth/basic_auth.md)
+    * [自动登录授权](module/auth/auto_login.md)
     * [开放平台授权](module/auth/open_platform.md)
 * [微信管理 Wechat](module/wechat/v3.md)
     * [v3.x](module/wechat/v3.md)
