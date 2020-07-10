@@ -11,7 +11,7 @@ env:
     - GITHUB_REPO: ztbcms/docs
     - GIT_SOURCE: _book  
 before_install:
-  - npm install -g gitbook-cli@2.3.0
+  - npm install -g gitbook-cli@2
   - npm install 
   - gitbook install
 script:
