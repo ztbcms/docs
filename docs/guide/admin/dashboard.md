@@ -5,11 +5,12 @@
 - 2.顶部栏
 - 3.tag栏
 - 4.内容页
+
 ![UTOOLS1594371731548.png](https://user-gold-cdn.xitu.io/2020/7/10/17337f5f26051d82?w=1918&h=927&f=png&s=151352)
 
 ### 页面权限：功能按权限显示
 
-`src/utils/mixin.js`中的`hasRolePermission()`用于检测当前登录用户是否有权限访问路由。请参考`Navbar.vue`中的『缓存清理』功能实现。
+`hasRolePermission()`用于检测当前登录用户是否有权限访问路由。请参考页面中的『缓存清理』功能实现。
 
 ![图片](https://dn-coding-net-production-pp.codehub.cn/988b5094-4b3b-4869-9d29-c7635bcd5386.png)
 
