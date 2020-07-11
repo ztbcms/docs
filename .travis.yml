@@ -13,7 +13,6 @@ env:
 before_install:
   - npm install -g gitbook-cli@2
   - npm install 
-  - gitbook install
 script:
   - gitbook install
   - make generate
