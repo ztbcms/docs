@@ -1,0 +1,1221 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <title>任务队列 Queue · ZTBCMS</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.0">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../../styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+
+    
+    <link rel="next" href="../mirror/" />
+    
+    
+    <link rel="prev" href="../chart/1.x.html" />
+    
+
+
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?0c94f14dc8eb5aafbbb35de1766e5ec8";
+            var s = document.getElementsByTagName("script")[0]; 
+            s.parentNode.insertBefore(hm, s);
+        })();
+</script>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-6764368739876780",
+    enable_page_level_ads: true
+  });
+</script>
+
+    </head>
+    <body>
+        
+<div class="gb-page-wrapper">
+    <header class="gb-page-header">
+        <div class="container">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+
+            <a href="../.." class="logo">
+                <img src="../../gitbook/images/logo.png">
+                <h1>ZTBCMS</h1>
+            </a>
+
+            
+
+            
+
+
+
+<a href="https://github.com/ztbcms/docs/blob/develop/docs/module/queue/README.md" target="_blank" class="btn btn-link pull-right hidden-xs">
+    修正当前页
+</a>
+
+<a href="https://github.com/ztbcms/ztbcms" class="btn btn-link pull-right hidden-xs">
+    <img src="https://img.shields.io/github/release/ztbcms/ztbcms.svg?maxAge=36000" alt="version">
+</a>
+<!--
+<a href="../../faq.md" class="btn btn-link pull-right hidden-xs">
+    F.A.Q
+</a>
+-->
+
+<!--<a href="https://github.com/ztbcms/ztbcms" target="_blank" class="btn btn-link pull-right hidden-xs">
+    3.0.0
+</a>-->
+
+
+
+        
+        </div>
+    </header>
+
+    <div class="gb-page-body">
+        <div class="gb-page-inner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        
+
+
+
+    
+    <div class="panel panel-default">
+        
+        <div class="panel-heading">
+            <h3 class="panel-title">开始使用</h3>
+        </div>
+        
+
+        <div class="list-group">
+            
+    
+        
+        <a href="../../" class="list-group-item ">
+        
+
+            
+
+            
+
+            概述
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../../basic/setup.html" class="list-group-item ">
+        
+
+            
+
+            
+
+            环境搭建&安装
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../../basic/project.html" class="list-group-item ">
+        
+
+            
+
+            
+
+            项目说明
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../../basic/router.html" class="list-group-item ">
+        
+
+            
+
+            
+
+            路由说明
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../../basic/structure.html" class="list-group-item ">
+        
+
+            
+
+            
+
+            目录结构
+
+        
+        </a>
+        
+
+        
+    
+
+        </div>
+    </div>
+    
+    <div class="panel panel-default">
+        
+        <div class="panel-heading">
+            <h3 class="panel-title">开发指南</h3>
+        </div>
+        
+
+        <div class="list-group">
+            
+    
+        
+        <a href="../../guide/template/" class="list-group-item ">
+        
+
+            
+
+            
+            <i class="octicon octicon-chevron-right"></i>
+            
+
+            模板
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../../guide/behaivor/readme.html" class="list-group-item ">
+        
+
+            
+
+            
+            <i class="octicon octicon-chevron-right"></i>
+            
+
+            行为管理
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../../guide/module/" class="list-group-item ">
+        
+
+            
+
+            
+
+            模块开发
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../../guide/admin/README.md" class="list-group-item ">
+        
+
+            
+
+            
+            <i class="octicon octicon-chevron-right"></i>
+            
+
+            管理后台权限
+
+        
+        </a>
+        
+
+        
+    
+
+        </div>
+    </div>
+    
+    <div class="panel panel-default">
+        
+        <div class="panel-heading">
+            <h3 class="panel-title">模块</h3>
+        </div>
+        
+
+        <div class="list-group">
+            
+    
+        
+        <a href="../auth/" class="list-group-item ">
+        
+
+            
+
+            
+            <i class="octicon octicon-chevron-down"></i>
+            
+
+            授权 Auth
+
+        
+        </a>
+        
+
+        
+        
+    
+        
+        <a href="../auth/basic_auth.html" class="list-group-item ">
+        
+
+            
+            <i class="octicon octicon-chevron-down" style="opacity: 0"></i>
+            
+
+            
+
+            通用授权
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../auth/auto_login.html" class="list-group-item ">
+        
+
+            
+            <i class="octicon octicon-chevron-down" style="opacity: 0"></i>
+            
+
+            
+
+            自动登录授权
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../auth/open_platform.html" class="list-group-item ">
+        
+
+            
+            <i class="octicon octicon-chevron-down" style="opacity: 0"></i>
+            
+
+            
+
+            开放平台授权
+
+        
+        </a>
+        
+
+        
+    
+
+        
+    
+        
+        <a href="../wechat/v3.html" class="list-group-item ">
+        
+
+            
+
+            
+            <i class="octicon octicon-chevron-right"></i>
+            
+
+            微信管理 Wechat
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../area/" class="list-group-item ">
+        
+
+            
+
+            
+            <i class="octicon octicon-chevron-right"></i>
+            
+
+            区域 Area
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../sms/" class="list-group-item ">
+        
+
+            
+
+            
+            <i class="octicon octicon-chevron-right"></i>
+            
+
+            短信 Sms
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../cron/" class="list-group-item ">
+        
+
+            
+
+            
+
+            计划任务 Cron
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../transport/" class="list-group-item ">
+        
+
+            
+
+            
+            <i class="octicon octicon-chevron-right"></i>
+            
+
+            数据导入导出 Transport
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../message/" class="list-group-item ">
+        
+
+            
+
+            
+
+            消息系统 Message
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../record/" class="list-group-item ">
+        
+
+            
+
+            
+            <i class="octicon octicon-chevron-right"></i>
+            
+
+            记录 Record
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../wxapp/" class="list-group-item ">
+        
+
+            
+
+            
+
+            小程序 Wxapp
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../log/" class="list-group-item ">
+        
+
+            
+
+            
+
+            日志 Log
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../alipay/alipay.html" class="list-group-item ">
+        
+
+            
+
+            
+
+            支付宝支付 Alipay
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../unionpay/readme.html" class="list-group-item ">
+        
+
+            
+
+            
+
+            银联支付 Unionpay
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../oss/readme.html" class="list-group-item ">
+        
+
+            
+
+            
+
+            云存储 Oss
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../chart/1.x.html" class="list-group-item ">
+        
+
+            
+
+            
+
+            图表模块 Chart
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="./" class="list-group-item active">
+        
+
+            
+
+            
+
+            任务队列 Queue
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../mirror/" class="list-group-item ">
+        
+
+            
+
+            
+
+            监控模块 Mirror
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../wap/" class="list-group-item ">
+        
+
+            
+
+            
+
+            WAP手机版 Wap
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../shop/" class="list-group-item ">
+        
+
+            
+
+            
+
+            多商户商城 Shop
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../search/" class="list-group-item ">
+        
+
+            
+
+            
+
+            搜索 Search
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../addons/" class="list-group-item ">
+        
+
+            
+
+            
+
+            插件管理 Addons
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../collection/" class="list-group-item ">
+        
+
+            
+
+            
+
+            采集 Collection
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../comments/" class="list-group-item ">
+        
+
+            
+
+            
+
+            评论 Comment
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../domains/" class="list-group-item ">
+        
+
+            
+
+            
+
+            域名 Domain
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../formguide/" class="list-group-item ">
+        
+
+            
+
+            
+
+            表单 Form
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../links/" class="list-group-item ">
+        
+
+            
+
+            
+
+            友情链接 Link
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../vote/" class="list-group-item ">
+        
+
+            
+
+            
+
+            投票 Vote
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../member/" class="list-group-item ">
+        
+
+            
+
+            
+
+            会员 Member
+
+        
+        </a>
+        
+
+        
+    
+
+        </div>
+    </div>
+    
+    <div class="panel panel-default">
+        
+        <div class="panel-heading">
+            <h3 class="panel-title">最佳实践</h3>
+        </div>
+        
+
+        <div class="list-group">
+            
+    
+        
+        <a href="../../best_practic/rule.html" class="list-group-item ">
+        
+
+            
+
+            
+
+            规范和约定
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../../best_practic/deploy.html" class="list-group-item ">
+        
+
+            
+
+            
+
+            部署指南
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../../best_practic/common_error/template.html" class="list-group-item ">
+        
+
+            
+
+            
+            <i class="octicon octicon-chevron-right"></i>
+            
+
+            常见错误
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../../best_practic/dev_tips.html" class="list-group-item ">
+        
+
+            
+
+            
+            <i class="octicon octicon-chevron-right"></i>
+            
+
+            开发Tips汇总
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../../best_practic/ztbcms_storage_engine.html" class="list-group-item ">
+        
+
+            
+
+            
+
+            数据库的存储引擎
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../../best_practic/behavior_manage.html" class="list-group-item ">
+        
+
+            
+
+            
+
+            行为管理最佳实践
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../../best_practic/performance_optimization.html" class="list-group-item ">
+        
+
+            
+
+            
+
+            性能优化
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../../best_practic/thinkphp/readme.html" class="list-group-item ">
+        
+
+            
+
+            
+            <i class="octicon octicon-chevron-right"></i>
+            
+
+            ThinkPHP
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../../best_practic/howto/readme.html" class="list-group-item ">
+        
+
+            
+
+            
+            <i class="octicon octicon-chevron-right"></i>
+            
+
+            HOW TO
+
+        
+        </a>
+        
+
+        
+    
+
+        </div>
+    </div>
+    
+    <div class="panel panel-default">
+        
+        <div class="panel-heading">
+            <h3 class="panel-title">附录</h3>
+        </div>
+        
+
+        <div class="list-group">
+            
+    
+        
+        <a href="../../extra/system_function.html" class="list-group-item ">
+        
+
+            
+
+            
+
+            系统函数
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../../extra/tech.html" class="list-group-item ">
+        
+
+            
+
+            
+
+            技术栈
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../../extra/version/readme.html" class="list-group-item ">
+        
+
+            
+
+            
+            <i class="octicon octicon-chevron-right"></i>
+            
+
+            版本发布
+
+        
+        </a>
+        
+
+        
+    
+
+        </div>
+    </div>
+    
+    <div class="panel panel-default">
+        
+        <div class="panel-heading">
+            <h3 class="panel-title">使用案例</h3>
+        </div>
+        
+
+        <div class="list-group">
+            
+    
+        
+        <a href="../../case.html" class="list-group-item ">
+        
+
+            
+
+            
+
+            用户与案例
+
+        
+        </a>
+        
+
+        
+    
+
+        </div>
+    </div>
+    
+
+
+
+                    </div>
+                    <div class="col-md-9">
+                        
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                            
+                            <div class="gb-markdown book-page-inner">
+                                <h2 id="&#x4EFB;&#x52A1;&#x961F;&#x5217;-"><a href="https://github.com/ztbcms/ztbcms-Queue" target="_blank">&#x4EFB;&#x52A1;&#x961F;&#x5217;</a> <img alt="version" src="https://img.shields.io/github/release/ztbcms/ztbcms-Queue.svg?maxAge=36000"></h2><p>&#x4EFB;&#x52A1;&#x961F;&#x5217;&#x9002;&#x7528;&#x540E;&#x53F0;&#x957F;&#x65F6;&#x95F4;&#xFF0C;&#x6279;&#x91CF;&#x3001;&#x5F02;&#x6B65;&#x6267;&#x884C;&#x4EFB;&#x52A1;&#xFF0C;&#x5982;&#x90AE;&#x4EF6;&#x3001;&#x77ED;&#x4FE1;&#x53D1;&#x9001;&#xFF0C;&#x6BCF;&#x65E5;&#x751F;&#x6210;&#x62A5;&#x8868;&#x7B49;&#x3002;</p><h3 id="&#x4F7F;&#x7528;">&#x4F7F;&#x7528;</h3><p>1.&#x521B;&#x5EFA;&#x4EFB;&#x52A1;</p><p>&#x8981;&#x70B9;&#xFF1A;&#x7EE7;&#x627F; <code>Queue\Libs\Job</code> &#x5E76;&#x5B9E;&#x73B0;<code>handle()</code>&#x65B9;&#x6CD5;</p><pre><code class="lang-php"><span class="hljs-keyword">use</span> <span class="hljs-title">Queue</span>\<span class="hljs-title">Libs</span>\<span class="hljs-title">Job</span>;
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">UpdateJob</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Job</span> </span>{
+
+    <span class="hljs-comment">//&#x5B9A;&#x4E49; &#x4F60;&#x7684;Job&#x6570;&#x636E;  </span>
+    <span class="hljs-comment">//&#x6CE8;&#x610F;&#xFF1A;&#x5FC5;&#x987B;&#x4E3A;public,&#x5426;&#x5219;&#x4E0D;&#x4FDD;&#x5B58;&#x8BE5;&#x6570;&#x636E;&#xFF01;</span>
+    <span class="hljs-keyword">public</span> $userid;
+    <span class="hljs-keyword">public</span> $username;
+
+    <span class="hljs-comment">//&#x5229;&#x7528;&#x521D;&#x59CB;&#x5316;&#x51FD;&#x6570;&#x5BFC;&#x5165;&#x6570;&#x636E;</span>
+    <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">__construct</span><span class="hljs-params">($userid, $username)</span> </span>{
+        $this-&gt;userid = $userid;
+        $this-&gt;username = $username;
+    }
+
+    <span class="hljs-comment">//&#x5B9E;&#x73B0;handle()</span>
+    <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">handle</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-comment">//your code</span>
+    }
+}</code></pre>
+<p>2.&#x628A;&#x4EFB;&#x52A1;&#x63A8;&#x9001;&#x5230;&#x6307;&#x5B9A;&#x961F;&#x5217;&#x4E2D;</p><pre><code class="lang-php">$job = <span class="hljs-keyword">new</span> UpdateJob(time(), <span class="hljs-string">&apos;ztbcms&apos;</span>);
+
+$queue = Queue::getInstance();
+$result = $queue-&gt;push(<span class="hljs-string">&apos;high&apos;</span>, $job);<span class="hljs-comment">//&#x6CE8;: high&#x5373;&#x4E3A;&#x961F;&#x5217;&#x540D;</span>
+
+<span class="hljs-comment">//&#x6216;&#x8005;&#x5EF6;&#x8FDF;&#x5C0F;&#x65F6;&#x6267;&#x884C;</span>
+$result = $queue-&gt;push(<span class="hljs-string">&apos;high&apos;</span>, $job, <span class="hljs-number">1</span>*<span class="hljs-number">60</span>*<span class="hljs-number">60</span>);<span class="hljs-comment">//&#x6CE8;: &#x7B2C;&#x4E09;&#x4E2A;&#x53C2;&#x6570;&#x5373;&#x4E3A;&#x5EF6;&#x8FDF;&#x6267;&#x884C;&#x65F6;&#x957F;&#xFF0C;&#x5355;&#x4F4D;&#xFF1A;&#x79D2;</span></code></pre>
+<h3 id="&#x90E8;&#x7F72;">&#x90E8;&#x7F72;</h3><h4 id="1&#x7B80;&#x5355;&#x90E8;&#x7F72;&#xFF0C;&#x672C;&#x5730;&#x6D4B;&#x8BD5;&#x65F6;&#x53EF;&#x4EE5;&#x9009;&#x62E9;&#x8FD9;&#x79CD;&#x65B9;&#x5F0F;">1.&#x7B80;&#x5355;&#x90E8;&#x7F72;&#xFF0C;&#x672C;&#x5730;&#x6D4B;&#x8BD5;&#x65F6;&#x53EF;&#x4EE5;&#x9009;&#x62E9;&#x8FD9;&#x79CD;&#x65B9;&#x5F0F;</h4><p>1.1. &#x542F;&#x52A8;&#x961F;&#x5217;</p><pre><code class="lang-shell">$ php index.php /queue/worker/run/queue/high,mid,low</code></pre>
+<p>&#x4E0A;&#x8FF0;&#x547D;&#x4EE4;&#x76D1;&#x542C;&#x4E86;3&#x4E2A;&#x540D;&#x4E3A;high,mid,low&#x7684;&#x961F;&#x5217;&#x3002;&#x8DEF;&#x7531;&#x89E3;&#x6790;&#x65B9;&#x5F0F;&#x8DDF;TP&#x91CD;&#x5199;URL&#x539F;&#x7406;&#x4E00;&#x6837;&#xFF0C;<code>/queue/worker/run</code>&#x5206;&#x522B;&#x5BF9;&#x5E94;Module,Controller,Action,&#x540E;&#x9762;&#x5219;&#x662F;key-value&#x7684;
+&#x53C2;&#x6570;</p><p>1.2. &#x5E73;&#x6ED1;&#x505C;&#x6B62;</p><pre><code class="lang-shell">$ php index.php /queue/worker/stop/_qsk/{&#x4F60;&#x7684;&#x79C1;&#x94A5;}</code></pre>
+<h4 id="2-&#x66F4;&#x5B89;&#x5168;&#x7684;&#x90E8;&#x7F72;&#x65B9;&#x5F0F;">2. &#x66F4;&#x5B89;&#x5168;&#x7684;&#x90E8;&#x7F72;&#x65B9;&#x5F0F;</h4><p>&#x7528;&#x4E8E;&#x529F;&#x80FD;&#x7684;&#x5B9E;&#x73B0;&#x57FA;&#x4E8E;Controller-Action,&#x53EF;&#x80FD;&#x4F1A;&#x88AB;&#x6076;&#x610F;&#x8BF7;&#x6C42;URL&#xFF0C;&#x56E0;&#x6B64;&#x6211;&#x4EEC;&#x63D0;&#x4F9B;&#x4E86;&#x79C1;&#x94A5;&#x6821;&#x9A8C;</p><p>1.&#x8BBE;&#x7F6E;&#x961F;&#x5217;&#x7684;&#x79C1;&#x94A5;</p><pre><code class="lang-php"><span class="hljs-keyword">return</span> <span class="hljs-keyword">array</span>(
+    <span class="hljs-string">&apos;QUEUE_SECRET_KEY&apos;</span> =&gt; <span class="hljs-string">&apos;ztbcms&apos;</span>,<span class="hljs-comment">//&#x961F;&#x5217;&#x6821;&#x9A8C;&#x79C1;&#x94A5;</span>
+);</code></pre>
+<p>2.&#x542F;&#x52A8;&#x65F6;&#x5E26;&#x7740;&#x79C1;&#x94A5;&#x53C2;&#x6570;<code>_qsk</code></p><pre><code class="lang-shell">$ php index.php /queue/worker/run/queue/high,mid,low/_qsk/ztbcms</code></pre>
+<h4 id="3-&#x66F4;&#x7A33;&#x5B9A;&#xFF0C;&#x591A;&#x8FDB;&#x7A0B;&#x90E8;&#x7F72;">3. &#x66F4;&#x7A33;&#x5B9A;&#xFF0C;&#x591A;&#x8FDB;&#x7A0B;&#x90E8;&#x7F72;</h4><p>&#x4F7F;&#x7528;&#x8FDB;&#x7A0B;&#x7BA1;&#x7406;&#x8F6F;&#x4EF6;&#x8FDB;&#x884C;&#x914D;&#x7F6E;&#x3002;&#x5982;:<a href="http://supervisord.org/" target="_blank">supervisor</a>, <a href="http://pm2.io/" target="_blank">PM2</a></p><h3 id="&#x6700;&#x4F73;&#x5B9E;&#x8DF5;">&#x6700;&#x4F73;&#x5B9E;&#x8DF5;</h3><h4 id="0&#x6839;&#x636E;&#x4E1A;&#x52A1;&#x8C03;&#x6574;&#x914D;&#x7F6E;">0.&#x6839;&#x636E;&#x4E1A;&#x52A1;&#x8C03;&#x6574;&#x914D;&#x7F6E;</h4><p><code>Queue/Confi/config.php</code>:</p><pre><code class="lang-php"><span class="hljs-keyword">return</span> <span class="hljs-keyword">array</span>(
+    <span class="hljs-string">&apos;QUEUE_SLEEP&apos;</span> =&gt; <span class="hljs-string">&apos;3&apos;</span>,<span class="hljs-comment">//&#x961F;&#x5217;&#x7A7A;&#x95F2;&#x65F6;&#xFF0C;&#x4F11;&#x7720;&#x65F6;&#x95F4;</span>
+    <span class="hljs-string">&apos;QUEUE_MAX_RETRY&apos;</span> =&gt; <span class="hljs-number">3</span>, <span class="hljs-comment">//&#x6700;&#x5927;&#x91CD;&#x8BD5;&#x6B21;&#x6570;</span>
+);</code></pre>
+<p>&#x82E5;&#x65E5;&#x5E38;&#x961F;&#x5217;&#x4EFB;&#x52A1;&#x4E0D;&#x591A;&#xFF0C;<code>QUEUE_SLEEP</code>&#x53EF;&#x4EE5;&#x9002;&#x5F53;&#x5EF6;&#x957F;</p><h4 id="1&#x5B9A;&#x671F;&#x5220;&#x9664;&#x5DF2;&#x5B8C;&#x6210;&#x4EFB;&#x52A1;">1.&#x5B9A;&#x671F;&#x5220;&#x9664;&#x5DF2;&#x5B8C;&#x6210;&#x4EFB;&#x52A1;</h4><p>&#x5B89;&#x88C5;[&#x8BA1;&#x5212;&#x4EFB;&#x52A1;&#x6A21;&#x5757;]&#xFF0C;&#x6DFB;&#x52A0;&#x8BA1;&#x5212;&#x4EFB;&#x52A1;<code>Queue\DeleteFinishJob</code>&#xFF0C;&#x63A8;&#x8350;&#x6BCF;&#x65E5;&#x6267;&#x884C;&#x4E00;&#x6B21;&#xFF0C;&#x6BCF;&#x6B21;&#x5220;&#x9664;7&#x65E5;&#x524D;&#x7684;&#x5DF2;&#x5B8C;&#x6210;&#x7684;&#x4EFB;&#x52A1;&#x3002;&#x5F53;&#x7136;&#xFF0C;&#x53EF;&#x4EE5;&#x6839;&#x636E;&#x4F60;&#x7684;&#x4E1A;&#x52A1;&#x903B;&#x8F91;&#x8C03;&#x6574;&#x5176;&#x6267;&#x884C;&#x9891;&#x7387;&#x3002;</p><pre><code class="lang-php"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">DeleteFinishJob</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Cron</span> </span>{
+
+    <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">run</span><span class="hljs-params">($cronId)</span> </span>{
+        $hour = <span class="hljs-number">7</span> * <span class="hljs-number">24</span>; <span class="hljs-comment">//&#x5220;&#x9664;X&#x5C0F;&#x65F6;&#x524D;&#x5DF2;&#x5B8C;&#x6210;&#x7684;&#x4EFB;&#x52A1;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;</span>
+        <span class="hljs-comment">//....</span>
+    }
+}</code></pre>
+
+                            </div>
+                            
+                        
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="gb-page-footer">
+        <div class="container">
+            <ul class="menu">
+                <li class="pull-right">
+                    <span class="service-info">Copyright ZtbCMS 2020</span>
+                </li>
+                <li>
+                    <a href="#">Return to the top</a>
+                </li>
+                <li>
+                    <a href="#">Updated Jul 11th 20</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</div>
+
+<script src="../../gitbook/gitbook.js"></script>
+
+    
+    <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+    
+
+    
+    <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+    
+
+    
+    <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+    
+
+<script>
+(function() {
+    gitbook.page.hasChanged({"page":{"title":"任务队列 Queue","level":"3.15","depth":1,"next":{"title":"监控模块 Mirror","level":"3.16","depth":1,"path":"module/mirror/README.md","ref":"module/mirror/README.md","articles":[]},"previous":{"title":"图表模块 Chart","level":"3.14","depth":1,"path":"module/chart/1.x.md","ref":"module/chart/1.x.md","articles":[]},"dir":"ltr"},"config":{"plugins":["theme-ztbcms-docs@1.0.1","-sharing","-fontsettings","sitemap"],"root":"./docs","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"sitemap":{"hostname":"https://www.ztbcms.com"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"theme-ztbcms-docs":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"version":"3.0.0"},"title":"ZTBCMS","gitbook":"3.2.0"},"file":{"path":"module/queue/README.md","mtime":"2020-07-11T04:14:27.165Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2020-07-11T04:15:14.634Z"},"basePath":"../..","book":{"language":""}});
+})();
+</script>
+
+        
+    </body>
+</html>
+

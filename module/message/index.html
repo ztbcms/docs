@@ -1,0 +1,1219 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <title>消息系统 Message · ZTBCMS</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.0">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../../styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+
+    
+    <link rel="next" href="../record/" />
+    
+    
+    <link rel="prev" href="../transport/tips.html" />
+    
+
+
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?0c94f14dc8eb5aafbbb35de1766e5ec8";
+            var s = document.getElementsByTagName("script")[0]; 
+            s.parentNode.insertBefore(hm, s);
+        })();
+</script>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-6764368739876780",
+    enable_page_level_ads: true
+  });
+</script>
+
+    </head>
+    <body>
+        
+<div class="gb-page-wrapper">
+    <header class="gb-page-header">
+        <div class="container">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+
+            <a href="../.." class="logo">
+                <img src="../../gitbook/images/logo.png">
+                <h1>ZTBCMS</h1>
+            </a>
+
+            
+
+            
+
+
+
+<a href="https://github.com/ztbcms/docs/blob/develop/docs/module/message/README.md" target="_blank" class="btn btn-link pull-right hidden-xs">
+    修正当前页
+</a>
+
+<a href="https://github.com/ztbcms/ztbcms" class="btn btn-link pull-right hidden-xs">
+    <img src="https://img.shields.io/github/release/ztbcms/ztbcms.svg?maxAge=36000" alt="version">
+</a>
+<!--
+<a href="../../faq.md" class="btn btn-link pull-right hidden-xs">
+    F.A.Q
+</a>
+-->
+
+<!--<a href="https://github.com/ztbcms/ztbcms" target="_blank" class="btn btn-link pull-right hidden-xs">
+    3.0.0
+</a>-->
+
+
+
+        
+        </div>
+    </header>
+
+    <div class="gb-page-body">
+        <div class="gb-page-inner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        
+
+
+
+    
+    <div class="panel panel-default">
+        
+        <div class="panel-heading">
+            <h3 class="panel-title">开始使用</h3>
+        </div>
+        
+
+        <div class="list-group">
+            
+    
+        
+        <a href="../../" class="list-group-item ">
+        
+
+            
+
+            
+
+            概述
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../../basic/setup.html" class="list-group-item ">
+        
+
+            
+
+            
+
+            环境搭建&安装
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../../basic/project.html" class="list-group-item ">
+        
+
+            
+
+            
+
+            项目说明
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../../basic/router.html" class="list-group-item ">
+        
+
+            
+
+            
+
+            路由说明
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../../basic/structure.html" class="list-group-item ">
+        
+
+            
+
+            
+
+            目录结构
+
+        
+        </a>
+        
+
+        
+    
+
+        </div>
+    </div>
+    
+    <div class="panel panel-default">
+        
+        <div class="panel-heading">
+            <h3 class="panel-title">开发指南</h3>
+        </div>
+        
+
+        <div class="list-group">
+            
+    
+        
+        <a href="../../guide/template/" class="list-group-item ">
+        
+
+            
+
+            
+            <i class="octicon octicon-chevron-right"></i>
+            
+
+            模板
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../../guide/behaivor/readme.html" class="list-group-item ">
+        
+
+            
+
+            
+            <i class="octicon octicon-chevron-right"></i>
+            
+
+            行为管理
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../../guide/module/" class="list-group-item ">
+        
+
+            
+
+            
+
+            模块开发
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../../guide/admin/README.md" class="list-group-item ">
+        
+
+            
+
+            
+            <i class="octicon octicon-chevron-right"></i>
+            
+
+            管理后台权限
+
+        
+        </a>
+        
+
+        
+    
+
+        </div>
+    </div>
+    
+    <div class="panel panel-default">
+        
+        <div class="panel-heading">
+            <h3 class="panel-title">模块</h3>
+        </div>
+        
+
+        <div class="list-group">
+            
+    
+        
+        <a href="../auth/" class="list-group-item ">
+        
+
+            
+
+            
+            <i class="octicon octicon-chevron-right"></i>
+            
+
+            授权 Auth
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../wechat/v3.html" class="list-group-item ">
+        
+
+            
+
+            
+            <i class="octicon octicon-chevron-right"></i>
+            
+
+            微信管理 Wechat
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../area/" class="list-group-item ">
+        
+
+            
+
+            
+            <i class="octicon octicon-chevron-right"></i>
+            
+
+            区域 Area
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../sms/" class="list-group-item ">
+        
+
+            
+
+            
+            <i class="octicon octicon-chevron-right"></i>
+            
+
+            短信 Sms
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../cron/" class="list-group-item ">
+        
+
+            
+
+            
+
+            计划任务 Cron
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../transport/" class="list-group-item ">
+        
+
+            
+
+            
+            <i class="octicon octicon-chevron-right"></i>
+            
+
+            数据导入导出 Transport
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="./" class="list-group-item active">
+        
+
+            
+
+            
+
+            消息系统 Message
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../record/" class="list-group-item ">
+        
+
+            
+
+            
+            <i class="octicon octicon-chevron-right"></i>
+            
+
+            记录 Record
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../wxapp/" class="list-group-item ">
+        
+
+            
+
+            
+
+            小程序 Wxapp
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../log/" class="list-group-item ">
+        
+
+            
+
+            
+
+            日志 Log
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../alipay/alipay.html" class="list-group-item ">
+        
+
+            
+
+            
+
+            支付宝支付 Alipay
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../unionpay/readme.html" class="list-group-item ">
+        
+
+            
+
+            
+
+            银联支付 Unionpay
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../oss/readme.html" class="list-group-item ">
+        
+
+            
+
+            
+
+            云存储 Oss
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../chart/1.x.html" class="list-group-item ">
+        
+
+            
+
+            
+
+            图表模块 Chart
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../queue/" class="list-group-item ">
+        
+
+            
+
+            
+
+            任务队列 Queue
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../mirror/" class="list-group-item ">
+        
+
+            
+
+            
+
+            监控模块 Mirror
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../wap/" class="list-group-item ">
+        
+
+            
+
+            
+
+            WAP手机版 Wap
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../shop/" class="list-group-item ">
+        
+
+            
+
+            
+
+            多商户商城 Shop
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../search/" class="list-group-item ">
+        
+
+            
+
+            
+
+            搜索 Search
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../addons/" class="list-group-item ">
+        
+
+            
+
+            
+
+            插件管理 Addons
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../collection/" class="list-group-item ">
+        
+
+            
+
+            
+
+            采集 Collection
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../comments/" class="list-group-item ">
+        
+
+            
+
+            
+
+            评论 Comment
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../domains/" class="list-group-item ">
+        
+
+            
+
+            
+
+            域名 Domain
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../formguide/" class="list-group-item ">
+        
+
+            
+
+            
+
+            表单 Form
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../links/" class="list-group-item ">
+        
+
+            
+
+            
+
+            友情链接 Link
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../vote/" class="list-group-item ">
+        
+
+            
+
+            
+
+            投票 Vote
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../member/" class="list-group-item ">
+        
+
+            
+
+            
+
+            会员 Member
+
+        
+        </a>
+        
+
+        
+    
+
+        </div>
+    </div>
+    
+    <div class="panel panel-default">
+        
+        <div class="panel-heading">
+            <h3 class="panel-title">最佳实践</h3>
+        </div>
+        
+
+        <div class="list-group">
+            
+    
+        
+        <a href="../../best_practic/rule.html" class="list-group-item ">
+        
+
+            
+
+            
+
+            规范和约定
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../../best_practic/deploy.html" class="list-group-item ">
+        
+
+            
+
+            
+
+            部署指南
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../../best_practic/common_error/template.html" class="list-group-item ">
+        
+
+            
+
+            
+            <i class="octicon octicon-chevron-right"></i>
+            
+
+            常见错误
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../../best_practic/dev_tips.html" class="list-group-item ">
+        
+
+            
+
+            
+            <i class="octicon octicon-chevron-right"></i>
+            
+
+            开发Tips汇总
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../../best_practic/ztbcms_storage_engine.html" class="list-group-item ">
+        
+
+            
+
+            
+
+            数据库的存储引擎
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../../best_practic/behavior_manage.html" class="list-group-item ">
+        
+
+            
+
+            
+
+            行为管理最佳实践
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../../best_practic/performance_optimization.html" class="list-group-item ">
+        
+
+            
+
+            
+
+            性能优化
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../../best_practic/thinkphp/readme.html" class="list-group-item ">
+        
+
+            
+
+            
+            <i class="octicon octicon-chevron-right"></i>
+            
+
+            ThinkPHP
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../../best_practic/howto/readme.html" class="list-group-item ">
+        
+
+            
+
+            
+            <i class="octicon octicon-chevron-right"></i>
+            
+
+            HOW TO
+
+        
+        </a>
+        
+
+        
+    
+
+        </div>
+    </div>
+    
+    <div class="panel panel-default">
+        
+        <div class="panel-heading">
+            <h3 class="panel-title">附录</h3>
+        </div>
+        
+
+        <div class="list-group">
+            
+    
+        
+        <a href="../../extra/system_function.html" class="list-group-item ">
+        
+
+            
+
+            
+
+            系统函数
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../../extra/tech.html" class="list-group-item ">
+        
+
+            
+
+            
+
+            技术栈
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../../extra/version/readme.html" class="list-group-item ">
+        
+
+            
+
+            
+            <i class="octicon octicon-chevron-right"></i>
+            
+
+            版本发布
+
+        
+        </a>
+        
+
+        
+    
+
+        </div>
+    </div>
+    
+    <div class="panel panel-default">
+        
+        <div class="panel-heading">
+            <h3 class="panel-title">使用案例</h3>
+        </div>
+        
+
+        <div class="list-group">
+            
+    
+        
+        <a href="../../case.html" class="list-group-item ">
+        
+
+            
+
+            
+
+            用户与案例
+
+        
+        </a>
+        
+
+        
+    
+
+        </div>
+    </div>
+    
+
+
+
+                    </div>
+                    <div class="col-md-9">
+                        
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                            
+                            <div class="gb-markdown book-page-inner">
+                                <h2 id="&#x6D88;&#x606F;&#x7CFB;&#x7EDF;-">&#x6D88;&#x606F;&#x7CFB;&#x7EDF; <img alt="version" src="https://img.shields.io/github/release/ztbcms/ztbcms-Message.svg?maxAge=36000"></h2><p>&#x63CF;&#x8FF0;&#xFF1A;&#x4E00;&#x4E2A;&#x7CFB;&#x7EDF;&#x91CC;&#x9762;&#x901A;&#x5E38;&#x90FD;&#x4F1A;&#x6709;&#x4E00;&#x4E9B;&#x7C7B;&#x4F3C;&#x4E8E;&#x7AD9;&#x5185;&#x4FE1;&#xFF0C;&#x7528;&#x6237;&#x79C1;&#x4FE1;&#x7B49;&#x6D88;&#x606F;(Message)&#xFF0C;&#x7136;&#x540E;&#x901A;&#x8FC7;&#x90AE;&#x4EF6;&#xFF0C;&#x5FAE;&#x4FE1;&#x6A21;&#x677F;&#x6D88;&#x606F;&#xFF0C;&#x77ED;&#x4FE1;&#x7B49;&#x591A;&#x79CD;&#x6E20;&#x9053;&#xFF08;Sender&#xFF09;&#x53D1;&#x9001;&#x5230;&#x5BF9;&#x5E94;&#x7528;&#x6237;&#x4E0A;&#x3002;&#x6D88;&#x606F;&#x7CFB;&#x7EDF;&#x8FD9;&#x662F;&#x89E3;&#x51B3;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#x3002;</p><h3 id="&#x76EE;&#x5F55;&#x7ED3;&#x6784;">&#x76EE;&#x5F55;&#x7ED3;&#x6784;</h3><pre><code>.
+&#x251C;&#x2500;&#x2500; Controller
+&#x251C;&#x2500;&#x2500; CronScript &#x8BA1;&#x5212;&#x4EFB;&#x52A1;&#x811A;&#x672C;
+&#x251C;&#x2500;&#x2500; Install 
+&#x251C;&#x2500;&#x2500; Libs &#x6838;&#x5FC3;&#x5B9E;&#x73B0;&#x5E93;
+&#x251C;&#x2500;&#x2500; Messages &#x6D88;&#x606F;&#x5B9E;&#x4F53;&#x7C7B;
+&#x251C;&#x2500;&#x2500; Model 
+&#x251C;&#x2500;&#x2500; Senders &#x53D1;&#x9001;&#x6E20;&#x9053;&#x5B9E;&#x73B0;
+&#x251C;&#x2500;&#x2500; Service &#x670D;&#x52A1;
+&#x2514;&#x2500;&#x2500; Uninstall</code></pre>
+<h3 id="&#x4F7F;&#x7528;&#x6307;&#x5357;">&#x4F7F;&#x7528;&#x6307;&#x5357;</h3><h4 id="1&#x521B;&#x5EFA;&#x4F60;&#x7684;&#x6D88;&#x606F;&#x5B9E;&#x4F53;&#x7C7B;">1.&#x521B;&#x5EFA;&#x4F60;&#x7684;&#x6D88;&#x606F;&#x5B9E;&#x4F53;&#x7C7B;</h4><p>&#x5728; <code>Message/Messages/</code> &#x76EE;&#x5F55;&#x4E0B;&#x521B;&#x5EFA;&#x6D88;&#x606F;&#x5B9E;&#x4F53;&#x7C7B;&#xFF0C;&#x5E76;&#x7EE7;&#x627F; <code>Message\Libs\Message</code> &#x7C7B;&#xFF0C;&#x5B9E;&#x73B0; <code>createSender()</code></p><pre><code class="lang-php">
+<span class="hljs-keyword">use</span> <span class="hljs-title">Message</span>\<span class="hljs-title">Libs</span>\<span class="hljs-title">Message</span>;
+<span class="hljs-keyword">use</span> <span class="hljs-title">Message</span>\<span class="hljs-title">Model</span>\<span class="hljs-title">MessageModel</span>;
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">SimpleMessage</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Message</span> </span>{
+
+    <span class="hljs-comment">/**
+     * SimpleMessage constructor.
+     *
+     * <span class="hljs-doctag">@param</span> string $sender &#x53D1;&#x9001;&#x4EBA;
+     * <span class="hljs-doctag">@param</span> string $receiver &#x63A5;&#x6536;&#x4EBA;
+     * <span class="hljs-doctag">@param</span> string $content  &#x6D88;&#x606F;ID
+     */</span>
+    <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">__construct</span><span class="hljs-params">($sender, $receiver, $content = <span class="hljs-string">&apos;&apos;</span>)</span> </span>{
+        $this-&gt;setContent($content);
+        $this-&gt;setType(MessageModel::TYPE_MESSAGE); <span class="hljs-comment">//&#x6D88;&#x606F;&#x7C7B;&#x578B;&#x672C;&#x7CFB;&#x7EDF;&#x6CA1;&#x6709;&#x8FC7;&#x591A;&#x7684;&#x6307;&#x5B9A;&#xFF0C;&#x9ED8;&#x8BA4;&#x63D0;&#x4F9B; message &#x79C1;&#x4FE1; &#x548C; remind &#x63D0;&#x9192;&#x8FD9;&#x4E24;&#x79CD;</span>
+
+        $this-&gt;setSender($sender); <span class="hljs-comment">//&#x53D1;&#x9001;&#x4EBA;&#xFF0C;&#x53EF;&#x4EE5;&#x662F;ID&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x540D;&#x5B57;&#xFF0C;&#x7531;&#x4F60;&#x7684;&#x4E1A;&#x52A1;&#x51B3;&#x5B9A;</span>
+        $this-&gt;setSenderType(<span class="hljs-string">&apos;member&apos;</span>);<span class="hljs-comment">//&#x53D1;&#x9001;&#x4EBA;&#x7684;&#x7C7B;&#x578B;&#xFF0C;&#x53EF;&#x4EE5;&#x4E3A;&#x7A7A;&#xFF0C;&#x7531;&#x4F60;&#x7684;&#x4E1A;&#x52A1;&#x51B3;&#x5B9A;</span>
+
+        $this-&gt;setReceiver($receiver); <span class="hljs-comment">//&#x63A5;&#x6536;&#x4EBA;&#xFF0C;&#x53EF;&#x4EE5;&#x662F;ID&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x540D;&#x5B57;&#xFF0C;&#x7531;&#x4F60;&#x7684;&#x4E1A;&#x52A1;&#x51B3;&#x5B9A;</span>
+        $this-&gt;setReceiverType(<span class="hljs-string">&apos;member&apos;</span>); <span class="hljs-comment">//&#x63A5;&#x6536;&#x4EBA;&#x7684;&#x7C7B;&#x578B;&#xFF0C;&#x53EF;&#x4EE5;&#x4E3A;&#x7A7A;&#xFF0C;&#x7531;&#x4F60;&#x7684;&#x4E1A;&#x52A1;&#x51B3;&#x5B9A;</span>
+
+        $this-&gt;setTarget(<span class="hljs-string">&apos;1&apos;</span>);  <span class="hljs-comment">//&#x6D88;&#x606F;&#x6E90;&#xFF0C;&#x5982;&#x67D0;&#x67D0;&#x4EBA;&#x70B9;&#x8D5E;&#x4E86;&#x4E00;&#x6587;&#x7AE0;&#xFF0C;&#x5219; Target &#x53EF;&#x80FD;&#x662F;&#x6587;&#x7AE0;ID&#xFF0C;&#x5177;&#x4F53;&#x7531;&#x4F60;&#x7684;&#x4E1A;&#x52A1;&#x51B3;&#x5B9A;</span>
+        $this-&gt;setTargetType(<span class="hljs-string">&apos;11&apos;</span>);<span class="hljs-comment">//&#x6D88;&#x606F;&#x6E90;&#x7C7B;&#x578B;&#xFF0C;&#x5982;&#x67D0;&#x67D0;&#x4EBA;&#x70B9;&#x8D5E;&#x4E86;&#x4E00;&#x6587;&#x7AE0;&#xFF0C;&#x5219; Target &#x5E94;&#x8BE5;&#x662F;&#x6587;&#x7AE0;&#x7C7B;&#x578B;&#x540D;&#x79F0;&#xFF0C;&#x5177;&#x4F53;&#x7531;&#x4F60;&#x7684;&#x4E1A;&#x52A1;&#x51B3;&#x5B9A;</span>
+
+    }
+
+    <span class="hljs-comment">/**
+     * &#x5B9A;&#x4E49;&#x8BE5;&#x6D88;&#x606F;&#x7684;&#x6D88;&#x606F;&#x5206;&#x53D1;&#x6E20;&#x9053;
+     *
+     * <span class="hljs-doctag">@return</span> array Senders&#x6570;&#x7EC4;
+     */</span>
+    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">createSender</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> [
+            <span class="hljs-keyword">new</span> SimpleSender(), <span class="hljs-comment">//&#x793A;&#x4F8B;&#xFF1A;&#x53D1;&#x90AE;&#x4EF6;</span>
+            <span class="hljs-keyword">new</span> SimpleWxSender() <span class="hljs-comment">//&#x793A;&#x4F8B;&#xFF1A;&#x53D1;&#x5FAE;&#x4FE1;&#x6A21;&#x677F;&#x6D88;&#x606F;</span>
+        ];
+    }
+}</code></pre>
+<h4 id="2&#x521B;&#x5EFA;&#x4F60;&#x7684;&#x5206;&#x53D1;&#x6E20;&#x9053;">2.&#x521B;&#x5EFA;&#x4F60;&#x7684;&#x5206;&#x53D1;&#x6E20;&#x9053;</h4><p>&#x5728; <code>Message/Senders/</code> &#x76EE;&#x5F55;&#x4E0B;&#x521B;&#x5EFA;&#x6D88;&#x606F;&#x5B9E;&#x4F53;&#x7C7B;&#xFF0C;&#x5E76;&#x7EE7;&#x627F; <code>Message\Libs\Sender</code> &#x7C7B;&#xFF0C;&#x5B9E;&#x73B0; <code>doSend()</code></p><p>&#x793A;&#x4F8B;&#xFF1A;SimpleSender:</p><pre><code class="lang-php"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">SimpleSender</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Sender</span> </span>{
+
+
+    <span class="hljs-comment">/**
+     * &#x53D1;&#x9001;&#x6D88;&#x606F;&#x64CD;&#x4F5C;
+     *
+     * <span class="hljs-doctag">@param</span> Message $message
+     * <span class="hljs-doctag">@return</span> boolean
+     */</span>
+    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">doSend</span><span class="hljs-params">(Message $message)</span> </span>{
+        <span class="hljs-keyword">echo</span> <span class="hljs-string">&apos;simple send =&gt; &apos;</span> . $message-&gt;getContent() . <span class="hljs-string">&apos;&lt;br&gt;&apos;</span>;
+
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">true</span>;
+    }
+}</code></pre>
+<h4 id="3&#x521B;&#x5EFA;&#x6D88;&#x606F;">3.&#x521B;&#x5EFA;&#x6D88;&#x606F;</h4><p>&#x4F7F;&#x7528; <code>Message\Service\MessageService::createMessage($msg)</code> &#x6DFB;&#x52A0;&#x6D88;&#x606F;</p><pre><code class="lang-php"><span class="hljs-keyword">use</span> <span class="hljs-title">Message</span>\<span class="hljs-title">Service</span>\<span class="hljs-title">MessageService</span>;
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">TestController</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">AdminBase</span> </span>{
+
+    <span class="hljs-comment">//&#x53D1;&#x9001;&#x4FE1;&#x606F;</span>
+    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">pushMessage</span><span class="hljs-params">()</span> </span>{
+        $sender = <span class="hljs-string">&apos;jayin&apos;</span>;
+        $receiver = <span class="hljs-string">&apos;admin&apos;</span>;
+        $content = <span class="hljs-string">&apos;&#x7528;&#x6237; &apos;</span> . $sender . <span class="hljs-string">&apos; &#x5BF9;&#x7528;&#x6237; &apos;</span> . $receiver . <span class="hljs-string">&apos; &#x8BF4;:&apos;</span> . <span class="hljs-string">&apos;&#x4F60;&#x597D;&#xFF0C;&#x8FD9;&#x662F;&#x63A8;&#x9001; at &apos;</span> . date(<span class="hljs-string">&apos;Y-m-d H:i:s&apos;</span>);
+
+        $msg = <span class="hljs-keyword">new</span> SimpleMessage($sender, $receiver, $content);
+        MessageService::createMessage($msg);
+    }
+
+}</code></pre>
+<h4 id="4&#x6D88;&#x606F;&#x5904;&#x7406;">4.&#x6D88;&#x606F;&#x5904;&#x7406;</h4><p>&#x4F7F;&#x7528; <code>Message\Service\MessageService::handleMessage($msg_id)</code> &#x5904;&#x7406;(&#x53D1;&#x9001;)&#x6D88;&#x606F;</p><p>4.1 &#x624B;&#x52A8;&#x5904;&#x7406;&#x4E00;&#x6761;&#x6D88;&#x606F;</p><pre><code class="lang-php"><span class="hljs-keyword">use</span> <span class="hljs-title">Message</span>\<span class="hljs-title">Service</span>\<span class="hljs-title">MessageService</span>;
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">TestController</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">AdminBase</span> </span>{
+
+    <span class="hljs-comment">//&#x5904;&#x7406;&#x4FE1;&#x606F;</span>
+    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">handleMessage</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-comment">//&#x53D6;&#x51FA;&#x672A;&#x5904;&#x7406;&#x7684;&#x6D88;&#x606F;&#xFF0C;&#x8FDB;&#x884C;&#x5904;&#x7406;</span>
+        $messages = D(<span class="hljs-string">&apos;Message/Message&apos;</span>)-&gt;where([<span class="hljs-string">&apos;process_status&apos;</span> =&gt; MessageModel::PROCESS_STATUS_UNPROCESS])-&gt;field(<span class="hljs-string">&apos;id&apos;</span>)-&gt;select();
+        <span class="hljs-keyword">foreach</span> ($messages <span class="hljs-keyword">as</span> $index =&gt; $message) {
+            MessageService::handleMessage($message[<span class="hljs-string">&apos;id&apos;</span>]);
+        }
+    }
+}</code></pre>
+<p>4.2 &#x6216;&#x8005;&#x4F60;&#x53EF;&#x4EE5;&#x6DFB;&#x52A0;&#x8BA1;&#x5212;&#x4EFB;&#x52A1;&#xFF0C;<code>Message/CronScript/HandleMessage</code>&#xFF0C;&#x5EFA;&#x8BAE;&#x6BCF;&#x9694;1&#x5206;&#x949F;&#x5904;&#x7406;&#x4E00;&#x6B21;&#x3002;</p><h3 id="&#x6700;&#x4F73;&#x5B9E;&#x8DF5;&#x4E0E;&#x63D0;&#x793A;">&#x6700;&#x4F73;&#x5B9E;&#x8DF5;&#x4E0E;&#x63D0;&#x793A;</h3><ol><li>&#x6709;&#x591A;&#x5C11;&#x4E0D;&#x540C;&#x7C7B;&#x578B;&#x7684;&#x6D88;&#x606F;&#x5C31;&#x5EFA;&#x591A;&#x5C11;&#x79CD; Message
+</li>
+<li>&#x6709;&#x591A;&#x5C11;&#x4E2A;&#x6D88;&#x606F;&#x5206;&#x53D1;&#x6E20;&#x9053;&#x5C31;&#x5EFA;&#x591A;&#x5C11;&#x79CD; Sender
+</li>
+<li>&#x5176;&#x5B9E; Sender &#x76F8;&#x5F53;&#x4E8E;&#x4E00;&#x4E2A;&#x4E8B;&#x4EF6;&#x5904;&#x7406;&#x5668;(Handler)&#xFF0C;<strong>&#x4E0D;&#x8981;&#x8BA4;&#x4E3A;&#x53EA;&#x80FD;&#x7528;&#x6765;&#x53D1;&#x6D88;&#x606F;</strong>(&#x6A21;&#x677F;&#x6D88;&#x606F;&#xFF0C;&#x77ED;&#x4FE1;&#x7B49;)
+</li>
+<li>Message &#x91CC; <code>setContent()</code>, <code>setReceiver()</code>, <code>setTarget()</code> &#x90FD;&#x4E0D;&#x662F;&#x5FC5;&#x987B;&#xFF0C;&#x53EA;&#x662F;&#x4F20;&#x5165;&#x5BF9;&#x5E94;&#x7684;&#x53C2;&#x6570;&#x65B9;&#x4FBF; Sender &#x4E2D;&#x81EA;&#x7531;&#x7684;&#x6839;&#x636E;&#x6D88;&#x606F;&#x7684;&#x6765;&#x6E90;&#x4FE1;&#x606F;&#x81EA;&#x7531;&#x4FEE;&#x6539;&#x53D1;&#x9001;&#x5185;&#x5BB9;
+</li></ol>
+
+                            </div>
+                            
+                        
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="gb-page-footer">
+        <div class="container">
+            <ul class="menu">
+                <li class="pull-right">
+                    <span class="service-info">Copyright ZtbCMS 2020</span>
+                </li>
+                <li>
+                    <a href="#">Return to the top</a>
+                </li>
+                <li>
+                    <a href="#">Updated Jul 11th 20</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</div>
+
+<script src="../../gitbook/gitbook.js"></script>
+
+    
+    <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+    
+
+    
+    <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+    
+
+    
+    <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+    
+
+<script>
+(function() {
+    gitbook.page.hasChanged({"page":{"title":"消息系统 Message","level":"3.7","depth":1,"next":{"title":"记录 Record","level":"3.8","depth":1,"path":"module/record/README.md","ref":"module/record/README.md","articles":[{"title":"数据结构","level":"3.8.1","depth":2,"path":"module/record/dataStructure.md","ref":"module/record/dataStructure.md","articles":[]},{"title":"使用指南","level":"3.8.2","depth":2,"path":"module/record/user.md","ref":"module/record/user.md","articles":[]}]},"previous":{"title":"最佳实践","level":"3.6.2","depth":2,"path":"module/transport/tips.md","ref":"module/transport/tips.md","articles":[]},"dir":"ltr"},"config":{"plugins":["theme-ztbcms-docs@1.0.1","-sharing","-fontsettings","sitemap"],"root":"./docs","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"sitemap":{"hostname":"https://www.ztbcms.com"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"theme-ztbcms-docs":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"version":"3.0.0"},"title":"ZTBCMS","gitbook":"3.2.0"},"file":{"path":"module/message/README.md","mtime":"2020-07-11T04:14:27.165Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2020-07-11T04:15:14.634Z"},"basePath":"../..","book":{"language":""}});
+})();
+</script>
+
+        
+    </body>
+</html>
+

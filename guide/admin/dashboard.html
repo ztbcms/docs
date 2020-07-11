@@ -1,0 +1,1206 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <title>后台框架页 · ZTBCMS</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.0">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../../styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+
+    
+    <link rel="next" href="../../module/auth/" />
+    
+    
+    <link rel="prev" href="permission.html" />
+    
+
+
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?0c94f14dc8eb5aafbbb35de1766e5ec8";
+            var s = document.getElementsByTagName("script")[0]; 
+            s.parentNode.insertBefore(hm, s);
+        })();
+</script>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-6764368739876780",
+    enable_page_level_ads: true
+  });
+</script>
+
+    </head>
+    <body>
+        
+<div class="gb-page-wrapper">
+    <header class="gb-page-header">
+        <div class="container">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+
+            <a href="../.." class="logo">
+                <img src="../../gitbook/images/logo.png">
+                <h1>ZTBCMS</h1>
+            </a>
+
+            
+
+            
+
+
+
+<a href="https://github.com/ztbcms/docs/blob/develop/docs/guide/admin/dashboard.md" target="_blank" class="btn btn-link pull-right hidden-xs">
+    修正当前页
+</a>
+
+<a href="https://github.com/ztbcms/ztbcms" class="btn btn-link pull-right hidden-xs">
+    <img src="https://img.shields.io/github/release/ztbcms/ztbcms.svg?maxAge=36000" alt="version">
+</a>
+<!--
+<a href="../../faq.md" class="btn btn-link pull-right hidden-xs">
+    F.A.Q
+</a>
+-->
+
+<!--<a href="https://github.com/ztbcms/ztbcms" target="_blank" class="btn btn-link pull-right hidden-xs">
+    3.0.0
+</a>-->
+
+
+
+        
+        </div>
+    </header>
+
+    <div class="gb-page-body">
+        <div class="gb-page-inner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        
+
+
+
+    
+    <div class="panel panel-default">
+        
+        <div class="panel-heading">
+            <h3 class="panel-title">开始使用</h3>
+        </div>
+        
+
+        <div class="list-group">
+            
+    
+        
+        <a href="../../" class="list-group-item ">
+        
+
+            
+
+            
+
+            概述
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../../basic/setup.html" class="list-group-item ">
+        
+
+            
+
+            
+
+            环境搭建&安装
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../../basic/project.html" class="list-group-item ">
+        
+
+            
+
+            
+
+            项目说明
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../../basic/router.html" class="list-group-item ">
+        
+
+            
+
+            
+
+            路由说明
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../../basic/structure.html" class="list-group-item ">
+        
+
+            
+
+            
+
+            目录结构
+
+        
+        </a>
+        
+
+        
+    
+
+        </div>
+    </div>
+    
+    <div class="panel panel-default">
+        
+        <div class="panel-heading">
+            <h3 class="panel-title">开发指南</h3>
+        </div>
+        
+
+        <div class="list-group">
+            
+    
+        
+        <a href="../template/" class="list-group-item ">
+        
+
+            
+
+            
+            <i class="octicon octicon-chevron-right"></i>
+            
+
+            模板
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../behaivor/readme.html" class="list-group-item ">
+        
+
+            
+
+            
+            <i class="octicon octicon-chevron-right"></i>
+            
+
+            行为管理
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../module/" class="list-group-item ">
+        
+
+            
+
+            
+
+            模块开发
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="README.md" class="list-group-item ">
+        
+
+            
+
+            
+            <i class="octicon octicon-chevron-down"></i>
+            
+
+            管理后台权限
+
+        
+        </a>
+        
+
+        
+        
+    
+        
+        <a href="permission.html" class="list-group-item ">
+        
+
+            
+            <i class="octicon octicon-chevron-down" style="opacity: 0"></i>
+            
+
+            
+
+            权限
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="dashboard.html" class="list-group-item active">
+        
+
+            
+            <i class="octicon octicon-chevron-down" style="opacity: 0"></i>
+            
+
+            
+
+            后台框架页
+
+        
+        </a>
+        
+
+        
+    
+
+        
+    
+
+        </div>
+    </div>
+    
+    <div class="panel panel-default">
+        
+        <div class="panel-heading">
+            <h3 class="panel-title">模块</h3>
+        </div>
+        
+
+        <div class="list-group">
+            
+    
+        
+        <a href="../../module/auth/" class="list-group-item ">
+        
+
+            
+
+            
+            <i class="octicon octicon-chevron-right"></i>
+            
+
+            授权 Auth
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../../module/wechat/v3.html" class="list-group-item ">
+        
+
+            
+
+            
+            <i class="octicon octicon-chevron-right"></i>
+            
+
+            微信管理 Wechat
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../../module/area/" class="list-group-item ">
+        
+
+            
+
+            
+            <i class="octicon octicon-chevron-right"></i>
+            
+
+            区域 Area
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../../module/sms/" class="list-group-item ">
+        
+
+            
+
+            
+            <i class="octicon octicon-chevron-right"></i>
+            
+
+            短信 Sms
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../../module/cron/" class="list-group-item ">
+        
+
+            
+
+            
+
+            计划任务 Cron
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../../module/transport/" class="list-group-item ">
+        
+
+            
+
+            
+            <i class="octicon octicon-chevron-right"></i>
+            
+
+            数据导入导出 Transport
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../../module/message/" class="list-group-item ">
+        
+
+            
+
+            
+
+            消息系统 Message
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../../module/record/" class="list-group-item ">
+        
+
+            
+
+            
+            <i class="octicon octicon-chevron-right"></i>
+            
+
+            记录 Record
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../../module/wxapp/" class="list-group-item ">
+        
+
+            
+
+            
+
+            小程序 Wxapp
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../../module/log/" class="list-group-item ">
+        
+
+            
+
+            
+
+            日志 Log
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../../module/alipay/alipay.html" class="list-group-item ">
+        
+
+            
+
+            
+
+            支付宝支付 Alipay
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../../module/unionpay/readme.html" class="list-group-item ">
+        
+
+            
+
+            
+
+            银联支付 Unionpay
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../../module/oss/readme.html" class="list-group-item ">
+        
+
+            
+
+            
+
+            云存储 Oss
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../../module/chart/1.x.html" class="list-group-item ">
+        
+
+            
+
+            
+
+            图表模块 Chart
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../../module/queue/" class="list-group-item ">
+        
+
+            
+
+            
+
+            任务队列 Queue
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../../module/mirror/" class="list-group-item ">
+        
+
+            
+
+            
+
+            监控模块 Mirror
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../../module/wap/" class="list-group-item ">
+        
+
+            
+
+            
+
+            WAP手机版 Wap
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../../module/shop/" class="list-group-item ">
+        
+
+            
+
+            
+
+            多商户商城 Shop
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../../module/search/" class="list-group-item ">
+        
+
+            
+
+            
+
+            搜索 Search
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../../module/addons/" class="list-group-item ">
+        
+
+            
+
+            
+
+            插件管理 Addons
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../../module/collection/" class="list-group-item ">
+        
+
+            
+
+            
+
+            采集 Collection
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../../module/comments/" class="list-group-item ">
+        
+
+            
+
+            
+
+            评论 Comment
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../../module/domains/" class="list-group-item ">
+        
+
+            
+
+            
+
+            域名 Domain
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../../module/formguide/" class="list-group-item ">
+        
+
+            
+
+            
+
+            表单 Form
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../../module/links/" class="list-group-item ">
+        
+
+            
+
+            
+
+            友情链接 Link
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../../module/vote/" class="list-group-item ">
+        
+
+            
+
+            
+
+            投票 Vote
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../../module/member/" class="list-group-item ">
+        
+
+            
+
+            
+
+            会员 Member
+
+        
+        </a>
+        
+
+        
+    
+
+        </div>
+    </div>
+    
+    <div class="panel panel-default">
+        
+        <div class="panel-heading">
+            <h3 class="panel-title">最佳实践</h3>
+        </div>
+        
+
+        <div class="list-group">
+            
+    
+        
+        <a href="../../best_practic/rule.html" class="list-group-item ">
+        
+
+            
+
+            
+
+            规范和约定
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../../best_practic/deploy.html" class="list-group-item ">
+        
+
+            
+
+            
+
+            部署指南
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../../best_practic/common_error/template.html" class="list-group-item ">
+        
+
+            
+
+            
+            <i class="octicon octicon-chevron-right"></i>
+            
+
+            常见错误
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../../best_practic/dev_tips.html" class="list-group-item ">
+        
+
+            
+
+            
+            <i class="octicon octicon-chevron-right"></i>
+            
+
+            开发Tips汇总
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../../best_practic/ztbcms_storage_engine.html" class="list-group-item ">
+        
+
+            
+
+            
+
+            数据库的存储引擎
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../../best_practic/behavior_manage.html" class="list-group-item ">
+        
+
+            
+
+            
+
+            行为管理最佳实践
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../../best_practic/performance_optimization.html" class="list-group-item ">
+        
+
+            
+
+            
+
+            性能优化
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../../best_practic/thinkphp/readme.html" class="list-group-item ">
+        
+
+            
+
+            
+            <i class="octicon octicon-chevron-right"></i>
+            
+
+            ThinkPHP
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../../best_practic/howto/readme.html" class="list-group-item ">
+        
+
+            
+
+            
+            <i class="octicon octicon-chevron-right"></i>
+            
+
+            HOW TO
+
+        
+        </a>
+        
+
+        
+    
+
+        </div>
+    </div>
+    
+    <div class="panel panel-default">
+        
+        <div class="panel-heading">
+            <h3 class="panel-title">附录</h3>
+        </div>
+        
+
+        <div class="list-group">
+            
+    
+        
+        <a href="../../extra/system_function.html" class="list-group-item ">
+        
+
+            
+
+            
+
+            系统函数
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../../extra/tech.html" class="list-group-item ">
+        
+
+            
+
+            
+
+            技术栈
+
+        
+        </a>
+        
+
+        
+    
+        
+        <a href="../../extra/version/readme.html" class="list-group-item ">
+        
+
+            
+
+            
+            <i class="octicon octicon-chevron-right"></i>
+            
+
+            版本发布
+
+        
+        </a>
+        
+
+        
+    
+
+        </div>
+    </div>
+    
+    <div class="panel panel-default">
+        
+        <div class="panel-heading">
+            <h3 class="panel-title">使用案例</h3>
+        </div>
+        
+
+        <div class="list-group">
+            
+    
+        
+        <a href="../../case.html" class="list-group-item ">
+        
+
+            
+
+            
+
+            用户与案例
+
+        
+        </a>
+        
+
+        
+    
+
+        </div>
+    </div>
+    
+
+
+
+                    </div>
+                    <div class="col-md-9">
+                        
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                            
+                            <div class="gb-markdown book-page-inner">
+                                <h2 id="&#x540E;&#x53F0;&#x6846;&#x67B6;&#x9875;&#x4F7F;&#x7528;&#x53CA;&#x4E8C;&#x5F00;">&#x540E;&#x53F0;&#x6846;&#x67B6;&#x9875;&#x4F7F;&#x7528;&#x53CA;&#x4E8C;&#x5F00;</h2><p>&#x9875;&#x9762;&#x5206;&#x4E3A;4&#x90E8;&#x5206;:</p><ul><li>1.&#x5DE6;&#x4FA7;&#x83DC;&#x5355;&#x680F;
+</li>
+<li>2.&#x9876;&#x90E8;&#x680F;
+</li>
+<li>3.tag&#x680F;
+</li>
+<li>4.&#x5185;&#x5BB9;&#x9875;
+</li></ul>
+<p><img alt="UTOOLS1594371731548.png" src="https://user-gold-cdn.xitu.io/2020/7/10/17337f5f26051d82?w=1918&amp;h=927&amp;f=png&amp;s=151352"></p><h3 id="&#x9875;&#x9762;&#x6743;&#x9650;&#xFF1A;&#x529F;&#x80FD;&#x6309;&#x6743;&#x9650;&#x663E;&#x793A;">&#x9875;&#x9762;&#x6743;&#x9650;&#xFF1A;&#x529F;&#x80FD;&#x6309;&#x6743;&#x9650;&#x663E;&#x793A;</h3><p><code>hasRolePermission()</code>&#x7528;&#x4E8E;&#x68C0;&#x6D4B;&#x5F53;&#x524D;&#x767B;&#x5F55;&#x7528;&#x6237;&#x662F;&#x5426;&#x6709;&#x6743;&#x9650;&#x8BBF;&#x95EE;&#x8DEF;&#x7531;&#x3002;&#x8BF7;&#x53C2;&#x8003;&#x9875;&#x9762;&#x4E2D;&#x7684;&#x300E;&#x7F13;&#x5B58;&#x6E05;&#x7406;&#x300F;&#x529F;&#x80FD;&#x5B9E;&#x73B0;&#x3002;</p><p><img alt="&#x56FE;&#x7247;" src="https://dn-coding-net-production-pp.codehub.cn/988b5094-4b3b-4869-9d29-c7635bcd5386.png"></p><h3 id="&#x9875;&#x9762;&#x64CD;&#x4F5C;">&#x9875;&#x9762;&#x64CD;&#x4F5C;</h3><p>1.&#x6253;&#x5F00;&#x65B0;&#x7A97;&#x53E3;</p><pre><code class="lang-js">
+<span class="hljs-comment">//&#x65B9;&#x6CD5;1.&#x76F4;&#x63A5;&#x8C03;&#x7528;(&#x517C;&#x5BB9;&#x6027;&#x5DEE;)</span>
+
+parent.window.__adminOpenNewFrame({
+    title: <span class="hljs-string">&apos;&#x6982;&#x89C8;&apos;</span>,
+    url: <span class="hljs-string">&apos;/Main/Index/index&apos;</span>
+})
+
+<span class="hljs-comment">//&#x65B9;&#x6CD5;2. &#x5C01;&#x88C5;&#x540E;&#x518D;&#x8C03;&#x7528;</span>
+<span class="hljs-built_in">window</span>.openNewIframe = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">title, url</span>) </span>{
+    <span class="hljs-keyword">if</span> (parent.window != <span class="hljs-built_in">window</span>) {
+        parent.window.__adminOpenNewFrame({
+            title: title,
+            url: url
+        })
+    } <span class="hljs-keyword">else</span> {
+        <span class="hljs-built_in">window</span>.location.href = url;
+    }
+}.bind(<span class="hljs-keyword">this</span>)
+
+<span class="hljs-comment">//&#x8C03;&#x7528;</span>
+<span class="hljs-built_in">window</span>.openNewIframe(<span class="hljs-string">&apos;&#x6982;&#x89C8;&apos;</span>,<span class="hljs-string">&apos;/Main/Index/index&apos;</span>);
+
+<span class="hljs-comment">//&#x65B9;&#x6CD5;3 &#x5E95;&#x5C42;&#x5B9E;&#x73B0;&#x65B9;&#x6CD5;,&#x4F7F;&#x7528;&#x4E8B;&#x4EF6;&#x89E6;&#x53D1;</span>
+<span class="hljs-keyword">const</span> event = <span class="hljs-keyword">new</span> CustomEvent(<span class="hljs-string">&apos;adminOpenNewFrame&apos;</span>, {
+  detail: {
+    title: <span class="hljs-string">&apos;&#x542F;&#x52A8;&#x7236;&#x7A97;&#x53E3;1&apos;</span>, 
+    url: <span class="hljs-string">&apos;/Main/Index/index&apos;</span>
+  }
+})
+<span class="hljs-built_in">window</span>.parent.dispatchEvent(event)
+
+<span class="hljs-comment">// &#x65B9;&#x6CD5;4(&#x63A8;&#x8350;) `/statics/js/ztbcms/ztbcms.js`&#x4E2D;&#x5DF2;&#x7ECF;&#x5C01;&#x88C5;&#x597D;&#x4E86;&#xFF0C;&#x53EA;&#x8981;&#x5F15;&#x5165;&#x5373;&#x53EF;</span>
+ztbcms.openNewIframeByUrl(<span class="hljs-string">&apos;&#x6982;&#x89C8;&apos;</span>, <span class="hljs-string">&apos;/Main/Index/index&apos;</span>)
+ztbcms.openNewIframeByUrl(<span class="hljs-string">&apos;&#x767E;&#x5EA6;&apos;</span>, <span class="hljs-string">&apos;https://baidu.com&apos;</span>)</code></pre>
+<ol><li>&#x56FE;&#x6807;&#x914D;&#x7F6E;
+</li></ol>
+<p>&#x5230;iconfont.cn&#x9009;&#x53D6;icon,&#x7528;&#x7684;&#x662F;svg
+<img alt="&#x56FE;&#x7247;" src="https://dn-coding-net-production-pp.codehub.cn/c02721e8-2d56-4407-8e59-8101e6f3fe1b.png"></p><p>&#x5728;dashborad.php &#x5F15;&#x5165;js
+<img alt="&#x56FE;&#x7247;" src="https://dn-coding-net-production-pp.codehub.cn/8b6dea28-655d-4dc0-9525-848ab9452635.png"></p><p>&#x8BBE;&#x7F6E;&#x83DC;&#x5355;&#x7684;icon
+<img alt="&#x56FE;&#x7247;" src="https://dn-coding-net-production-pp.codehub.cn/f856614b-fcbe-40f6-9f47-b332c34852dd.png"></p>
+                            </div>
+                            
+                        
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="gb-page-footer">
+        <div class="container">
+            <ul class="menu">
+                <li class="pull-right">
+                    <span class="service-info">Copyright ZtbCMS 2020</span>
+                </li>
+                <li>
+                    <a href="#">Return to the top</a>
+                </li>
+                <li>
+                    <a href="#">Updated Jul 11th 20</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</div>
+
+<script src="../../gitbook/gitbook.js"></script>
+
+    
+    <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+    
+
+    
+    <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+    
+
+    
+    <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+    
+
+<script>
+(function() {
+    gitbook.page.hasChanged({"page":{"title":"后台框架页","level":"2.4.2","depth":2,"next":{"title":"授权 Auth","level":"3.1","depth":1,"path":"module/auth/README.md","ref":"module/auth/README.md","articles":[{"title":"通用授权","level":"3.1.1","depth":2,"path":"module/auth/basic_auth.md","ref":"module/auth/basic_auth.md","articles":[]},{"title":"自动登录授权","level":"3.1.2","depth":2,"path":"module/auth/auto_login.md","ref":"module/auth/auto_login.md","articles":[]},{"title":"开放平台授权","level":"3.1.3","depth":2,"path":"module/auth/open_platform.md","ref":"module/auth/open_platform.md","articles":[]}]},"previous":{"title":"权限","level":"2.4.1","depth":2,"path":"guide/admin/permission.md","ref":"guide/admin/permission.md","articles":[]},"dir":"ltr"},"config":{"plugins":["theme-ztbcms-docs@1.0.1","-sharing","-fontsettings","sitemap"],"root":"./docs","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"sitemap":{"hostname":"https://www.ztbcms.com"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"theme-ztbcms-docs":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"version":"3.0.0"},"title":"ZTBCMS","gitbook":"3.2.0"},"file":{"path":"guide/admin/dashboard.md","mtime":"2020-07-11T04:14:27.165Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2020-07-11T04:15:14.634Z"},"basePath":"../..","book":{"language":""}});
+})();
+</script>
+
+        
+    </body>
+</html>
+
