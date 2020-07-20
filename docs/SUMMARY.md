@@ -30,9 +30,10 @@
     * [使用方法](guide/behaivor/usage.md)
     * [测试Behaivor](guide/behaivor/testing_behaivor.md)
 * [模块开发](guide/module/README.md)
-* [管理后台权限](guide/admin/README.md)
+* [管理后台](guide/admin/README.md)
     * [权限](guide/admin/permission.md)
-    * [后台框架页](guide/admin/dashboard.md)
+    * [框架页](guide/admin/dashboard.md)
+    * [消息中心](guide/admin/message.md)
 * [请求缓存](guide/request_cache/README.md)
 
 ### 模块
