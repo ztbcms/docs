@@ -33,6 +33,7 @@
 * [管理后台权限](guide/admin/README.md)
     * [权限](guide/admin/permission.md)
     * [后台框架页](guide/admin/dashboard.md)
+* [请求缓存](guide/request_cache/README.md)
 
 ### 模块
 
