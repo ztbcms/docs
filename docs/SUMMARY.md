@@ -25,7 +25,7 @@
         * [pre上一篇标签](guide/template/tag/pre.md)
         * [next下一篇标签](guide/template/tag/next.md)
         * [blockcache区块缓存标签](guide/template/tag/blockcache.md)
-* [行为管理](guide/behaivor/readme.md)
+* [行为管理](guide/behaivor/README.md)
     * [行为规则](guide/behaivor/rule.md)
     * [使用方法](guide/behaivor/usage.md)
     * [测试Behaivor](guide/behaivor/testing_behaivor.md)
