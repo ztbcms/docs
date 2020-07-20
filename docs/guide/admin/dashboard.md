@@ -6,7 +6,7 @@
 - 3.tag栏
 - 4.内容页
 
-![UTOOLS1594371731548.png](https://user-gold-cdn.xitu.io/2020/7/10/17337f5f26051d82?w=1918&h=927&f=png&s=151352)
+![U4K3PU.png](https://s1.ax1x.com/2020/07/20/U4K3PU.png)
 
 ### 页面权限：功能按权限显示
 
