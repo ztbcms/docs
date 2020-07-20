@@ -27,6 +27,7 @@
 <url> <loc>https://www.ztbcms.com/guide/admin/</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://www.ztbcms.com/guide/admin/permission.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://www.ztbcms.com/guide/admin/dashboard.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://www.ztbcms.com/guide/admin/message.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://www.ztbcms.com/guide/request_cache/</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://www.ztbcms.com/module/auth/</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://www.ztbcms.com/module/auth/basic_auth.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
