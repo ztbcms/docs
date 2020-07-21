@@ -34,6 +34,7 @@
     * [权限](guide/admin/permission.md)
     * [框架页](guide/admin/dashboard.md)
     * [消息中心](guide/admin/message.md)
+    * [登录页安全](guide/admin/login_code.md)
 * [请求缓存](guide/request_cache/README.md)
 
 ### 模块
