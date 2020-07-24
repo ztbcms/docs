@@ -57,27 +57,10 @@ $ php index.php /queue/worker/run/queue/high,mid,low
 参数
 
 1.2. 平滑停止
+> 即运行完当前的任务就退出当前队列
 
 ```shell
-$ php index.php /queue/worker/stop/_qsk/{你的私钥}
-```
-
-#### 2. 更安全的部署方式
-
-用于功能的实现基于Controller-Action,可能会被恶意请求URL，因此我们提供了私钥校验
-
-1.设置队列的私钥
-
-```php
-return array(
-    'QUEUE_SECRET_KEY' => 'ztbcms',//队列校验私钥
-);
-```
-
-2.启动时带着私钥参数`_qsk`
-
-```shell
-$ php index.php /queue/worker/run/queue/high,mid,low/_qsk/ztbcms
+$ php index.php /queue/worker/stop
 ```
 
 #### 3. 更稳定，多进程部署
