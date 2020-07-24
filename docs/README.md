@@ -10,6 +10,10 @@
 * 同时系统对扩展方面也支持比较大，可以使用内置的行为控制，对现有功能进行扩展
 
 
-### 特别鸣谢
+### 合作方
 
-[![主题邦科技](https://dn-coding-net-production-pp.qbox.me/da8e8b23-f828-4f13-9465-d5442890845c.png)](http://zhutibang.cn)
+<a href="https://www.zhutibang.cn"><img src="https://dn-coding-net-production-pp.qbox.me/da8e8b23-f828-4f13-9465-d5442890845c.png" style="width: 180px"></a>
+
+<a href="https://portal.qiniu.com/signup?code=1h5fdum9dyez6"><img src="https://s1.ax1x.com/2020/07/24/UvdEct.png" style="width: 180px"></a>
+
+<a href="https://www.aliyun.com/?source=5176.11533457&userCode=cb42l4yn&type=copy"><img src="https://s1.ax1x.com/2020/07/24/Uvw1aD.png" style="width: 180px"></a>
