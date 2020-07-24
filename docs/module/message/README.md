@@ -116,7 +116,7 @@ class TestController extends AdminBase {
 
 使用 `Message\Service\MessageService::handleMessage($msg_id)` 处理(发送)消息
 
-4.1 手动处理一条消息
+##### 4.1 手动处理一条消息
 ```php
 use Message\Service\MessageService;
 
@@ -133,7 +133,20 @@ class TestController extends AdminBase {
 }
 ```
 
-4.2 或者你可以添加计划任务，`Message/CronScript/HandleMessage`，建议每隔1分钟处理一次。
+##### 4.2 使用计划任务执行【推荐】
+
+或者你可以添加计划任务，`Message/CronScript/HandleMessage`，建议每隔1分钟处理一次。执行延迟为分钟级别。
+
+##### 4.3 使用命令行执行【推荐】
+
+使用命令行可以创建多个处理消息进程，可以应付海量的消息处理。执行延迟为秒级别。
+```shell
+# 启动
+php index.php /Message/Cli/start 
+
+# 平滑停止(请务必使用这种方式停止，否则任务没有结束就强制结束会有产生系统异常，脏数据等)
+php index.php /Message/Cli/stop 
+```
 
 ### 最佳实践与提示
 
