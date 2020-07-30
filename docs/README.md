@@ -1,7 +1,7 @@
 <h2 align="center">ZTBCMS</h2>
 
 
-![ZTBCMS](https://coding-net-production-pp-ci.codehub.cn/151bd71d-0a5e-4245-8346-5119a64de388.png)
+<img src="https://coding-net-production-pp-ci.codehub.cn/151bd71d-0a5e-4245-8346-5119a64de388.png" style="height: 300px">
 
 ### 特点
 
