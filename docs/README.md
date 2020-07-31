@@ -17,3 +17,5 @@
 <a href="https://portal.qiniu.com/signup?code=1h5fdum9dyez6"><img src="https://s1.ax1x.com/2020/07/24/UvdEct.png" style="width: 180px"></a>
 
 <a href="https://www.aliyun.com/?source=5176.11533457&userCode=cb42l4yn&type=copy"><img src="https://s1.ax1x.com/2020/07/24/Uvw1aD.png" style="width: 180px"></a>
+
+<a href="https://www.bt.cn/?invite_code=MV9xcml5enc="><img src="https://s1.ax1x.com/2020/07/31/aQxYoF.png" style="width: 180px"></a>
