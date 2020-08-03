@@ -12,10 +12,12 @@
 
 ### 合作方
 
-<a href="https://www.zhutibang.cn"><img src="https://dn-coding-net-production-pp.qbox.me/da8e8b23-f828-4f13-9465-d5442890845c.png" style="width: 180px"></a>
+<a href="https://www.zhutibang.cn"><img src="https://dn-coding-net-production-pp.qbox.me/da8e8b23-f828-4f13-9465-d5442890845c.png" style="height: 40px"></a>
+<a href="https://portal.qiniu.com/signup?code=1h5fdum9dyez6"><img src="https://s1.ax1x.com/2020/07/24/UvdEct.png" style="height: 40px"></a>
+<a href="https://www.aliyun.com/?source=5176.11533457&userCode=cb42l4yn&type=copy"><img src="https://s1.ax1x.com/2020/07/24/Uvw1aD.png" style="height: 40px"></a>
+<a href="https://www.bt.cn/?invite_code=MV9xcml5enc="><img src="https://s1.ax1x.com/2020/07/31/aQxYoF.png" style="height: 40px"></a>
 
-<a href="https://portal.qiniu.com/signup?code=1h5fdum9dyez6"><img src="https://s1.ax1x.com/2020/07/24/UvdEct.png" style="width: 180px"></a>
 
-<a href="https://www.aliyun.com/?source=5176.11533457&userCode=cb42l4yn&type=copy"><img src="https://s1.ax1x.com/2020/07/24/Uvw1aD.png" style="width: 180px"></a>
+### 友情链接
 
-<a href="https://www.bt.cn/?invite_code=MV9xcml5enc="><img src="https://s1.ax1x.com/2020/07/31/aQxYoF.png" style="width: 180px"></a>
+[开发者在线](http://www.devonline.net)|[Linux命令行](http://linux.devonline.net)
