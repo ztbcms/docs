@@ -3,10 +3,12 @@
 实现参考[『Thikphp 3.2-静态缓存』](https://www.kancloud.cn/manual/thinkphp/1839), 静态缓存只能提供HTML的缓存且只能以文件形式进行缓存。而请求缓存，支持ajax/html的缓存，而且可以根据缓存配置自行切换文件/redis的缓存
 
 缓存检测：
-1、行为app_begin时，检测路由是否需要有缓存，有则返回缓存内容
 
-缓存更新
-2、行为ajax_return/view_filter时，更换请求的缓存内容
+行为app_begin时，检测路由是否需要有缓存，有则返回缓存内容(\Common\Behavior\ReadRequestCacheBehavior)
+
+缓存更新:
+
+行为ajax_return/view_filter时，更换请求的缓存内容(\Common\Behavior\WriteRequestCacheBehavior)
 
 ## 使用指南
 
