@@ -4,11 +4,11 @@
 
 缓存检测：
 
-行为app_begin时，检测路由是否需要有缓存，有则返回缓存内容(`\Common\Behavior\ReadRequestCacheBehavior`)
+行为`app_begin`时，检测路由是否需要有缓存，有则返回缓存内容(`\Common\Behavior\ReadRequestCacheBehavior`)
 
 缓存更新:
 
-行为ajax_return/view_filter时，更换请求的缓存内容(`\Common\Behavior\WriteRequestCacheBehavior`)
+行为`ajax_return`/`view_filter`时，更换请求的缓存内容(`\Common\Behavior\WriteRequestCacheBehavior`)
 
 ## 使用指南
 
