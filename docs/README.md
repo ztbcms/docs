@@ -1,14 +1,19 @@
-<h2 align="center">ZTBCMS</h2>
-
-
-<img src="https://coding-net-production-pp-ci.codehub.cn/151bd71d-0a5e-4245-8346-5119a64de388.png" style="height: 300px">
-
-### 特点
-
-* 基于 [ThinkPHP](http://www.thinkphp.cn) 框架开发，采用独立分组的方式开发的内容管理系统
-* 支持模块安装/卸载，拥有丰富的[扩展模块](http://mod.ztbcms.com/)
-* 同时系统对扩展方面也支持比较大，可以使用内置的行为控制，对现有功能进行扩展
-
+---
+home: true
+heroImage: /img/logo.png
+heroText: ZTBCMS
+tagline: 高性能、模块化、极速开发PHP Web框架
+actionText: 快速上手 →
+actionLink: /basic/setup/
+features:
+- title: 简洁至上
+  details: 提供完善的后台管理系统，结构清晰，容易上手
+- title: ThinkPHP驱动
+  details: 基于ThinkPHP框架开发，采用独立分组的方式开发的内容管理系统
+- title: 易拓展
+  details: 提供模块组件安装与卸载，海量模块插件
+footer: Copyright © 2016-present
+---
 
 ### 合作方
 

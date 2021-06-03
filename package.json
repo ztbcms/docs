@@ -4,12 +4,14 @@
   "homepage": "https://www.ztbcms.com",
   "description": "Library and cmd utility to generate GitBooks",
   "dependencies": {
-  
+    "git-update-ghpages": "^1.3.0"
   },
   "devDependencies": {
-
+    "vuepress": "^1.8.2"
   },
   "scripts": {
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs"
   },
   "repository": {
     "type": "git",

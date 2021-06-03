@@ -2,7 +2,6 @@
 
 ### 开始使用
 
-* [概述](README.md)
 * [环境搭建&安装](basic/setup.md)
 * [项目说明](basic/project.md)
 * [路由说明](basic/router.md)
@@ -107,16 +106,6 @@
 
 * [系统函数](extra/system_function.md)
 * [技术栈](extra/tech.md)
-* [版本发布](extra/version/readme.md)
-    * [v3.8.10.3](extra/version/v38103.md)
-    * [v3.8.10.1](extra/version/v38101.md)
-    * [v3.8.10.0](extra/version/v38100.md)
-    * [v3.7.2.6](extra/version/v3725.md)
-    * [v3.7.2.5](extra/version/v3725.md)
-    * [v3.7.2.3](extra/version/v3723.md)
-    * [v3.7.2.2](extra/version/v3722.md)
-    * [v3.7.2.1](extra/version/v3721.md)
-    * [v3.7.2.0](extra/version/v3720.md)
 
 
 ### 使用案例
