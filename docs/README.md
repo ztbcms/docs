@@ -1,7 +1,7 @@
 ---
 home: true
 heroImage: /img/logo.png
-heroText: ZTBCMS
+heroText: ZTBCMS V3
 tagline: 高性能、模块化、极速开发PHP Web框架
 actionText: 快速上手 →
 actionLink: /basic/setup/
@@ -14,6 +14,11 @@ features:
   details: 提供模块组件安装与卸载，海量模块插件
 footer: Copyright © 2016-present
 ---
+
+<img src="https://img.shields.io/github/release/ztbcms/ztbcms.svg?maxAge=36000" alt="version">
+
+ZTBCMS v4基于TP6开发，文档请移步到 [ztbcms V4文档](https://www.kancloud.cn/ztbcms/ztbcms/1939308)
+
 
 ### 合作方
 
