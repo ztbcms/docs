@@ -5,14 +5,18 @@ ZTBCMS 文档 [![Build Status](https://travis-ci.org/ztbcms/docs.svg?branch=deve
 
 ### 环境需求
 
-Node.js 4.x以上
+Node.js 8.x以上
 
 ### 开始构建
 
 ```shell
-$ npm install gitbook-cli -g
-$ gitbook install
-$ gitbook serve
+npm install
+# 本地预览
+npm run dev
+# 构建生产环境
+npm run build
+# 推送到部署分支 dist
+npm run deploy
 ```
 
 [1]: http://ztbcms.com

@@ -19,7 +19,6 @@ footer: Copyright © 2016-present
 
 ZTBCMS v4基于TP6开发，文档请移步到 [ztbcms V4文档](https://www.kancloud.cn/ztbcms/ztbcms/1939308)
 
-
 ### 合作方
 
 <a href="https://www.zhutibang.cn"><img src="https://dn-coding-net-production-pp.qbox.me/da8e8b23-f828-4f13-9465-d5442890845c.png" style="height: 40px"></a>
