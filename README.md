@@ -1,4 +1,4 @@
-ZTBCMS 文档 [![Build Status](https://travis-ci.org/ztbcms/docs.svg?branch=develop)](https://travis-ci.org/ztbcms/docs) [![Netlify Status](https://api.netlify.com/api/v1/badges/fb48fca3-ef04-4ed2-9c0f-e4b512ca5694/deploy-status)](https://app.netlify.com/sites/admiring-lovelace-0db8a9/deploys)
+ZTBCMS 文档 
 =======
 
 [官网][1] | [文档][2] | [源代码][3]
