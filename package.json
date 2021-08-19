@@ -12,7 +12,8 @@
   "scripts": {
     "dev": "vuepress dev docs",
     "build": "vuepress build docs",
-    "deploy": "cd docs/.vuepress/dist && git init . && git add -A . && git commit -m 'Build' && git remote add origin https://e.coding.net/gzztb/ztbcms/docs.git && git checkout -b dist && git push -f origin dist"
+    "deploy": "cd docs/.vuepress/dist && git init . && git add -A . && git commit -m 'Build' && git remote add origin https://e.coding.net/gzztb/ztbcms/docs.git && git checkout -b dist && git push -f origin dist",
+    "buildAndDeploy": "npm run build && npm run deploy"
   },
   "repository": {
     "type": "git",

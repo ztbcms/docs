@@ -12,5 +12,16 @@ module.exports = {
       { text: '附录', link: '/extra/' },
       { text: '案例', link: '/case' },
     ]
-  }
+  },
+  head: [
+    [
+      // Google Ads
+      "script",
+      {
+        async: true,
+        crossorigin: "anonymous",
+        src: "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6764368739876780",
+      },
+    ],
+  ],
 }
