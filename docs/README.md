@@ -17,14 +17,14 @@ footer: Copyright © 2016-present
 
 <img src="https://img.shields.io/github/release/ztbcms/ztbcms.svg?maxAge=36000" alt="version">
 
-ZTBCMS v4基于TP6开发，文档请移步到 [ztbcms V4文档](https://www.kancloud.cn/ztbcms/ztbcms/1939308)
+<!-- ZTBCMS v4基于TP6开发，文档请移步到 [ztbcms V4文档](https://www.kancloud.cn/ztbcms/ztbcms/1939308) -->
 
 ### 合作方
 
-<a href="https://www.zhutibang.cn"><img src="https://dn-coding-net-production-pp.qbox.me/da8e8b23-f828-4f13-9465-d5442890845c.png" style="height: 40px"></a>
-<a href="https://portal.qiniu.com/signup?code=1h5fdum9dyez6"><img src="https://s1.ax1x.com/2020/07/24/UvdEct.png" style="height: 40px"></a>
-<a href="https://www.aliyun.com/minisite/goods?userCode=i3y41dsk"><img src="https://s1.ax1x.com/2020/07/24/Uvw1aD.png" style="height: 40px"></a>
-<a href="https://www.bt.cn/?invite_code=MV9xcml5enc="><img src="https://s1.ax1x.com/2020/07/31/aQxYoF.png" style="height: 40px"></a>
+<a href="https://www.zhutibang.cn"><img src="./img_zhutiabng.png" style="height: 40px"></a>
+<a href="https://portal.qiniu.com/signup?code=1h5fdum9dyez6"><img src="./img_qiniu.png" style="height: 40px"></a>
+<a href="https://www.aliyun.com/minisite/goods?userCode=i3y41dsk"><img src="./img_aliyun.png" style="height: 40px"></a>
+<a href="https://www.bt.cn/?invite_code=MV9xcml5enc="><img src="./img_bt.png" style="height: 40px"></a>
 
 
 ### 友情链接
