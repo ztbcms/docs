@@ -14,6 +14,7 @@ module.exports = {
     ]
   },
   head: [
+    ['link', { rel: 'icon', href: '/img/logo.png' }],
     [
       // Google Ads
       "script",
