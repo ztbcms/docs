@@ -22,9 +22,10 @@ footer: Copyright © 2016-present
 ### 合作方
 
 <a href="https://www.zhutibang.cn"><img src="./img_zhutiabng.png" style="height: 40px"></a>
-<a href="https://portal.qiniu.com/signup?code=1h5fdum9dyez6"><img src="./img_qiniu.png" style="height: 40px"></a>
 <a href="https://www.aliyun.com/minisite/goods?userCode=i3y41dsk"><img src="./img_aliyun.png" style="height: 40px"></a>
+<a href="https://curl.qcloud.com/eBYweamd"><img src="./img_tencent_cloud.jpg" style="height: 40px"></a>
 <a href="https://www.bt.cn/?invite_code=MV9xcml5enc="><img src="./img_bt.png" style="height: 40px"></a>
+<a href="https://portal.qiniu.com/signup?code=1h5fdum9dyez6"><img src="./img_qiniu.png" style="height: 40px"></a>
 
 
 ### 友情链接
