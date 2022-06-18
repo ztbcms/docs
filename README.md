@@ -17,6 +17,8 @@ npm run dev
 npm run build
 # 推送到部署分支 dist
 npm run deploy
+# 建构生产环境并推送到部署分支
+npm run buildAndDeploy
 ```
 
 [1]: http://ztbcms.com
