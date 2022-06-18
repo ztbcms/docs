@@ -16,3 +16,4 @@ sidebar: false
 * [日志 Log](/module/log/README.md)
 * [云存储 Oss](/module/oss/readme.md)
 * [监控模块 Mirror](/module/mirror/README.md)
+* [邮件](/module/Email/README.md)
