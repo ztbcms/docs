@@ -1,3 +1,7 @@
+---
+sidebar: false
+---
+
 ### 开发指南
 
 * [模板](/guide/template/README.md)

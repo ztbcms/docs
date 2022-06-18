@@ -16,7 +16,7 @@ module.exports = {
   ],
   themeConfig: {
     // Git 仓库和编辑链接
-    repo: 'https://github.com/ztbcms/ztbcms',
+    repo: 'https://github.com/ztbcms/ztbcms/tree/v3',
     // 自定义仓库链接文字。默认从 `themeConfig.repo` 中自动推断为
     // "GitHub"/"GitLab"/"Bitbucket" 其中之一，或是 "Source"。
     repoLabel: '查看源码',
@@ -45,5 +45,12 @@ module.exports = {
     ],
     // 最后更新时间
     lastUpdated: '更新于', // string | boolean
+    // 侧栏
+    // sidebar: [
+    //   '/',
+    //   ['http://baidu.com', '模块']
+    // ],
+    sidebar: 'auto',
+    sidebarDepth: 2,
   },
 }

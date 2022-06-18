@@ -1,3 +1,7 @@
+---
+sidebar: false
+---
+
 <h2 align="center">案例与用户</h2>
 
 <img src="./img_zhutiabng.png" style="height: 80px">

@@ -1,3 +1,7 @@
+---
+sidebar: false
+---
+
 ### 最佳实践
 
 * [规范和约定](/best_practic/rule.md)

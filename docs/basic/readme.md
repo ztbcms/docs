@@ -1,3 +1,7 @@
+---
+sidebar: false
+---
+
 ### 开始使用
 
 * [环境搭建&安装](/basic/setup.md)

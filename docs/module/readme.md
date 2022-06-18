@@ -1,3 +1,7 @@
+---
+sidebar: false
+---
+
 ### 模块
 
 * [授权 Auth](/module/auth/README.md)
