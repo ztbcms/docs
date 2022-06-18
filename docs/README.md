@@ -12,14 +12,10 @@ features:
   details: 基于ThinkPHP框架开发，采用独立分组的方式开发的内容管理系统
 - title: 易拓展
   details: 提供模块组件安装与卸载，海量模块插件
-footer: Copyright © 2016-present
+footer: COPYRIGHT © SINCE 2016
 ---
 
-<img src="https://img.shields.io/github/release/ztbcms/ztbcms.svg?maxAge=36000" alt="version">
-
-<!-- ZTBCMS v4基于TP6开发，文档请移步到 [ztbcms V4文档](https://www.kancloud.cn/ztbcms/ztbcms/1939308) -->
-
-### 合作方
+### 合作供应商
 
 <a href="https://www.zhutibang.cn"><img src="./img_zhutiabng.png" style="height: 40px"></a>
 <a href="https://www.aliyun.com/minisite/goods?userCode=i3y41dsk"><img src="./img_aliyun.png" style="height: 40px"></a>
