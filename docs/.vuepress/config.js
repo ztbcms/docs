@@ -4,15 +4,6 @@ module.exports = {
   description: '高性能、模块化、极速开发PHP Web框架',
   head: [
     ['link', { rel: 'icon', href: '/img/logo.png' }],
-    [
-      // Google Ads
-      "script",
-      {
-        async: true,
-        crossorigin: "anonymous",
-        src: "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6764368739876780",
-      },
-    ],
   ],
   themeConfig: {
     // Git 仓库和编辑链接
