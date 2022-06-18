@@ -1,7 +1,9 @@
 ZTBCMS 文档 
 =======
 
-[官网][1] | [文档][2] | [源代码][3]
+[官网][1] | [文档][1] | [源代码][3] 
+
+[V3官网][2] | [V3文档][2] | [V3源代码][5]
 
 ### 环境需求
 
@@ -21,6 +23,8 @@ npm run deploy
 npm run buildAndDeploy
 ```
 
-[1]: http://ztbcms.com
-[2]: http://ztbcms.com
+[1]: http://www.ztbcms.com
+[2]: http://v3.ztbcms.com
 [3]: http://github.com/ztbcms/ztbcms
+[4]: http://v3.ztbcms.com
+[5]: https://github.com/ztbcms/ztbcms/tree/v3
