@@ -1,7 +1,7 @@
 ---
 home: true
 heroImage: /img/logo.png
-heroText: ZTBCMS V3
+heroText: ZTBCMS V4
 tagline: 高性能、模块化、极速开发PHP Web框架
 actionText: 快速上手 →
 actionLink: /basic/setup/
