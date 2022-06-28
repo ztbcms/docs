@@ -26,4 +26,4 @@ footer: COPYRIGHT © SINCE 2016
 
 ### 友情链接
 
-[开发者在线](http://www.devonline.net)|[Linux命令行](http://linux.devonline.net)
+[开发者在线](http://www.devonline.net) | [Linux命令行](http://linux.devonline.net)

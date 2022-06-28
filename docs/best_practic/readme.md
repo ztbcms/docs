@@ -6,7 +6,7 @@ sidebar: false
 
 * [规范和约定](/best_practic/rule.md)
 * [部署指南](/best_practic/deploy.md)
-* [开发Tips汇总](/best_practic/dev_tips.md)
+* 开发Tips
     * [模块](/best_practic/tips/module.md)
     * [自定义后台iconfont](/best_practic/tips/custom_admin_icon.md)
     * [自定义成功(失败)页面](/best_practic/tips/custom_page.md)
