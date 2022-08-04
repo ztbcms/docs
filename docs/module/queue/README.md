@@ -1,98 +1,97 @@
-## [任务队列](https://github.com/ztbcms/ztbcms-Queue) ![version](https://img.shields.io/github/release/ztbcms/ztbcms-Queue.svg?maxAge=36000)
+## 队列 Queue
 
-任务队列适用后台长时间，批量、异步执行任务，如邮件、短信发送，每日生成报表等。
+
+### 简介
+
+队列提供能异步执行任务的能力。当长时间，批量、异步执行任务，如邮件、短信发送，每日生成报表等。
+
+
+### 依赖与安装
+
+```bash
+composer require jayin/think-queue
+```
+
+ztbcms 已经集成了队列，可以直接使用。
+
+### 配置
+
+队列配置文件在`config/queue.php`和`.env`中配置。主要配置项在`.env`中
+```ini
+# 队列
+[queue]
+# 队列驱动可选值：sync、database(建议)、redis
+driver=database
+# 是否开启队列监控;开启后需要正确设置 redis_connection 参数
+watch_queue=false
+# redis 默认链接
+redis_connection=default
+# 保留队列日志
+keep_log_day=30
+```
+
 
 ### 使用
 
-1.创建任务
-
-要点：继承 ` Queue\Libs\Job` 并实现`handle()`方法
+#### 1. 创建任务
 
 ```php
-use Queue\Libs\Job;
 
-class UpdateJob extends Job {
+use think\queue\Job;
+use app\common\libs\queue\BaseQueueJob;
 
-    //定义 你的Job数据  
-    //注意：必须为public,否则不保存该数据！
-    public $userid;
-    public $username;
+// 继承 BaseQueueJob
+class ReportDailyJob extends BaseQueueJob {
 
-    //利用初始化函数导入数据
-    public function __construct($userid, $username) {
-        $this->userid = $userid;
-        $this->username = $username;
-    }
+    /**
+     * @param Job $job
+     * @param $data
+     */
+    function generateDailyReport(Job $job, $data)
+    {
+        if ($job->attempts() > 1) {
+            // 重试次数达到N次处理
+            return;
+        }
 
-    //实现handle()
-    public function handle() {
-        //your code
+        // 业务逻辑
+        $id = $data['id'];
+
+        // 请务必删除任务
+        $job->delete();
+
+        // 也可以重新发布这个任务
+        $job->release($delay); //$delay为延迟时间
     }
 }
 ```
 
-2.把任务推送到指定队列中
+### 2. 推送到指定队列中
 
 ```php
-$job = new UpdateJob(time(), 'ztbcms');
+use think\facade\Queue
 
-$queue = Queue::getInstance();
-$result = $queue->push('high', $job);//注: high即为队列名
+# Method 1
+Queue::push('app\job\ReportDailyJob@generateDailyReport', ['id' => 1], 'queu_name');
 
-//或者延迟小时执行
-$result = $queue->push('high', $job, 1*60*60);//注: 第三个参数即为延迟执行时长，单位：秒
+# Method 2
+queue('app\job\ReportDailyJob@generateDailyReport', ['id' => 1], 0, 'queu_name');
 ```
 
-### 部署
+### 3. 部署
 
-#### 1.简单部署，本地测试时可以选择这种方式
-
-1.1. 启动队列
 
 ```shell
-$ php index.php /queue/worker/run/queue/high,mid,low
+php think queue:listen --queue queue_name --tries 3 --sleep 10 --timeout 300 --delay 300
 ```
 
-上述命令监听了3个名为high,mid,low的队列。路由解析方式跟TP重写URL原理一样，`/queue/worker/run`分别对应Module,Controller,Action,后面则是key-value的
-参数
+更稳定，多进程部署,可使用进程管理软件进行配置。如:[supervisor](http://supervisord.org/), [PM2](http://pm2.io/)
 
-1.2. 平滑停止
-> 即运行完当前的任务就退出当前队列
 
-```shell
-$ php index.php /queue/worker/stop
-```
-
-#### 3. 更稳定，多进程部署
-
-使用进程管理软件进行配置。如:[supervisor](http://supervisord.org/), [PM2](http://pm2.io/)
+添加计划任务`app\common\cronscript\QueueCleanLogScript`以清理队列日志。
 
 ### 最佳实践
 
-#### 0.根据业务调整配置
 
-`Queue/Confi/config.php`:
-```php
-return array(
-    'QUEUE_SLEEP' => 3,//队列空闲时，休眠时间
-    'QUEUE_MAX_RETRY' => 3, //最大重试次数
-);
-```
-
-若日常队列任务不多，`QUEUE_SLEEP`可以适当延长
-
-#### 1.定期删除已完成任务
-
-安装[计划任务模块]，添加计划任务`Queue\DeleteFinishJob`，推荐每日执行一次，每次删除7日前的已完成的任务。当然，可以根据你的业务逻辑调整其执行频率。
-
-```php
-class DeleteFinishJob extends Cron {
-
-    public function run($cronId) {
-        $hour = 7 * 24; //删除X小时前已完成的任务，你可以
-        //....
-    }
-}
-```
-
+### 常见问题
 
