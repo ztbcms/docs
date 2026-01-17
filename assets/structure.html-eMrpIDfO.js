@@ -1,0 +1,31 @@
+import{_ as n,c as a,a as e,o as i}from"./app-BwMOa-0n.js";const l={};function c(d,s){return i(),a("div",null,[...s[0]||(s[0]=[e(`<h2 id="目录结构" tabindex="-1"><a class="header-anchor" href="#目录结构"><span>目录结构</span></a></h2><div class="language-text line-numbers-mode" data-highlighter="prismjs" data-ext="text"><pre><code class="language-text"><span class="line">.</span>
+<span class="line">├── app 应用核心目录</span>
+<span class="line">│   ├── Application</span>
+<span class="line">│   │   ├── Admin 后台管理模块</span>
+<span class="line">│   │   ├── Api 接口模块</span>
+<span class="line">│   │   ├── Attachment 附件模块</span>
+<span class="line">│   │   ├── Content 内容管理</span>
+<span class="line">│   │   │   ├── Fields 字段模板</span>
+<span class="line">│   │   │   ├── TagLib 标签库</span>
+<span class="line">│   │   │   └── View 模板</span>
+<span class="line">│   │   │       ├── Addtemplate 内容添加模板页</span>
+<span class="line">│   │   │       ├── Category 栏目列表模板页 </span>
+<span class="line">│   │   │       ├── Edittemplate  内容编辑模板页</span>
+<span class="line">│   │   │       ├── Listtemplate  内容列表模板页</span>
+<span class="line">│   │   │       ├── Tags 标签模板页</span>
+<span class="line">│   │   ├── Install 系统安装模块</span>
+<span class="line">│   │   ├── Migrate 数据迁移模块，数据迁移脚本</span>
+<span class="line">│   │   ├── System  应用Model,Service</span>
+<span class="line">│   │   ├── Template 模板模块</span>
+<span class="line">│   │   ├── Testing 测试样例模块</span>
+<span class="line">│   ├── Common 全局通用模块 </span>
+<span class="line">│   ├── Core ThinkPHP核心目录</span>
+<span class="line">│   ├── Libs  ZTBCMS 系统目录</span>
+<span class="line">│   └── Template  前端模板目录</span>
+<span class="line">│       └── Default</span>
+<span class="line">├── d  上传数据目录</span>
+<span class="line">├── runtime  缓存目录</span>
+<span class="line">├── statics 静态文件</span>
+<span class="line">└── vendor composer 依赖</span>
+<span class="line"></span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>`,2)])])}const p=n(l,[["render",c]]),m=JSON.parse('{"path":"/basic/structure.html","title":"","lang":"zh-CN","frontmatter":{},"git":{"updatedTime":1522061575000,"contributors":[{"name":"Jayin Ton","username":"","email":"tonjayin@gmail.com","commits":4}],"changelog":[{"hash":"1deb2203710cac5b83a16bd92868ad73ffbe61c9","time":1522061575000,"email":"273942569@qq.com","author":"Jayin Ton","message":"Update structure.md"},{"hash":"bcc4b71cec2334477588181945d3fe8eb76b3b73","time":1511510212000,"email":"273942569@qq.com","author":"Jayin Ton","message":"Update structure.md"},{"hash":"7635f240cf926549b21e90158a83ae4b1df2d412","time":1489369223000,"email":"tonjayin@gmail.com","author":"Jayin Ton","message":"update"},{"hash":"20e18dd682fcdcb9a3c39bc1dc302e1e0b130b68","time":1489334557000,"email":"tonjayin@gmail.com","author":"Jayin Ton","message":"目录结构"}]},"filePathRelative":"basic/structure.md"}');export{p as comp,m as data};
