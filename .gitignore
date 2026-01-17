@@ -30,5 +30,10 @@ build/Release
 # Output of documentation
 dist/
 
+# VuePress 2.x
+docs/.vuepress/.cache
+docs/.vuepress/.temp
+docs/.vuepress/dist
+
 
 

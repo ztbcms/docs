@@ -1,40 +1,46 @@
-// vuepress 默认主体配置：https://vuepress.vuejs.org/zh/theme/default-theme-config.html
-module.exports = {
+import { viteBundler } from '@vuepress/bundler-vite'
+import { defaultTheme } from '@vuepress/theme-default'
+import { defineUserConfig } from 'vuepress'
+
+export default defineUserConfig({
+  lang: 'zh-CN',
   title: 'ZTBCMS',
   description: '高性能、模块化、极速开发PHP Web框架',
   head: [
     ['link', { rel: 'icon', href: '/img/logo.png' }],
   ],
-  themeConfig: {
+
+  bundler: viteBundler(),
+
+  theme: defaultTheme({
+    logo: '/img/logo.png',
+
     // Git 仓库和编辑链接
     repo: 'https://github.com/ztbcms/ztbcms',
-    // 自定义仓库链接文字。默认从 `themeConfig.repo` 中自动推断为 "GitHub"/"GitLab"/"Bitbucket" 其中之一，或是 "Source"。
     repoLabel: '查看源码',
-    // 以下为可选的编辑链接选项
-    // 文档仓库
+
+    // 文档仓库配置
     docsRepo: 'https://github.com/ztbcms/docs',
-    // 文档根目录
     docsDir: 'docs',
-    // 文档分支
     docsBranch: 'develop',
-    // 是否开启编辑链接
-    editLinks: true,
-    // 默认为 "Edit this page"
+    editLink: true,
     editLinkText: '编辑此页',
 
-    logo: '/img/logo.png',
     // 导航栏
-    nav: [
+    navbar: [
       { text: '起步', link: '/basic/' },
       { text: '框架', link: '/guide/' },
       { text: '最佳实践', link: '/best_practic/' },
       { text: '模块', link: '/module/' },
       { text: '案例', link: '/case' },
     ],
+
     // 最后更新时间
-    lastUpdated: '更新于', // string | boolean
+    lastUpdated: true,
+    lastUpdatedText: '更新于',
+
     // 侧栏
     sidebar: 'auto',
     sidebarDepth: 2,
-  },
-}
+  }),
+})

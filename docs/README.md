@@ -1,10 +1,15 @@
 ---
 home: true
 heroImage: /img/logo.png
-heroText: ZTBCMS V4
+heroText: ZTBCMS
 tagline: 高性能、模块化、极速开发PHP Web框架
-actionText: 快速上手 →
-actionLink: /basic/setup/
+actions:
+  - text: 快速上手 →
+    link: /basic/
+    type: primary
+  - text: 下载框架
+    link: https://github.com/ztbcms/ztbcms
+    type: info
 features:
 - title: 简洁至上
   details: 提供完善的后台管理系统，结构清晰，容易上手
@@ -17,7 +22,6 @@ footer: COPYRIGHT © SINCE 2016
 
 ### 合作供应商
 
-<a href="https://www.zhutibang.cn"><img src="./img_zhutiabng.png" style="height: 40px"></a>
 <a href="https://www.aliyun.com/minisite/goods?userCode=i3y41dsk"><img src="./img_aliyun.png" style="height: 40px"></a>
 <a href="https://curl.qcloud.com/eBYweamd"><img src="./img_tencent_cloud.jpg" style="height: 40px"></a>
 <a href="https://www.bt.cn/?invite_code=MV9xcml5enc="><img src="./img_bt.png" style="height: 40px"></a>
